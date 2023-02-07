@@ -5,12 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>React - Inception</title>
+    <link rel="stylesheet" href="index.css" />
+
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
   </head>
   <body>
-    <div>
-      <h1>Heading 1</h1>
+    <!-- Hello React using HTML -->
+    <div id="box">
+      <h1>Hello React (using HTML)</h1>
     </div>
+
+    <!-- Hello React using JAVASCRIPT -->
+    <div id="container"></div>
+    <script>
+      const myHeading = document.createElement("h1")
+      myHeading.innerHTML = "Hello React (using JS)"
+
+      const container = document.getElementById("container")
+      container.appendChild(myHeading)
+    </script>
+
+    <!-- Hello React using REACT -->
+    <div id="root"></div>
+    <script src="App.js"></script>
   </body>
 </html>

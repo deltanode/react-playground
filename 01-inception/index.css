@@ -1,0 +1,19 @@
+#box {
+  background-color: antiquewhite;
+}
+
+#container {
+  background-color: azure;
+}
+
+#root {
+  background-color: blanchedalmond;
+}
+
+.orange-color {
+  color: rgb(235, 125, 41);
+}
+
+.yellow-color {
+  color: rgb(116, 116, 22);
+}
