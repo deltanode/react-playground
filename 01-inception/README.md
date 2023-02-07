@@ -102,10 +102,10 @@ Getting started with react.
   - VS Code
   - Chrome
   - Extensions of Chrome
-- [Build your first Hello World program](App.js) using,
-  - Using just HTML
-  - Using JS to manipulate the DOM
-  - Using React
+- Build your first Hello World program using,
+  - [Using just HTML](index.html)
+  - [Using JS to manipulate the DOM](index.html)
+  - [Using React](App.js)
     - use CDN Links
     - Create an Element
     - Create nested React Elements
@@ -115,4 +115,3 @@ Getting started with react.
 ## References:
 
 - https://beta.reactjs.org/apis/react/createElement
-
