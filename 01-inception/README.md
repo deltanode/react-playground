@@ -69,7 +69,9 @@ Getting started with react.
     <summary>What is difference between react.development.js and react.production.js files via CDN ?</summary>
     <br>
     <blockquote>
-    -   
+    - react.production.js are the minified files. <br><br>
+    - Both react.development.js and react.production.js contains the similar code. The code difference between both files is nothing. <br><br>
+    - But, react.production.js is much more optimised for production use. The size of react.production.js will be very less then react.development.js
     </blockquote> <br>
   </details>
   
