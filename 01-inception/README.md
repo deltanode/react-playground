@@ -78,19 +78,17 @@ Getting started with react.
     <br>
     <blockquote>
       - When we load a webpage then 2 major things happens, <strong>HTML Parshing</strong> and <strong>Loading of scripts</strong>.<br>
-      - Now, <strong>Loading of scripts</strong> contains 2 parts, <strong>Fetching the script from the network<strong> & <strong>Executing it line by line</strong>. <br>
-      - Now, there are 3 scenario: <<strong>Normal</strong>, using <strong>Async</strong> & using <strong>defer</strong>. <br><br> 
+      - Now, <strong>Loading of scripts</strong> contains 2 parts, <strong>Fetching the script from the network</strong> & <strong>Executing it line by line</strong>. <br>
+      - Now, there are 3 scenario: <strong>Normal</strong>, using <strong>Async</strong> & using <strong>Defer</strong>. <br><br> 
       - Normal Case: <script src="..." > <br>
       - In Normal case, during HTML parshing, when the browser encounter the script tag, it pauses the HTML parshing & start fetching the scripts from the network & then it executed them & again continues the HTML parshing after that. <br><br>
-
       - Using Async: <script async src="..." > <br>
       - In Async case, during HTML parshing, the browser parallelly fetches the script from the network. After fetching the script, it pauses the the HTML parshing & starts executing the script & then it again continues the HTML parshing after that.<br><br>
-
       - Using Defer: <script defer src="..." > <br>
       - In Async case, during HTML parshing, the browser parallelly fetches the script from the network. Now, when the HTML parshing completes, it then start executing the script at last. <br><br>
+      - Also know, the Async does not guarantee the <strong>order of execution</strong> of the scripts but Defer does. <br><br>
+      <img src="async-vs-defer-attributes.jpg"> <br><br>
       - When it comes to loading external JavaScript files on your website, should you use async or defer? <br><br>
-
-      - ALso know, the Async does not guarantee the <strong>order of execution</strong> of the scripts but Defer does.
       - Async allows your script to run as soon as it’s loaded, without blocking other elements on the page. Defer means your script will only execute after the page has finished loading. In most cases, async is the better option — but there are exceptions. Understanding when to use each one will help you create a faster and more efficient website. <br><br>
        - <strong>Async</strong> in script tag in JavaScript is a way to load scripts asynchronously. That means, if a script is async, it will be loaded independently of other scripts on the page, and will not block the page from loading. <br>
       - If you have a page with several external scripts, loading them all asynchronously can speed up the page load time, because the browser can download and execute them in parallel. <br>
