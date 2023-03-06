@@ -2,6 +2,7 @@
 
 A playground to practice & learn react. This is where the magic happens! 
 
+
 <!--  **************************************************************************************************************************************  -->
 <!-- ## [&rarr; Inception](01-inception) -->
 ## [1. Inception](01-inception)
@@ -165,6 +166,31 @@ A playground to practice & learn react. This is where the magic happens!
 <!--  **************************************************************************************************************************************  -->
 
 
+        
+<!--        
+<details>
+    <summary>
+        <h2>Inception <a href="www.google.com">➥ </a></h2>
+     </summary>
+    <ol>
+        <li>
+            <details>
+               <summary>What is Emmet?</summary><br>
+               <block> hello dfjldkjf dkjflkjdf dkjflkjdf kldjfjdfj</block><br>
+            </details>
+        </li>
+        <li>
+            <details>
+               <summary>Difference between a Library and Framework?</summary><br>
+               <blockquote> hello dfjldkjf dkjflkjdf dkjflkjdf kldjfjdfj</blockquote><br>
+            </details>
+        </li>
+     </ol>
+</details>
+-->        
+        
+        
+        
 <!--
 | S.No | Description | Topic | Link |
 | --- | --- | --- | --- |
