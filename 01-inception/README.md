@@ -1,6 +1,10 @@
 # 01 - Inception
 
-Getting started with react.
+We started learning react from scratch. Environment setup was clearly explained. Started with creating a simple Hello world program . First, using only html, then we tried to implement the same through javascript. Finally, we created a simple hello world program using React. Everything was done without installing any package. Unlike other courses which starts with create-react-app as first session, we tried writing the react code from zero.
+
+## Notes:
+  - [Handwritten](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2001%20-%20Inception%20-%20HandWritten%20Notes.pdf)
+  - [Digital](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2001%20-%20Inception%20-%20Digital%20Notes.pdf)
 
 ## Theory:
 
