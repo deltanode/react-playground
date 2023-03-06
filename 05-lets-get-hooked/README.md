@@ -6,3 +6,25 @@ Today was the continuation of previous chapter where we started to develop a foo
 
 - [Handwritten [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2005%20-%20Let's%20get%20Hooked!%20-%20HandWritten%20Notes.pdf)
 - [Digital [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2005%20-%20Let's%20get%20Hooked!%20-%20Digital%20Notes.pdf)
+
+## Theory:
+
+- What is the `difference` between `Named export`, `Default export`, and `* as export`?
+- What is the `importance` of `config.js` file?
+- What are `React Hooks`?
+- Why do we need `useState Hook`?
+
+## Coding:
+
+- `Clean up` your code.
+- Create a `Folder Structure` for your app.
+- Make `different files` for each Component.
+- Create a `config file`.
+- Use all types of `import and export`.
+- Create a `Search Box` in your App.
+- Use `useState` to create a variable and `bind` it to the input box.
+- Try to make your `search bar work`.
+
+## References:
+
+- [Akshay Saini Code Link](https://bitbucket.org/namastedev/namaste-react-live/src/master/)
