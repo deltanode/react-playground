@@ -1,8 +1,6 @@
-# 01 - Inception
+# 08 -
 
 W
-
-#### Topic Covered:
 
 ## Notes:
 
