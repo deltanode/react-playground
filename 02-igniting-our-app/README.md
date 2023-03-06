@@ -10,6 +10,10 @@ Today was about creating production-ready react app from scratch without using c
     <li>Setup React App</li> 
 </ul>
 
+## Notes:
+  - [Handwritten [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2002%20-%20Igniting%20our%20App%20-%20HandWritten%20Notes.pdf)
+  - [Digital [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2002%20-%20Igniting%20our%20App%20-%20Digital%20Notes.pdf)
+
 ## Theory:
 
 <details>
