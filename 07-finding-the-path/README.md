@@ -4,5 +4,5 @@ Today we started with the recap of previous chapter's important concepts like us
 
 ## Notes:
 
-- [Handwritten [PDF]]()
-- [Digital [PDF]]()
+- [Handwritten [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2007%20-%20Finding%20the%20Path%20%20-%20HandWritten%20Notes.pdf)
+- [Digital [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2007%20-%20Finding%20the%20Path%20-%20Digital%20Notes.pdf)

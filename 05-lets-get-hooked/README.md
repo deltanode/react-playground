@@ -4,5 +4,5 @@ Today was the continuation of previous chapter where we started to develop a foo
 
 ## Notes:
 
-- [Handwritten [PDF]]()
-- [Digital [PDF]]()
+- [Handwritten [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2005%20-%20Let's%20get%20Hooked!%20-%20HandWritten%20Notes.pdf)
+- [Digital [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2005%20-%20Let's%20get%20Hooked!%20-%20Digital%20Notes.pdf)

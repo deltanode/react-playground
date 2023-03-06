@@ -4,5 +4,5 @@ Today, it was all about understanding the creating class-based component, it's d
 
 ## Notes:
 
-- [Handwritten [PDF]]()
-- [Digital [PDF]]()
+- [Handwritten [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2008%20-%20Let's%20get%20Classy%20%20-%20HandWritten%20Notes.pdf)
+- [Digital [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2008%20-%20Let's%20get%20Classy%20-%20Digital%20Notes.pdf)

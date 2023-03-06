@@ -4,5 +4,5 @@ Until last chapter, we were using mock data to render the UI. In this chapter, w
 
 ## Notes:
 
-- [Handwritten [PDF]]()
-- [Digital [PDF]]()
+- [Handwritten [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2006%20-%20Exploring%20the%20world%20-%20Handwritten%20Notes.pdf)
+- [Digital [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2006%20-%20Exploring%20the%20world%20-%20Digital%20Notes.pdf)
