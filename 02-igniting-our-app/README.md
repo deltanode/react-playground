@@ -28,7 +28,7 @@ Today was about creating production-ready react app from scratch without using c
         
 - `npm` alternative is `yarn`
 <br>
-<b>NOTE:</b> NPM does not stand for Node Package Manager but everything else.        
+<b>NOTE:</b> `NPM` DOESN'T stand for `Node Package Manager` but everything else.        
         
 ### How to initialize `npm`?
 ```
@@ -179,8 +179,22 @@ Parcel provides HMR properties to keep track of files changes by using `file wat
     <summary>List down your favourite 5 superpowers of Parcel and describe any 3 of them in your own words.</summary>
     <br>
     <blockquote>
-    - 
-    </blockquote> <br><br>
+        
+Superpowers of `parcel`: 
+  1. `minification`: Minification refers to the process of removing unnecessary or redundant data without affecting how the resource is processed by the browser - e.g. code comments and formatting, removing unused code, using shorter variable and function names, and so on.
+  2. `image optimizations` (By default, Parcel includes lossless image optimization for JPEGs and PNGs in prod. mode, which reduces the size of images without affecting their quality. 
+  3. `compression`(renaming variables)
+  4. `cleaning our code`: Note: parcel & babel, itself doesn't remove consol.log. To achieve that, we need to config it. We will be needing a plugin `npm install babel-plugin-transsform-remote-control`
+  5. `super fast build`
+  6. `dev and prod builds`
+  7. `caching while development`: Parcel caches everything it builds. If you restart the dev server, Parcel will only rebuild files that have changed since the last time it ran. Parcel automatically tracks all of the files, configuration, plugins, and dev dependencies that are involved in your build.
+  8. `Old browser competibility` Parcel allows support for older broser also, by using `BrowserList` in package.json     
+  9. `Https on dev as well npx parcel index.html (--https)`
+  10. `Consistent Hashing Algorithm`
+  11. `Zero configuration`: Unlike Webpack, Parcel requires zero configurations to setup.
+  12. `Tree shaking`: Removing unwanted code or dead code.
+  13. `API proxy`
+  </blockquote> <br><br>
  </details>
 
 <details>
