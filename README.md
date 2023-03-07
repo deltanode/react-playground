@@ -4,7 +4,7 @@ A playground to practice & learn react. This is where the magic happens!
 
 
 <!--  **************************************************************************************************************************************  -->
-<!-- ## [&rarr; Inception](01-inception) -->
+<!-- ## [&rarr; Inception ➥](01-inception) -->
 ## [1. Inception](01-inception)
 
 
