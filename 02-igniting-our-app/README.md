@@ -4,12 +4,13 @@ Today was about creating production-ready react app from scratch without using c
 
 #### Topic Covered:
 
-<ul> 
-    <li>Bundler: Parcel</li> 
-    <li>npm</li> 
-    <li>npx</li> 
-    <li>Setup React App</li> 
-</ul>
+- Bundlers
+ - Parcel setup
+ - About `npm` & `npx`
+ - About `node_modules`
+ - Understanding `package.json` and `package-lock.json`
+ - installing react as a packge using `npm`
+ - Setting up our own `create-react-app` setup without using `create-react-app`
 
 ## Notes:
 
