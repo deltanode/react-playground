@@ -91,23 +91,35 @@ The `type` attribute in the script tag defines the type of script that we we wan
 
 - `text/javascript` : It is the basic standard of writing javascript code inside the `<script>` tag.
 
-e.g
+   ```
+   <script type="text/javascript">
+       const a = "Hello";
+       const b = "World!";
+       console.log(a + " " + b); // Hello World!
+   </script>
+   ```
 
-```
-<script type="text/javascript">
-    const a = "Hello";
-    const b = "World!";
-    console.log(a + " " + b); // Hello World!
-</script>
-```
+- `module`: This value tells the browser that the script is a module that can import or export other files or modules inside it
+  ```
+  <script type="module" src="app.js"></script>
+  ```
+
+- `importmap`: If the type attribute is set `importmap`, the body of the element contains importmap ie an JSON object using which the browser can resolve the module specifiers while importing modules.
+   ```
+   <script type="importmap" src="app.js"></script>
+   ```
 
 - `text/ecmascript` : this value indicates that the script is following the `EcmaScript` standards.
-
-- `module`: This value tells the browser that the script is a module that can import or export other files or modules inside it.
 
 - `text/babel` : This value indicates that the script is a babel type and required bable to transpile it.
 
 - `text/typescript`: As the name suggest the script is written in `TypeScript`.
+  
+ 
+- *NOTE*: In HTML5, type attribute is not mandatory. If type attribute is not present(default), or an empty string (type="") or javascript MIME type (text/javascript or application/ecmascript), it is treated as classic "javascript" file.  
+   ```
+   <script type="" src="app.js"></script>
+   ```
 
 </blockquote><br>
 </details>
