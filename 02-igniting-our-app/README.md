@@ -154,7 +154,7 @@ Steps to implement tree shaking :
   1. Declare ES6 import and exports for the modules
   2. Bundler analyses the dependency tree during compilation phase.
   3. Any uncode code is removed from the final build.       
-    </blockquote> <br><br>
+    </blockquote> <br>
  </details>
 
 <details>
@@ -172,7 +172,7 @@ There are many advantages of this features :
 Parcel provides HMR properties to keep track of files changes by using `file watcher algorithms`.
        
 <b>Webpack</b> needs some configuration to be done for using HMR 
-</blockquote> <br><br>
+</blockquote> <br>
  </details>
 
 <details>
@@ -181,28 +181,34 @@ Parcel provides HMR properties to keep track of files changes by using `file wat
     <blockquote>
         
 Superpowers of `parcel`: 
-  1. `minification`: Minification refers to the process of removing unnecessary or redundant data without affecting how the resource is processed by the browser - e.g. code comments and formatting, removing unused code, using shorter variable and function names, and so on.
-  2. `image optimizations` (By default, Parcel includes lossless image optimization for JPEGs and PNGs in prod. mode, which reduces the size of images without affecting their quality. 
+  1. `minification` (Minification refers to the process of removing unnecessary or redundant data without affecting how the resource is processed by the browser - e.g. code comments and formatting, removing unused code, using shorter variable and function names, and so on.)
+  2. `image optimizations` (By default, Parcel includes lossless image optimization for JPEGs and PNGs in prod. mode, which reduces the size of images without affecting their quality.) 
   3. `compression`(renaming variables)
-  4. `cleaning our code`: Note: parcel & babel, itself doesn't remove consol.log. To achieve that, we need to config it. We will be needing a plugin `npm install babel-plugin-transsform-remote-control`
+  4. `cleaning our code` (Note: parcel & babel, itself doesn't remove consol.log. To achieve that, we need to config it & we will be installing a plugin `npm install babel-plugin-transsform-remote-control`)
   5. `super fast build`
   6. `dev and prod builds`
-  7. `caching while development`: Parcel caches everything it builds. If you restart the dev server, Parcel will only rebuild files that have changed since the last time it ran. Parcel automatically tracks all of the files, configuration, plugins, and dev dependencies that are involved in your build.
-  8. `Old browser competibility` Parcel allows support for older broser also, by using `BrowserList` in package.json     
+  7. `caching while development` (Parcel caches everything it builds. If you restart the dev server, Parcel will only rebuild files that have changed since the last time it ran. Parcel automatically tracks all of the files, configuration, plugins, and dev dependencies that are involved in your build.)
+  8. `Old browser competibility` (Parcel allows support for older broser also, by using `BrowserList` in package.json)     
   9. `Https on dev as well npx parcel index.html (--https)`
   10. `Consistent Hashing Algorithm`
-  11. `Zero configuration`: Unlike Webpack, Parcel requires zero configurations to setup.
-  12. `Tree shaking`: Removing unwanted code or dead code.
+  11. `Zero configuration` (Unlike Webpack, Parcel requires zero configurations to setup.)
+  12. `Tree shaking` (Removing unwanted code or dead code.)
   13. `API proxy`
-  </blockquote> <br><br>
+  14. `Hot module replacement` (Parcel provides HMR properties to keep track of files changes by using file watcher algorithms.)        
+  </blockquote> <br>
  </details>
 
 <details>
     <summary>What is `.gitignore`? What should we add and not add into it?</summary>
     <br>
     <blockquote>
-    - 
-    </blockquote> <br><br>
+        
+- This file contains the list of files that we should not commit to the repository.
+
+OR
+        
+- The `.gitignore file` is a text file that tells `Git` which files or folders to `ignore` in a project during `commit to the repository`.
+    </blockquote> <br>
  </details>
 
 <details>
