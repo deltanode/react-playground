@@ -16,7 +16,7 @@ Today was about creating production-ready react app from scratch without using c
 
 - [Handwritten [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2002%20-%20Igniting%20our%20App%20-%20HandWritten%20Notes.pdf)
 - [Digital [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2002%20-%20Igniting%20our%20App%20-%20Digital%20Notes.pdf)
-- [Github [Link]](https://github.com/Learn-React-With-Harshi/chapter-02-igniting-react-app/blob/main/class-notes.md)
+- [Github [Link]](https://github.com/deltanode/react-playground/blob/main/02-igniting-our-app/notes.md)
 
 ## Theory:
 
