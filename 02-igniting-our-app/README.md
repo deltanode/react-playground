@@ -168,7 +168,8 @@ There are many advantages of this features :
   1) The application state is retained which is usually lost during full reload
   2) Instantly updates the browser when source css/js code is modified.
 
-<b>Parcel</b> automatically does HMR while the application uses a framework (Eg:React, Vue). If no framework is used, then HMR can be opted using `module.hot` API 
+<b>Parcel</b> automatically does HMR, when the application is using library/framework like:React, Vue, Angular. If no library/framework is used, then HMR can be opted using `module.hot` API. <br>
+Parcel provides HMR properties to keep track of files changes by using `file watcher algorithms`.
        
 <b>Webpack</b> needs some configuration to be done for using HMR 
 </blockquote> <br><br>
