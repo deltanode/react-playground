@@ -23,9 +23,13 @@ Today was about creating production-ready react app from scratch without using c
     <summary>What is `NPM`?</summary>
     <br>
     <blockquote>
-<b>It is a tool used for package management</b> and the default package manager for Node projects. NPM is installed, when NodeJS is installed on a machine. It comes with a command-line interface (CLI) used to interact with the online database of NPM. This database is called the NPM Registry, and it hosts public and private 'packages.' To add or update packages, we use the NPM CLI to interact with this database. <br>
+<b>It is a tool used for package management</b> and the default package manager for Node projects. 
+<br> NPM is installed, when NodeJS is installed on a machine. It comes with a command-line interface (CLI) used to interact with the online database of NPM. This database is called the NPM Registry, and it hosts public and private 'packages.' To add or update packages, we use the NPM CLI to interact with this database. <br><br>
+        
 - `npm` alternative is `yarn`
-
+<br>
+<b>NOTE:</b> NPM does not stand for Node Package Manager but everything else.        
+        
 ### How to initialize `npm`?
 ```
 npm init
@@ -94,40 +98,80 @@ npm install -D parcel
     <summary>What is `.parcel-cache`</summary>
     <br>
     <blockquote>
-    - 
-    </blockquote> <br><br>
+        <b>.parcel-cache</b> is used by parcel(bundler) to reduce the building time.
+It stores information about your project when parcel builds it, so that when it rebuilds, it doesn't have to re-parse and re-analyze everything from scratch. It's a key reason why parcel can be so fast in development mode.
+    </blockquote> <br>
  </details>
 
 <details>
     <summary>What is `npx` ?</summary>
     <br>
     <blockquote>
-    - 
-    </blockquote> <br><br>
+  
+  - `npx` npx is a tool that is used to execute the packages registered on the `npm registry` without installing them.
+       
+  - `npx` is a `npm package runner` that is used to execute the command without installing the package (just use on the go). When you run a package using `npx`, it searches for the package in the local and global registry, and then it runs the package. If the package is not already installed, `npx` downloads the package files and installs the package, but it will only cache the files instead of saving it.
+
+  Examples : 
+  
+  ```npx parcel index.html``` -> npx searches for `parcel` package in your environment and if not found, downloads it and then runs the command. (with index.html as entry point. you can remove index.html and put it in the source of package.json as well)
+  
+  ```npx create-react-app my-app``` -> npx seraches for `create-react-app` package in your environment, if not found, downlaods it and then creates my-app using create-react-app in the current project directory.
+    </blockquote> <br>
  </details>
 
 <details>
     <summary>What is difference between `dependencies` vs `devDependencies`</summary>
     <br>
     <blockquote>
-    - 
-    </blockquote> <br><br>
+
+First, lets understand what is dependencies:-         
+- `Dependencies` are nothing but it is a third party package or we can say that modules installed using npm. <br><br>
+Or <br><br>
+- The `dependencies value` is used to specify `any other modules` that a given module (represented by the package. json ) requires to work. <br> When you run `npm install` from the root folder of a given module, it will install any modules listed in that dependencies object. <br><br>
+        
+| dependencies                                                    | devDependencies           | 
+| -------------                                                   |:-------------:             | 
+| Packages that are required in the production environment      | Packages that are required only in the development environment, and not in prod/testing environment| 
+| Command : ```npm install <package-name>```| Command : ```npm install -D <package-name>```or ```npm install --save-dev <package-name>``` |  
+| Eg : react, react-dom, redux, express, nodemon, babel, mocha (testing)      | Eg: parcel     |
+</blockquote> <br><br>
  </details>
 
 <details>
     <summary>What is Tree Shaking?</summary>
     <br>
     <blockquote>
-    - 
+    
+`Tree shaking` is process of removing the unwanted code that we do not use while developing the application.
+In computing, tree shaking is a dead code elimination technique that is applied when optimizing code.
+
+OR
+        
+`Tree shaking` is a concept in JavaScript to describe the removal of dead code. Tree shaking is done by module bundler like parcel/webpack while bundling multiple javascript files into single files thus improving the web performance.
+      
+Steps to implement tree shaking : 
+  1. Declare ES6 import and exports for the modules
+  2. Bundler analyses the dependency tree during compilation phase.
+  3. Any uncode code is removed from the final build.       
     </blockquote> <br><br>
  </details>
 
 <details>
-    <summary>What is Hot Module Replacement?</summary>
+    <summary>What is Hot Module Replacement (HMR)?</summary>
     <br>
     <blockquote>
-    - 
-    </blockquote> <br><br>
+        
+The process of adding, removing or updating the modules while the application is running without full reload is called `Hot Module Replacement`. This feature is available in all module bundlers like Parcel, Webpack,etc.
+        
+There are many advantages of this features : 
+  1) The application state is retained which is usually lost during full reload
+  2) Instantly updates the browser when source css/js code is modified.
+
+<b>Parcel</b> automatically does HMR while the application uses a framework (Eg:React, Vue). If no framework is used, then HMR can be opted using `module.hot` API 
+       
+<b>Webpack</b> needs some configuration to be done for using HMR 
+</blockquote> <br><br>
  </details>
 
 <details>
