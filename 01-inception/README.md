@@ -80,16 +80,11 @@ A key difference between the two is the is the <b>inversion of control</b> & <b>
    <details>
     <summary>Why is `React` known as React?</summary>
     <br>
-    <blockquote>
-    
+    <blockquote>    
 - React is a JavaScript library that helps developers to build user interfaces – the things you interact with on websites. It has become popular because of its simplicity and flexibility. <br><br>      
 - React is named <strong>React</strong> because of its ability to react to changes in data. When the data in a React component changes, React will automatically re-render the component so that it reflects the new data. This makes it easy to create performant user interfaces that always look up-to-date. <br><br>
 - React was created by Jordan Walke, a software engineer at Facebook. It was first used internally at Facebook to power News Feed and other user interface elements. After seeing how well it performed, Jordan open-sourced React and made it available to the world.
 
-*More*:-
-
-`React` is a JavaScript library for building User Interfaces whereas `ReactDOM` is also JavaScript library that allows `React to interact with the DOM`.
-The react package contains `React.createElement()`, `React.Component`, `React.Children`, and other helpers related to elements and component classes. You can think of these as the isomorphic or universal helpers that you need to build components. The react-dom package contains `ReactDOM.render()`, and in react-dom/server we have server-side rendering support with `ReactDOMServer.renderToString()` and `ReactDOMServer.renderToStaticMarkup()`.
 
 </blockquote><br>
   </details>
@@ -118,10 +113,22 @@ The react package contains `React.createElement()`, `React.Component`, `React.Ch
     <summary>What is difference between `React` and `ReactDOM` ?</summary>
     <br>
     <blockquote>
-    - In order to work with <strong>React</strong> in the <strong>browsers</strong>, we need to include 2 libraries: React and ReactDOM. <br><br>
-    - <strong>React</strong> library is responsible for creating views and <strong>ReactDOM</strong> library is responsible to actually render UI in the browser. <br><br>
-    - Include these two libraries before your main JavaScript file. 
-    </blockquote> <br>
+
+`React` is a JavaScript library for building User Interfaces whereas `ReactDOM` is also JavaScript library that allows `React to interact with the DOM`.
+<br><br>
+The react package contains `React.createElement()`, `React.Component`, `React.Children`, and other helpers related to elements and component classes. You can think of these as the isomorphic or universal helpers that you need to build components. 
+<br><br>
+The react-dom package contains `ReactDOM.render()`, and in react-dom/server we have server-side rendering support with `ReactDOMServer.renderToString()` and `ReactDOMServer.renderToStaticMarkup()`.
+      
+<br>
+      
+*More*:-
+
+- In order to work with <strong>React</strong> in the <strong>browsers</strong>, we need to include 2 libraries: `React` and `ReactDOM`. <br><br>
+- <strong>React</strong> library is responsible for creating views and <strong>ReactDOM</strong> library is responsible to actually render UI in the browser. <br><br>
+- Include these two libraries before your main JavaScript file. 
+
+</blockquote> <br>
   </details>
 
    <details>
