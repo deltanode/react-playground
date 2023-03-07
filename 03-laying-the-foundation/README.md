@@ -17,6 +17,7 @@ We revised the previous sessions and doubts raised in the previous sessions were
 
 - [Handwritten [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2003%20-%20Laying%20the%20Foundation%20-%20HandWritten%20Notes.pdf)
 - [Digital [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2003%20-%20Laying%20the%20Foundation%20-%20Digital%20Notes.pdf)
+- [Github [Link]](https://github.com/deltanode/react-playground/blob/main/03-laying-the-foundation/notes.md)
 
 ## Theory:
 
@@ -43,7 +44,7 @@ We revised the previous sessions and doubts raised in the previous sessions were
  
   <!-- *******************************-->
   <details>
-    <summary>{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in `JSX`.</summary>
+    <summary>{TitleComponent}` vs `{< TitleComponent/>}` vs `{< TitleComponent>< /TitleComponent>}` in `JSX`.</summary>
     <br>
   <blockquote>A</blockquote> <br>
   </details>
