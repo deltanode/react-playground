@@ -15,7 +15,7 @@ We started learning react from scratch. Environment setup was clearly explained.
 
 - [Handwritten [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2001%20-%20Inception%20-%20HandWritten%20Notes.pdf)
 - [Digital [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2001%20-%20Inception%20-%20Digital%20Notes.pdf)
-- [Github [Link]](https://github.com/Learn-React-With-Harshi/chapter-01-inception-namaste-react/blob/main/class-notes.md) 
+- [Github [Link]](https://github.com/deltanode/react-playground/blob/main/01-inception/notes.md) 
 
 ## Theory:
 
