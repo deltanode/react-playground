@@ -21,34 +21,64 @@ We revised the previous sessions and doubts raised in the previous sessions were
 
 ## Theory:
 
-  <!-- *******************************-->
-  <details>
-    <summary>What is `JSX`?</summary>
-    <br>
-  <blockquote>A</blockquote> <br>
-  </details>
+<!-- *******************************-->
+<details>
+<summary>What is `JSX`?</summary><br>
+<blockquote>
 
-  <!-- *******************************-->
-  <details>
-    <summary>Superpowers of `JSX`</summary>
-    <br>
-  <blockquote>A</blockquote> <br>
-  </details>
+`JSX` stands for JavaScript XML. 
+  
+  `JSX` is neither a string nor a html tag but a <b>syntactic sugar</b> for the React object. It is a `html-like syntax` inside `js` code for creating react elements. By using JSX, instead of writting markup (html) and logic(js) separately, the separation of concerns (SoC) is emphasized based on loosely coupled units called 'Components' which contains both. 
 
-  <!-- *******************************-->
-  <details>
-    <summary>Role of type `attribute` in script tag? What `options can I use` there?</summary>
-    <br>
-  <blockquote>A</blockquote> <br>
-  </details>
+  <b>Broswer does not understand JSX</b> and a transpiler/compiler is required to convert this to browser understandable js code. Eg: Babel
+
+JSX ------> React.createElement() -----> React element ----> Object to be rendered in the DOM
+
+### Eg: using JSX:
+```
+const myElement = <h1>I Love JSX!</h1>;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myElement);
+```
+### Eg: Without JSX:
+```
+const myElement = React.createElement('h1', {}, 'I do not use JSX!');
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myElement);
+```
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>Superpowers of `JSX`</summary><br>
+<blockquote>
+
+
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>Role of type `attribute` in script tag? What `options can I use` there?</summary><br>
+<blockquote>
+
+
+
+</blockquote><br>
+</details>
  
-  <!-- *******************************-->
-  <details>
-    <summary>{TitleComponent}` vs `{< TitleComponent/>}` vs `{< TitleComponent>< /TitleComponent>}` in `JSX`.</summary>
-    <br>
-  <blockquote>A</blockquote> <br>
-  </details>
-  <!-- *******************************-->
+ <!-- *******************************-->
+<details>
+<summary>{TitleComponent}` vs `{< TitleComponent/>}` vs `{< TitleComponent>< /TitleComponent>}` in `JSX`.</summary><br>
+<blockquote>
+
+
+
+</blockquote><br>
+</details>
+<!-- *******************************-->
 
 ## Coding
 
@@ -73,3 +103,17 @@ We revised the previous sessions and doubts raised in the previous sessions were
 - [JS Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 - [Babel Playground](https://babeljs.io/repl#)
 - [React without JSX](https://reactjs.org/docs/react-without-jsx.html)
+
+  
+ <!-- *******************************-->
+<!--
+<details>
+<summary>{TitleComponent}` vs `{< TitleComponent/>}` vs `{< TitleComponent>< /TitleComponent>}` in `JSX`.</summary><br>
+<blockquote>
+
+
+
+</blockquote><br>
+</details>
+-->
+<!-- *******************************-->
