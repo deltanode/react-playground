@@ -250,24 +250,34 @@ For example  in `package.json` file:
     <summary>Why should I not modify `package-lock.json`?</summary>
     <br>
     <blockquote>
-    - 
-    </blockquote> <br>
+        
+As the name suggests, it locks the package-lock.json file,
+        `package-lock.json` file contains the information about the dependencies and their versions used in the project. Deleting it would cause dependencies issues in the production environment. So don't modify it, It's being handled automatically by NPM.
+        
+</blockquote> <br>
  </details>
 
 <details>
     <summary>What is `node_modules` ? Is it a good idea to push that on git?</summary>
     <br>
     <blockquote>
-    - 
-    </blockquote> <br>
+    
+In simple words, `node_modules` holds the source code of the packages that are installed through npm. It is a very bad practice to push `node_modules` to git (source control) since it is huge in size and blow up the project capacity and moreover all the packages in `node_modules` can be re-generated using `package.json` file. 
+</blockquote> <br>
  </details>
 
 <details>
     <summary>What is the `dist` folder?</summary>
     <br>
     <blockquote>
-    - 
-    </blockquote> <br>
+    
+The `/dist` folder contains the minimized version of the source code. The code present in the `/dist` folder is actually the code which is used on production web applications. Along with the minified code, the /dist folder also comprises of all the compiled modules that may or may not be used with other systems.
+        
+OR
+        
+The /dist folder contains the minimized version of the source code. The code present in the /dist folder is actually the code which is used on production web applications.
+
+</blockquote> <br>
  </details>
 
 <details>
@@ -302,6 +312,22 @@ For example  in `package.json` file:
     </blockquote> <br>
 </details>
 
+<details>
+    <summary>Why `node_module` has a another `package-lock.json`(Hidden Lockfiles) </summary>
+    <br>
+    <blockquote>
+
+In order to avoid processing the node_modules folder repeatedly, npm as of v7 uses a "hidden" lockfile present in node_modules/.package-lock.json. This contains information about the tree, and is used in lieu of reading the entire node_modules hierarchy provided that the following conditions are met:
+  - All package folders it references exist in the node_modules hierarchy.
+  - No package folders exist in the node_modules hierarchy that are not listed in the lockfile.
+  - The modified time of the file is at least as recent as all of the package folders it references.
+        
+That is, the hidden lockfile will only be relevant if it was created as part of the most recent update to the package tree. If another CLI mutates the tree in any way, this will be detected, and the hidden lockfile will be ignored.        
+        
+</blockquote> <br>
+</details>
+        
+        
 ## Coding:
 
 - In your existing project
