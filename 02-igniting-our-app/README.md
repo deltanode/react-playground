@@ -284,32 +284,99 @@ The /dist folder contains the minimized version of the source code. The code pre
     <summary>What is `browserlists`</summary>
     <br>
     <blockquote>
-    - 
-    </blockquote> <br>
+    
+`Browserslist` is a tool that allows specifying which browsers should be supported in your frontend app by specifying "queries" in a config file. It's used by frameworks/libraries such as React, Angular and Vue, but it's not limited to them.
+
+The  `browserslist` field in package.json can be used to specify which browsers/node.js versions the application supports. The value of this object can be an array of statistics ( % coverage), last versions, Node.js versions, Browser versions or even unreleased versions.
+
+```
+"browsersList" : ["last 2 versions", "> 1%", "not dead"]
+
+```
+
+</blockquote> <br>
 </details>
 
 <details>
-    <summary>Read about dif bundlers: vite, webpack, parcel</summary>
+    <summary>Read about diff bundlers: vite, webpack, parcel</summary>
     <br>
     <blockquote>
-    - 
-    </blockquote> <br>
+        
+`Babel`
+- Babel is a JavaScript compiler that allows you to use new features of ECMAScript before they are implemented in browsers.
+- Consider Babel if you want to use new JavaScript features that are not yet implemented in browsers.
+
+`Webpack`
+- Webpack is a module bundler for modern JavaScript applications. It is a module bundler that can be used in a variety of ways, from a build-time tool to a development-time tool.
+- Consider webpack if you want to bundle your JavaScript application for production.
+- Consider Webpack if you want to bundle JavaScript files for usage in a browser.
+
+`Parcel`     
+- Parcel is a zero configuration web application bundler that is fast and easy to use.
+- Consider Parcel if you want a fast and easy to use bundler for your web application.
+- Consider Parcel if you want a zero-configuration bundler that supports all module formats and works with any JavaScript library.
+- Consider Parcel if you want to automate tasks such as minification, compilation, unit testing, linting, etc. and want to use a JavaScript bundler.
+        
+`Vite`
+- Vite is a web-based IDE that is designed to be a fast and lightweight alternative to traditional IDEs. It is a cloud-based IDE that runs on any device and is accessible from any browser.
+- Consider Vite if you want a lightweight IDE that is accessible from any browser.
+      
+`Rollup`
+- Rollup is a module bundler for JavaScript modules. It is a minimalistic alternative to webpack and is best suited for smaller projects.
+- Consider Rollup if you are looking for a minimalistic alternative to webpack.
+- Consider Rollup if you want a module bundler that supports ES6 modules and can be used with any module format.
+        
+`Gulp`
+- Gulp is a JavaScript task runner that automates tasks such as minification, compilation, unit testing, linting, etc. Gulp is a streaming build system, meaning it doesn't have to wait for tasks to finish before executing the next one.
+- Consider Gulp if you want to automate tasks such as minification, compilation, unit testing, linting, etc.
+        
+</blockquote> <br>
 </details>
 
 <details>
     <summary>Read about: ^ - caret and ~ - tilda</summary>
     <br>
     <blockquote>
-    - 
-    </blockquote> <br>
+    
+| ^ version | ~ version | 
+| --- | :----: | 
+| In package.json, if a dependency's version [majorversion.minorversion.patchversion] is prefixed with `^` , then it will be updated to all future `minor` versions and not any major version | In package.json, if a dependency's version [majorversion.minorversion.patchversion] is prefixed with `~` , then it will be updated to all future `patch` versions and not minor/major versions | 
+| Eg: "react": "^18.2.0" will use releases from 18.2.0 to < 19.0.0 | Eg: "~18.2.0" will use releases from "18.2.0" < 18.3.0 |
+
+Patch version is used for any bug fixes. Minor version is used for adding new functionality. Major version may contain major functionality changes/ some existing features may be deprecated.
+So if ~ is used , user will be updated to all bug fixed patch versions. If ^ is used, user will be updated to all new functionality/ features included minor version.
+
+</blockquote> <br>
 </details>
 
 <details>
     <summary>Read about Script types in html (MDN Docs)</summary>
     <br>
     <blockquote>
-    - 
-    </blockquote> <br>
+    
+`type` attribute of the <script> tag indicates the type of script.Until HTML 4,  type is a required attribute. The value of type can be any of the following : 
+
+```
+<script type="" src="app.js"></script>
+```
+In HTML5, type attribute is not mandatory. If type attribute is not present(default), or an empty string (type="") or javascript MIME type (text/javascript or application/ecmascript), it is treated as classic "javascript" file.
+
+```
+<script type="module" src="app.js"></script>
+```
+If the type attribute is set `module`, then the code in that js file is treated as module.
+
+```
+<script type="importmap" src="app.js"></script>
+```
+If the type attribute is set `importmap`, the body of teh element contains importmap ie an JSON object using which the browser can resolve the module specifiers while importing modules.
+
+```
+<script type="{$anyothervalue}" src="app.js"></script>
+```
+If the type attribute contains anyother value, then the code is treated as data block and will not be processed by the browser. A valid MIME type other than Javascript MIME type (Eg: image/png or text/css) must be mentioned. All the other attributes for this type will be ignored even the `src` attribute.
+        
+</blockquote> <br>
 </details>
 
 <details>
