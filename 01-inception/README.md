@@ -68,7 +68,8 @@ _More_:-
 For `node.js`
 
 - Modules are libraries for Node.js.
-  Node.js has a simple module loading system. In Node.js, files and modules are in one-to-one correspondence.
+
+> Node.js has a simple module loading system. In Node.js, files and modules are in one-to-one correspondence.
 
 - Examples of modules:
 
