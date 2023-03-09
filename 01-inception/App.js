@@ -37,7 +37,7 @@ What parameter does createElement takes?
   3 ...children(Optional) (like arrays of react element OR string, numbers,null, undefined, true, false, empty nodes)
 
 What does React.createElement() returns?
-- It returns the `React Element`.
+- It Create and return a new React element of the given type.
 
 What is heading1 & heading2 in the above code?
 - They are `react elements`.
