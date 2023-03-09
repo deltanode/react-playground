@@ -4,7 +4,7 @@ A playground to practice & learn react. This is where the magic happens!
 
 ## Theory
 
-| S.No | Topic <img width="250px"> | <img width="50px"> Link <img width="50px"> |
+| S.No | <img width="125px"> Topic <img width="125px"> | <img width="50px"> Link <img width="50px"> |
 | :---: | :--- | :---: |
 | 1. |Inception                  |[ 🔗](01-inception)                  |
 | 2. |Igniting Our App           |[ 🔗](02-igniting-our-app)           |
