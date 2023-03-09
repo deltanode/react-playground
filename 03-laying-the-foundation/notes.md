@@ -2,14 +2,6 @@
 
 - `git init` It can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository. 
 
--  npx ~= npm run 
-   ```
-   npx parcel index.html   
-   or
-   npm run index.html      // will this work ??
-   
-   ```
-
 -  Adding **script** in package.json 
    ```
    In package.json
@@ -19,6 +11,29 @@
      "build": parcel build index.html"
      }
    }
+
+
+-  npx ~= npm run 
+   > will `npm run parcel index.html` work ???
+   
+   > No, It will not work. It will give error:
+   ```
+   npm ERR! Missing script: "parcel index.html"
+   npm ERR! 
+   npm ERR! To see a list of scripts, run:
+   npm ERR!   npm run
+   ```
+   
+   Because `npm run` will run a script.  
+   ```
+   npx parcel index.html   
+   or
+   npm run start      // where "start" is script. (i.e "start": parcel index.html")
+   
+   Note: `
+   ```
+
+
    
  - parcel * Babel, itself does not remove console.log. For that we need a babel plugin 
    ```
