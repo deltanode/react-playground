@@ -1,4 +1,4 @@
-## Summary of today's class:
+## 01 Inception [Summary]:
 
 1. Intro about the namaste react course
 
