@@ -4,4 +4,4 @@ Today, it was all about testing the application. In this chapter, different type
 
 ## Notes:
 
-- [Github [Link]]()
+- [Github [Link]](https://github.com/deltanode/react-playground/blob/main/13-time-for-the-test/notes.md)

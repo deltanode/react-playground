@@ -4,4 +4,4 @@ Today, it was all about handling data using external state management library Re
 
 ## Notes:
 
-- [Github [Link]]()
+- [Github [Link]](https://github.com/deltanode/react-playground/blob/main/12-lets-build-our-store/notes.md)

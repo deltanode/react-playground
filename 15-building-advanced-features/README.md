@@ -4,4 +4,4 @@ This chapter is the continuation of the app that we discussed in last chapter. I
 
 ## Notes:
 
-- [Github [Link]]()
+- [Github [Link]](https://github.com/deltanode/react-playground/blob/main/15-building-advanced-features/notes.md)

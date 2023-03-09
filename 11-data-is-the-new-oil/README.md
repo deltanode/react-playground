@@ -4,4 +4,4 @@ Today was about Data layer of the app. Consider data as if it's oil, use it wise
 
 ## Notes:
 
-- [Github [Link]]()
+- [Github [Link]](https://github.com/deltanode/react-playground/blob/main/11-data-is-the-new-oil/notes.md)
