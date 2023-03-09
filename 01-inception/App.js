@@ -14,9 +14,14 @@ const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(wrapper)
 // Note: render will overide the DOM.
 
-/*
-Quick Revise:
 
+
+
+
+/*
+**************
+Quick Revise:
+**************
 
 What is the shortest program of react?
 - html files with react CDN links
