@@ -39,12 +39,13 @@
 - if we have package-lock.json -> we can regenerate node modules 
 
 
-- React CDN - is not a good way 
+- React CDN - is NOT a good way 
 - Good way -> in server through node modules 
+  ```
+  `npm install react`        // Installing in global dependencies not dev dependencies 
 
-- `npm install react` -> in global dependencies not dev dependencies 
-
-- `npx parcel index.html` -> Execute using npm with index.html as entry point -> Creates local server 
+  `npx parcel index.html`    // Execute using npm with index.html as entry point -> Creates local server 
+  ```
 
 - Common Errors & Warnings
    ```
