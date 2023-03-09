@@ -1,0 +1,20 @@
+{
+  "name": "03-laying-the-foundation",
+  "description": "We revised the previous sessions and doubts raised in the previous sessions were addressed. Babel/Polyfills and their usage were explained. Scripts were written for starting and building the app. Steps to install a npm package were walked through. JSX vs React.createElement() vs Components were discussed in depth.",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  }
+}
