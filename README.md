@@ -4,6 +4,38 @@ A playground to practice & learn react. This is where the magic happens!
 
 ## Theory
 
+| S.No | Topic <img width="250px"> | <img width="50px"> Link <img width="50px"> |
+| :---: | :--- | :---: |
+| 1. |Inception                  |[ 🔗](01-inception)                  |
+| 2. |Igniting Our App           |[ 🔗](02-igniting-our-app)           |
+| 3. |Laying the foundation      |[ 🔗](03-laying-the-foundation)      |
+| 4. |Coding in React            |[ 🔗](04-coding-in-react)            |
+| 5. |Let's get hooked           |[ 🔗](05-lets-get-hooked)            |
+| 6. |Exploring the world        |[ 🔗](06-exploring-the-world)        |
+| 7. |Finding the path           |[ 🔗](07-finding-the-path)           |
+| 8. |Let's get Classy           |[ 🔗](08-Lets-get-classy)            |
+| 9. |Optimizing our App         |[ 🔗](09-optimizing-our-app)         |
+| 10.|What is seen is sold       |[ 🔗](10-what-is-seen-is-sold)       |
+| 11.|Data is the new oil        |[ 🔗](11-data-is-the-new-oil)        |
+| 12.|Let's build our store      |[ 🔗](12-lets-build-our-store)       |
+| 13.|Time for the test          |[ 🔗](13-time-for-the-test)          |
+| 14.|Machine Coding Inteview    |[ 🔗](14-machine-coding-interview)   |
+| 15.|Building Advanced Features |[ 🔗](15-building-advanced-features) |
+
+## Projects
+
+| S.No | Topic <img width="250px"> | <img width="50px"> Link <img width="50px"> |
+| :---: | :--- | :---: |
+| 1. |Food Delivery App             |[ 🔗]()                  |
+| 2. |Youtube Clone                 |[ 🔗]()                  |
+
+
+
+
+
+
+<!--
+## Theroy
 1. [Inception 🔗](01-inception)
 2. [Igniting Our App 🔗](02-igniting-our-app)
 3. [Laying the foundation 🔗](03-laying-the-foundation)
@@ -21,29 +53,11 @@ A playground to practice & learn react. This is where the magic happens!
 15. [Building Advanced Features 🔗](15-building-advanced-features)
 
 ## Project
-
 1. [Food Delivery App]()
 2. [Youtube Clone]()
-
-<!--
-| S.No | Theory | Link |
-| --- | --- | --- |
-| 1. |Inception                  |[ 🔗](01-inception)                  |
-| 2. |Igniting Our App           |[ 🔗](02-igniting-our-app)           |
-| 3. |Laying the foundation      |[ 🔗](03-laying-the-foundation)      |
-| 4. |Coding in React            |[ 🔗](04-coding-in-react)            |
-| 5. |Let's get hooked           |[ 🔗](05-lets-get-hooked)            |
-| 6. |Exploring the world        |[ 🔗](06-exploring-the-world)        |
-| 7. |Finding the path ]         |[ 🔗](07-finding-the-path)           |
-| 8. |Let's get Classy ]         |[ 🔗](08-Lets-get-classy)            |
-| 9. |Optimizing our App         |[ 🔗](09-optimizing-our-app)         |
-| 10.|What is seen is sold       |[ 🔗](10-what-is-seen-is-sold)       |
-| 11.|Data is the new oil        |[ 🔗](11-data-is-the-new-oil)        |
-| 12.|Let's build our store      |[ 🔗](12-lets-build-our-store)       |
-| 13.|Time for the test          |[ 🔗](13-time-for-the-test)          |
-| 14.|Machine Coding Inteview    |[ 🔗](14-machine-coding-interview)   |
-| 15.|Building Advanced Features |[ 🔗](15-building-advanced-features) |
 -->
+
+
 
 <!--
 | S.No | Theory | Link |
