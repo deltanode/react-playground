@@ -6,6 +6,7 @@ The first half of the chapter was about Why to use, How to create, Where to crea
 
 - [Handwritten [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2009%20-%20Optimizing%20our%20App%20%20-%20HandWritten%20Notes.pdf)
 - [Digital [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2009%20-%20Optimizing%20our%20App%20-%20Digital%20Notes.pdf)
+- [Github [Link]]()
 
 ## Theory:
 

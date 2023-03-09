@@ -4,5 +4,4 @@ Today was about Data layer of the app. Consider data as if it's oil, use it wise
 
 ## Notes:
 
-- [Handwritten [PDF]]()
-- [Digital [PDF]]()
+- [Github [Link]]()

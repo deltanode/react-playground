@@ -4,5 +4,4 @@ Today, it was all about handling data using external state management library Re
 
 ## Notes:
 
-- [Handwritten [PDF]]()
-- [Digital [PDF]]()
+- [Github [Link]]()

@@ -4,5 +4,4 @@ Today, it was all about UI Layer of our app. The look and feel of the app attrac
 
 ## Notes:
 
-- [Handwritten [PDF]]()
-- [Digital [PDF]]()
+- [Github [Link]]()

@@ -4,5 +4,4 @@ Today, it was all about testing the application. In this chapter, different type
 
 ## Notes:
 
-- [Handwritten [PDF]]()
-- [Digital [PDF]]()
+- [Github [Link]]()

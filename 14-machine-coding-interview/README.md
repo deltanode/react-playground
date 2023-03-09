@@ -4,5 +4,4 @@ This chapter helps us to prepare for machine coding round of interview. How to p
 
 ## Notes:
 
-- [Handwritten [PDF]]()
-- [Digital [PDF]]()
+- [Github [Link]]()

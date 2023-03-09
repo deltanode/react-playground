@@ -4,5 +4,4 @@ This chapter is the continuation of the app that we discussed in last chapter. I
 
 ## Notes:
 
-- [Handwritten [PDF]]()
-- [Digital [PDF]]()
+- [Github [Link]]()
