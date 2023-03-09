@@ -1,3 +1,5 @@
+// 01 - Inception
+
 const heading1 = React.createElement("h1", { class: "orange-color" }, "Hello React (using React)")
 const heading2 = React.createElement("h2", { class: "yellow-color" }, "heading 2 (nested react element)")
 // Note: In React.createElement, "React" is the kind of Global variable that came from injected CDN react files.
@@ -12,8 +14,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(wrapper)
 // Note: render will overide the DOM.
 
-/* 
+/*
 Quick Revise:
+
 
 What is the shortest program of react?
 - html files with react CDN links
@@ -28,10 +31,13 @@ What parameter does createElement takes?
   2 props(i.e likes html attributes id & class) OR null (empty object), 
   3 ...children(Optional) (like arrays of react element OR string, numbers,null, undefined, true, false, empty nodes)
 
-What is heading1 & heading2 in the above code?
-- They are react elements.
+What does React.createElement() returns?
+- It returns the `React Element`.
 
-What is react element at the end of the day?
+What is heading1 & heading2 in the above code?
+- They are `react elements`.
+
+What is `react element` at the end of the day?
 - It's an object.
 
 What is the function of reader?
