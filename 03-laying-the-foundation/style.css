@@ -1,3 +1,33 @@
 body {
   background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+}
+
+.header-wrapper {
+  background-color: white;
+  box-shadow: 10px 5px 5px rgba(25, 25, 25, 0.1);
+  padding: 1rem;
+  width: 1025px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search input {
+  padding: 0.5rem;
+  width: 25 rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo img {
+  width: 5rem;
+}
+
+.avatar img {
+  width: 2.5rem;
 }
