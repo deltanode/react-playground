@@ -14,7 +14,7 @@
 
 
 -  npx ~= npm run 
-   > will `npm run parcel index.html` work ???
+   > Will `npm run parcel index.html` work ???
    
    > No, It will not work. It will give error:
    ```
@@ -24,13 +24,12 @@
    npm ERR!   npm run
    ```
    
-   Because `npm run` will run a script.  
+   Because `npm run` will run a script, To run the package directly use `npx`:-  
    ```
    npx parcel index.html   
    or
    npm run start      // where "start" is script. (i.e "start": parcel index.html")
    
-   Note: `
    ```
 
 
