@@ -46,11 +46,11 @@ const NestedComponent = () => (
     {1 + 5}
     {console.log("Hello")}
     {alert("Hello Everyone")}
-    {header}
+    {header}  {/*Curly braces { } are special syntax in JSX. It is used to evaluate a JavaScript expression during compilation. A JavaScript expression can be a variable, function, an object, or any code that resolves into a value.*/}
     {header_jsx}
     {header_jsx_attr}
     {TitleComponent} {/* It does not work and warning is thrown in console since TitleComponent is a component and not a react element */}
-    {TitleComponent()} /* */
+    {TitleComponent()}
     {<TitleComponent />}
     {<TitleComponent></TitleComponent>}
   </div>
