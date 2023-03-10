@@ -84,8 +84,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"))
 // root.render(header_jsx_attr)       /* Rendering header created using JSX  and passing attributes in jsx tag*/
 
 // root.render(TitleComponent)                      /* It does not work and warning is thrown in console since TitleComponent is a `component` and NOT a `react element` */
-// root.render(TitleComponent())                    /* Rendering header created using Functional Component. As React component is a Funtion only*/
-// root.render(<TitleComponent />)                  /* Rendering header created using Functional Component */
+// root.render(TitleComponent())                    /* Rendering header created using Functional Component (As React component is a Funtion only) */
+// root.render(<TitleComponent />)                  /* Rendering header created using Functional Component (Using self closing tag) */
 // root.render(<TitleComponent></TitleComponent>)   /* Rendering header created using Functional Component */
 
 // root.render(<NestedComponent />)    /* Rendering header created using Functional Component (Component Composition) */
