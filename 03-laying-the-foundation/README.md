@@ -17,7 +17,7 @@ We revised the previous sessions and doubts raised in the previous sessions were
 
 - [Handwritten [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2003%20-%20Laying%20the%20Foundation%20-%20HandWritten%20Notes.pdf)
 - [Digital [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2003%20-%20Laying%20the%20Foundation%20-%20Digital%20Notes.pdf)
-- [Github [Link]](https://github.com/deltanode/react-playground/blob/main/03-laying-the-foundation/notes.md)
+- [Notes.md](https://github.com/deltanode/react-playground/blob/main/03-laying-the-foundation/notes.md)
 
 ## Theory:
 
