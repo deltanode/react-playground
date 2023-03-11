@@ -97,8 +97,9 @@ It the diff algorithm that react uses to diff one tree from another.
 <!-- *******************************-->
 <details>
 <summary>What is `React Fiber`?</summary><br>
-In React 16, react launched new reconcilliation engine know as React Fiber. 
 <blockquote>
+
+In React 16, react launched new reconcilliation engine know as React Fiber.
 
 </blockquote><br>
 </details>
