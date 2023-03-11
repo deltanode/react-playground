@@ -2,6 +2,18 @@
 
 We started to develop a config-driven UI for food ordering platform. First, we created LLD of the web application, continued working on creating layouts, components and data manipulation from mock data. Concepts of props(properties), virtual DOM, importance of unique key were discussed.
 
+#### Topics Coverd:-
+
+While Creating `food ordering app` covered:
+
+- Different ways to add CSS in react
+- React.Fragment (<></>)
+- Config Driven UI
+- Props
+- Keys
+- Virtual DOM
+- Reconciliation
+
 ## Notes:
 
 - [Handwritten [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code%20-%20HandWritten%20Notes.pdf)
@@ -79,7 +91,13 @@ Use Braces {}
 <blockquote>
 
 - <></> is a shorthand of < React.Fragment></ React.Fragment>
-- React.Fragment is provide by React library. They are used to create Enpty tags.
+- React gives us access to the `component` know as `React.Fragment`. It is exported from React library.
+- React.Fragment is like a Empty tags.
+
+_More_:-
+
+- JSX only have one parent.
+- We can't apply CSS Style on React.Fragment as it doesn't exist in HTML.
 
 </blockquote><br>
 </details>
@@ -149,6 +167,22 @@ In layman terms, they are just the arguments that we pass on React Component(i.e
 
 - It a way of creataing a dynamic UI in such a way, which changes on the basics of backend API data.
 - Eg: Suppose we provide some services through our web app in different cities. Now we want to display offer & discounts as the cities. So, our web app should re-render on the basis of datacomming from the backend, this is beacause of config driven UI.
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>Javascript: Map() vs forEach()</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>Javascript: Optional Chaning (?.)</summary><br>
+<blockquote>
+
 </blockquote><br>
 </details>
 <!-- *******************************-->
