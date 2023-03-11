@@ -32,9 +32,22 @@ No, Its not mandatory
 
 <!-- *******************************-->
 <details>
-<summary>`{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in `JSX`.
+<summary>`{TitleComponent}` vs `{< TitleComponent/>}` vs `{< TitleComponent></ TitleComponent>}` in `JSX`.
 </summary><br>
 <blockquote>
+
+```
+{}
+/* Curly braces { } are special syntax in JSX.
+ * It is used to evaluate a JavaScript expression during compilation.
+ * A JavaScript expression can be a variable, function, an object, or any code that resolves into a value.
+ */
+
+{TitleComponent}                        // It will give warning TitleComponent is a function componment, Not a React Element
+{TitleComponent()}                      // this will render the TitleComponent (calling function expression as a Noraml Function)
+{< TitleComponent/>}                    // this will render the TitleComponent (calling function expression using Self Closing Tag)
+{< TitleComponent></ TitleComponent>}   // this will render the TitleComponent (calling function expression using Normal Tag)
+```
 
 </blockquote><br>
 </details>
@@ -62,11 +75,11 @@ Use Braces {}
 
 <!-- *******************************-->
 <details>
-<summary>What is `<React.Fragment></React.Fragment>` and `<></>`?</summary><br>
+<summary>What is `< React.Fragment></ React.Fragment>` and `<></>`?</summary><br>
 <blockquote>
 
-> <></> is a shorthand of <React.Fragment></React.Fragment>
-> React.Fragment is provide by React library. They are used to create Enpty tags.
+- <></> is a shorthand of < React.Fragment></ React.Fragment>
+- React.Fragment is provide by React library. They are used to create Enpty tags.
 
 </blockquote><br>
 </details>
