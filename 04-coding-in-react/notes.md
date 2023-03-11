@@ -1,4 +1,4 @@
-### Class notes `Chapter-04 Talk is cheap, show me in code`
+### `Chapter-04 Talk is cheap, show me in code`
 
 1. Recap on Chapter-03 - functional component, react elements
 

@@ -6,21 +6,138 @@ We started to develop a config-driven UI for food ordering platform. First, we c
 
 - [Handwritten [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code%20-%20HandWritten%20Notes.pdf)
 - [Digital [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code%20-%20Digital%20Notes.pdf)
-- [Github [Link]](https://github.com/deltanode/react-playground/blob/main/04-coding-in-react/notes.md)
+- [Notes.md](https://github.com/deltanode/react-playground/blob/main/04-coding-in-react/notes.md)
 
 ## Theory:
 
-- Is `JSX` mandatory for React?
-- Is `ES6` mandatory for React?
-- `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in `JSX`.
-- How can I write `comments` in JSX?
-- What is `<React.Fragment></React.Fragment>` and `<></>`?
-- What is `Reconciliation` in React?
-- What is `React Fiber`?
-- Why do we need `keys` in React?
-- Can we use `index as keys` in React?
-- What is `props in React`? Ways to.
-- What is `Config Driven UI`?
+<!-- *******************************-->
+<details>
+<summary>Is `JSX` mandatory for React?</summary><br>
+<blockquote>
+
+No, Its not mandatory
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>Is `ES6` mandatory for React?</summary><br>
+<blockquote>
+
+No, Its not mandatory
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>`{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in `JSX`.
+</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>How can I write `comments` in JSX?</summary><br>
+<blockquote>
+
+Use Braces {}
+
+```
+{
+  // This is single line comment
+  /**
+   *This is a
+   * Multiline
+   * Comment
+   */
+}
+```
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is `<React.Fragment></React.Fragment>` and `<></>`?</summary><br>
+<blockquote>
+
+> <></> is a shorthand of <React.Fragment></React.Fragment>
+> React.Fragment is provide by React library. They are used to create Enpty tags.
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is `Reconciliation` in React?</summary><br>
+<blockquote>
+
+It the diff algorithm that react uses to diff one tree from another.
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is `React Fiber`?</summary><br>
+In React 16, react launched new reconcilliation engine know as React Fiber. 
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>Why do we need `keys` in React?</summary><br>
+<blockquote>
+
+- When we have multiple childen with same Tag name, then its difficult for react to figure out the sequence in which the new child is added. So, it re-render the complete node.
+- But we only want to make changes to the small portion only.
+- For this we need to pass `keys`. So that react can figure out where the change has occure & only render that perticular node.
+
+_More_:-
+
+- React create the visual representation of the DOM which is know as Virtual DOM.
+- Because of reconcilliation algorithm, react diff on tree from another, & only make chages to that small portion only.
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>Can we use `index as keys` in React?</summary><br>
+<blockquote>
+
+Yes, we can use `index as keys` in React but we usually avoid it. We shoul prefer it only for the last case senario.
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is `props in React`? Ways to.</summary><br>
+<blockquote>
+
+Props are the attributes that we pass in React Component.
+In layman terms, they are just the arguments that we pass on React Component(i.e which is a function only)
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is `Config Driven UI`?</summary><br>
+<blockquote>
+
+- It a way of creataing a dynamic UI in such a way, which changes on the basics of backend API data.
+- Eg: Suppose we provide some services through our web app in different cities. Now we want to display offer & discounts as the cities. So, our web app should re-render on the basis of datacomming from the backend, this is beacause of config driven UI.
+</blockquote><br>
+</details>
+<!-- *******************************-->
 
 ## Coding:
 
