@@ -32,19 +32,31 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 
+const Logo = () => <img alt="Logo" src="https://seeklogo.com/images/F/food-logo-59E5A73AFD-seeklogo.com.png" />
+
 const HeaderComponent = () => {
   return (
-    <React.Fragment>
-      <h1>Food Ordering App</h1>
-    </React.Fragment>
+    <div className="header">
+      <Logo />
+      <div className="nav-items">
+        <ul>
+          <li>Home </li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Cart</li>
+        </ul>
+      </div>
+    </div>
   )
 }
 
 const AppLayout = () => {
   return (
-    <>
-      <HeaderComponent />
-    </>
+    <React.Fragment>
+      <>
+        <HeaderComponent />
+      </>
+    </React.Fragment>
   )
 }
 

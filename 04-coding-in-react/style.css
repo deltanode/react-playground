@@ -1,3 +1,27 @@
 body {
   background-color: antiquewhite;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header img {
+  width: 6rem;
+  height: 4rem;
+}
+
+.nav-items ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-items li {
+  padding: 1rem;
+}
