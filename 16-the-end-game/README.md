@@ -1,6 +1,6 @@
 # 16 - The End Game
 
-## Read about these topics and practice indepth slow coding all of the below:
+### Read about these topics and practice indepth slow coding all of the below:
 
 <ul>
 	<li>Web Sockets vs API Polling</li>
