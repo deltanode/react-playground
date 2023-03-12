@@ -4,4 +4,30 @@ Today was about Data layer of the app. Consider data as if it's oil, use it wise
 
 ## Notes:
 
-- [Github [Link]](https://github.com/deltanode/react-playground/blob/main/11-data-is-the-new-oil/notes.md)
+- [Notes.md](https://github.com/deltanode/react-playground/blob/main/11-data-is-the-new-oil/notes.md)
+
+## Theory:
+
+<ul>
+	<li>What is prop drilling?</li>
+	<li>What is lifting the state up?</li>
+	<li>What is Context Provider and Context Consumer?</li>
+	<li>If you don’t pass a value to the provider does it take the default value?</li>
+</ul>
+
+
+## Coding:
+
+<ul>
+	<li>Practice React Context with code examples</li>
+	<li>Try out Nested Contexts</li>
+</ul>
+
+
+## References:
+
+<ul>
+	<li><a href="https://reactjs.org/docs/lifting-state-up.html" target="_blank">Lifting State Up</a></li>
+	<li><a href="https://reactjs.org/docs/context.html" target="_blank">React Context</a><br>
+	 </li>
+</ul>
