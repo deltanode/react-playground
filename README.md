@@ -21,6 +21,7 @@ A playground to practice & learn react. This is where the magic happens!
 | 13.|Time for the test          |[ 🔗](13-time-for-the-test)          |
 | 14.|Machine Coding Inteview    |[ 🔗](14-machine-coding-interview)   |
 | 15.|Building Advanced Features |[ 🔗](15-building-advanced-features) |
+| 16.|The End Game               |[ 🔗](16-the-end-game)               |
 
 ## Projects
 
