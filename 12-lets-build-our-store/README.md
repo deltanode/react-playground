@@ -26,5 +26,5 @@ Today, it was all about handling data using external state management library Re
 	 </li>
 </ul>
 
-<p><img  width="600" height="400" src="https://learn.namastedev.com/s/articles/63e3cd07e4b0694fa487a0e1/images/63dlb7zi0.png"></p>
+<p><img  width="600" height="400" src="./img/12.png"></p>
 </div>
