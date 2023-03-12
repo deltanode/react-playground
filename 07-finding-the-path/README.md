@@ -6,15 +6,50 @@ Today we started with the recap of previous chapter's important concepts like us
 
 - [Handwritten [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2007%20-%20Finding%20the%20Path%20%20-%20HandWritten%20Notes.pdf)
 - [Digital [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2007%20-%20Finding%20the%20Path%20-%20Digital%20Notes.pdf)
-- [Github [Link]](https://github.com/deltanode/react-playground/blob/main/07-finding-the-path/notes.md)
+- [Notes.md](https://github.com/deltanode/react-playground/blob/main/07-finding-the-path/notes.md)
 
 ## Theory:
 
-- What are various ways to `add images` into our App? Explain with `code examples`.
-- What would happen if we do `console.log(useState())`?
-- How will `useEffect` behave if we `don't add` a `dependency array`?
-- What is `SPA`?
-- What is the `difference` between `Client Side Routing` and `Server Side Routing`?
+<!-- *******************************-->
+<details>
+<summary>What are various ways to `add images` into our App? Explain with `code examples`.</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What would happen if we do `console.log(useState())`?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>How will `useEffect` behave if we `don't add` a `dependency array`?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is `SPA`?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is the `difference` between `Client Side Routing` and `Server Side Routing`?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+<!-- *******************************-->
 
 ## Coding:
 

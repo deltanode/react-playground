@@ -1,4 +1,4 @@
-### Class notes `Chapter - 06 Exploring the world`
+### `Chapter - 06 Exploring the world`
 
 Revising last chapter - useState() and Hooks
 

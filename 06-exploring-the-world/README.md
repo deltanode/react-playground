@@ -6,21 +6,98 @@ Until last chapter, we were using mock data to render the UI. In this chapter, w
 
 - [Handwritten [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2006%20-%20Exploring%20the%20world%20-%20Handwritten%20Notes.pdf)
 - [Digital [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2006%20-%20Exploring%20the%20world%20-%20Digital%20Notes.pdf)
-- [Github [Link]](https://github.com/deltanode/react-playground/blob/main/06-exploring-the-world/notes.md)
+- [Notes.md](https://github.com/deltanode/react-playground/blob/main/06-exploring-the-world/notes.md)
 
 ## Theory:
 
-- What is `Microservice`?
-- What is `Monolith architecture`?
-- What is the `difference` between `Monolith and Microservice?
-- Why do we need a `useEffect Hook`?
-- What is `Optional Chaining`?
-- What is `Shimmer UI`?
-- What is the `difference` between `JS expression and JS statement`?
-- What is `Conditional Rendering`? explain with a code example.
-- What is `CORS`?
-- What is `async and await`?
-- What is the use of `const json = await data.json()`; in `getRestaurants()`?
+<!-- *******************************-->
+<details>
+<summary>What is `Microservice`?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is `Monolith architecture`?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is the `difference` between `Monolith and Microservice?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>Why do we need a `useEffect Hook`?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is `Optional Chaining`?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is `Shimmer UI`?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is the `difference` between `JS expression and JS statement`?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is `Conditional Rendering`? explain with a code example.</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is `CORS`?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is `async and await`?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is the use of `const json = await data.json()`; in `getRestaurants()`?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+<!-- *******************************-->
 
 ## Coding:
 

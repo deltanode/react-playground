@@ -8,15 +8,62 @@ Today, it was all about handling data using external state management library Re
 
 ## Theory:
 
-<ul>
-	<li>useContext vs Redux.</li>
-	<li>Advantage of using Redux Toolkit over Redux.</li>
-	<li>Explain Dispatcher.</li>
-	<li>Explain Reducer.</li>
-	<li>Explain slice.</li>
-	<li>Explain selector.</li>
-	<li>Explain createSlice and the configuration it takes.</li>
-</ul>
+<!-- *******************************-->
+<details>
+<summary>useContext vs Redux.</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>Advantage of using Redux Toolkit over Redux.</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>Explain Dispatcher.</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>Explain Reducer.</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>Explain slice.</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>Explain selector.</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>Explain createSlice and the configuration it takes.</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+<!-- *******************************-->
 
 ## Coding:
 

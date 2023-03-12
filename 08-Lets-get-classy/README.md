@@ -6,17 +6,66 @@ Today, it was all about understanding the creating class-based component, it's d
 
 - [Handwritten [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2008%20-%20Let's%20get%20Classy%20%20-%20HandWritten%20Notes.pdf)
 - [Digital [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2008%20-%20Let's%20get%20Classy%20-%20Digital%20Notes.pdf)
-- [Github [Link]](https://github.com/deltanode/react-playground/blob/main/08-Lets-get-classy/notes.md)
+- [Notes.md](https://github.com/deltanode/react-playground/blob/main/08-Lets-get-classy/notes.md)
 
 ## Theory:
 
-- How do you create `Nested Routes react-router-dom` configuration?
-- Read about `createHashRouter`, `createMemoryRouter` from React Router docs.
-- What is the `order of life cycle method calls` in `Class Based Components`?
-- Why do we use `componentDidMount`?
-- Why do we use `componentWillUnmount`? Show with `example`.
-- (Research) Why do we use `super(props)` in `constructor`?
-- (Research) Why `can't we have` the `callback function` of `useEffect async`?
+<!-- *******************************-->
+<details>
+<summary>How do you create `Nested Routes react-router-dom` configuration?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>Read about `createHashRouter`, `createMemoryRouter` from React Router docs.</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is the `order of life cycle method calls` in `Class Based Components`?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>Why do we use `componentDidMount`?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>Why do we use `componentWillUnmount`? Show with `example`.</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>(Research) Why do we use `super(props)` in `constructor`?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>(Research) Why `can't we have` the `callback function` of `useEffect async`?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+<!-- *******************************-->
 
 ## Coding:
 

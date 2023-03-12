@@ -1,4 +1,4 @@
-### Class notes `Chapter-08 Let's get Classy`
+### `Chapter-08 Let's get Classy`
 
 Class-based Components
 

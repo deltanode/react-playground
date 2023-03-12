@@ -6,23 +6,46 @@ Today, it was all about UI Layer of our app. The look and feel of the app attrac
 
 - [Notes.md](https://github.com/deltanode/react-playground/blob/main/10-what-is-seen-is-sold/notes.md)
 
-
 ## Theory:
 
-<ul>
-	<li>Explore all the ways of writing css.</li>
-	<li>How do we configure tailwind?</li>
-	<li>In tailwind.config.js, what does all the keys mean (content, theme, extend, plugins)?</li>
-	<li>Why do we have .postcssrc file?</li>
-</ul>
+<!-- *******************************-->
+<details>
+<summary>Explore all the ways of writing css.</summary><br>
+<blockquote>
 
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>How do we configure tailwind?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>In tailwind.config.js, what does all the keys mean (content, theme, extend, plugins)?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>Why do we have .postcssrc file?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+<!-- *******************************-->
 
 ## Coding:
 
 <ul>
 	<li>Configure Tailwind and try to build your whole app using tailwind.</li>
 </ul>
-
 
 ## References:
 
@@ -32,4 +55,3 @@ Today, it was all about UI Layer of our app. The look and feel of the app attrac
 	<li>https://getbootstrap.com/</li>
 	<li>Material UI - https://mui.com/ </li>
 </ul>
-

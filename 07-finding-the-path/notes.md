@@ -1,4 +1,4 @@
-### Class notes `Chapter-07 Finding the path`
+### `Chapter-07 Finding the path`
 
 ## useEffect(callback, [dependencies])
 

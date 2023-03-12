@@ -1,4 +1,4 @@
-### Class notes `Chapter - 09 Optimizing our app`
+### `Chapter - 09 Optimizing our app`
 
 We use hooks everyday in our code in functional component
 

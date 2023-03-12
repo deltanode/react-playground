@@ -124,7 +124,7 @@ In React 16, react launched new reconcilliation engine know as React Fiber.
 
 <!-- *******************************-->
 <details>
-<summary>Why do we need `keys` in React?</summary><br>
+<summary>Why do we need `keys` in React? When do we need keys in React?</summary><br>
 <blockquote>
 
 - When we have multiple childen with same Tag name, then its difficult for react to figure out the sequence in which the new child is added. So, it re-render the complete node.

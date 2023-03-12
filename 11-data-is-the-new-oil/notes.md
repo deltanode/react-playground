@@ -1,4 +1,4 @@
-### Class notes `Chapter-11 Data is the new oil`
+### `Chapter-11 Data is the new oil`
 
 Data is the new oil
 

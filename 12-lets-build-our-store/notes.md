@@ -1,4 +1,4 @@
-### Class notes `Chapter-12 Let's build our store`
+### `Chapter-12 Let's build our store`
 
 Today's session will be on more efficient & complex ways of handling data in our application. -> Redux
 

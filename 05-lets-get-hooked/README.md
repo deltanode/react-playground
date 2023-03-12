@@ -6,14 +6,42 @@ Today was the continuation of previous chapter where we started to develop a foo
 
 - [Handwritten [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2005%20-%20Let's%20get%20Hooked!%20-%20HandWritten%20Notes.pdf)
 - [Digital [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2005%20-%20Let's%20get%20Hooked!%20-%20Digital%20Notes.pdf)
-- [Github [Link]](https://github.com/deltanode/react-playground/blob/main/05-lets-get-hooked/notes.md)
+- [Notes.md](https://github.com/deltanode/react-playground/blob/main/05-lets-get-hooked/notes.md)
 
 ## Theory:
 
-- What is the `difference` between `Named export`, `Default export`, and `* as export`?
-- What is the `importance` of `config.js` file?
-- What are `React Hooks`?
-- Why do we need `useState Hook`?
+<!-- *******************************-->
+<details>
+<summary>What is the `difference` between `Named export`, `Default export`, and `* as export`?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is the `importance` of `config.js` file?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What are `React Hooks`?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>Why do we need `useState Hook`?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+<!-- *******************************-->
 
 ## Coding:
 

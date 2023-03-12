@@ -1,4 +1,4 @@
-### Class notes `Chapter-13 Time for the test`
+### `Chapter-13 Time for the test`
 
 How to test react applications ? Jest & React Testing Library (alternative to enzyme)
 

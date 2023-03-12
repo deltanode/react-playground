@@ -8,13 +8,38 @@ Today was about Data layer of the app. Consider data as if it's oil, use it wise
 
 ## Theory:
 
-<ul>
-	<li>What is prop drilling?</li>
-	<li>What is lifting the state up?</li>
-	<li>What is Context Provider and Context Consumer?</li>
-	<li>If you don’t pass a value to the provider does it take the default value?</li>
-</ul>
+<!-- *******************************-->
+<details>
+<summary>What is prop drilling?</summary><br>
+<blockquote>
 
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is lifting the state up?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is Context Provider and Context Consumer?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>If you don’t pass a value to the provider does it take the default value?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+<!-- *******************************-->
 
 ## Coding:
 
@@ -22,7 +47,6 @@ Today was about Data layer of the app. Consider data as if it's oil, use it wise
 	<li>Practice React Context with code examples</li>
 	<li>Try out Nested Contexts</li>
 </ul>
-
 
 ## References:
 

@@ -1,4 +1,4 @@
-### Class notes `Chapter-10 What is seen is sold`
+### `Chapter-10 What is seen is sold`
 
 The look part of the app - CSS
 

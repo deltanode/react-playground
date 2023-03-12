@@ -8,13 +8,38 @@ Today, it was all about testing the application. In this chapter, different type
 
 ## Theory:
 
-<ul>
-	<li>What are different types for testing?</li>
-	<li>What is Enzyme?</li>
-	<li>Enzyme vs React Testing Library</li>
-	<li>What is Jest and why do we use it?</li>
-</ul>
+<!-- *******************************-->
+<details>
+<summary>What are different types for testing?</summary><br>
+<blockquote>
 
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is Enzyme?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>Enzyme vs React Testing Library</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+
+<!-- *******************************-->
+<details>
+<summary>What is Jest and why do we use it?</summary><br>
+<blockquote>
+
+</blockquote><br>
+</details>
+<!-- *******************************-->
 
 ## Coding:
 

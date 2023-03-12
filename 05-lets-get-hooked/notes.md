@@ -1,4 +1,4 @@
-### Class notes `Chapter-05 Let's get hooked`
+### `Chapter-05 Let's get hooked`
 
 1. File structure in React
 
