@@ -20,4 +20,4 @@ This chapter helps us to prepare for machine coding round of interview. How to p
 
 <p>- Code for YouTube app - <a href="https://bitbucket.org/namastedev/my-youtube/src/master/" rel="noreferrer noopener" role="button" tabindex="0" target="_blank" title="https://bitbucket.org/namastedev/my-youtube/src/master/">https://bitbucket.org/namastedev/my-youtube/src/master/</a></p>
 
-<p><img width="600" height="400" src="https://learn.namastedev.com/s/articles/63e79054e4b09dd83a41bc6a/images/9a0i8jc3b.png"></p>
+<p><img width="600" height="400" src="./img/14.png"></p>
