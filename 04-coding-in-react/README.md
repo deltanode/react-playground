@@ -204,6 +204,7 @@ In layman terms, they are just the arguments that we pass on React Component(i.e
 
 ### PS. Basically do everything that I did in the class, in the `same sequence`. `Don't skip small things`.
 
+  
 ## References:
 
 - [Akshay Saini Code Link](https://bitbucket.org/namastedev/namaste-react-live/src/master/)
@@ -213,3 +214,7 @@ In layman terms, they are just the arguments that we pass on React Component(i.e
 - [React Fiber Architecture](https://github.com/acdlite/react-fiber-architecture)
 - [React Without ES6](https://reactjs.org/docs/react-without-es6.html)
 - [Index Keys as Anti-Pattern](https://robinpokorny.com/blog/index-as-a-key-is-an-anti-pattern/)
+
+  
+## Screenshot:
+ <img height="600px" width="450px"  src="./screenshot/screenshot_localhost.png">
