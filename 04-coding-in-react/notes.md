@@ -398,3 +398,70 @@ const AppLayout = () => {
 }
 
 ```
+
+### So, now it is clear that 
+ - What all `attribute` we pass in __React Component__ when rendering(function call) it, those attributes gets attached to a empty object & this object is know as Props, is passed to that React Component (function defination)
+
+```
+const restaurantData = {
+  imageId: "bdcd233971b7c81bf77e1fa4471280eb",
+  name: "KFC",
+  cuisines: ["Burger", "Biryani", "American"],
+  approxDeliveryTime: "45"
+}
+
+const RestrauntCard = props => {
+  // console.log(props)                  // Output: {style: {color: 'red'}, restaurant: {restaurant: {imageId: 'bdcd233971b7c81bf77e1fa4471280eb', name: 'KFC', cuisines: Array(3), approxDeliveryTime: '45'}}}
+  return (
+    <div className="restaurant-card">
+      <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + props.restaurant.imageId} alt="restaurant image" />
+      <h2>{props.restaurant.name}</h2>
+      <h3>{props.restaurant.cuisines.join(", ")}</h3>
+      <h4>{props.restaurant.approxDeliveryTime} minutes</h4>
+    </div>
+  )
+}
+
+const AppLayout = () => {
+  return (
+    <>
+       <HeaderComponent />
+       <RestrauntCard style={{ color: "red" }} restaurant={restaurantData} />
+       {/* <RestrauntCard style={{ color: "red" }} {...restaurantData} /> */}
+    </>    
+  )
+}
+```
+
+Or
+
+```
+const restaurantData = {
+  imageId: "bdcd233971b7c81bf77e1fa4471280eb",
+  name: "KFC",
+  cuisines: ["Burger", "Biryani", "American"],
+  approxDeliveryTime: "45"
+}
+
+const RestrauntCard = ({ imageId, name, cuisines, approxDeliveryTime }) => {
+  return (
+    <div className="restaurant-card">
+      <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + imageId} alt="restaurant image" />
+      <h2>{name}</h2>
+      <h3>{cuisines.join(", ")}</h3>
+      <h4>{approxDeliveryTime} minutes</h4>
+    </div>
+  )
+}
+
+const AppLayout = () => {
+  return (
+    <>
+       <HeaderComponent />
+       
+       {/*<RestrauntCard style={{ color: "red" }} restaurant={restaurantData} /> */}
+       <RestrauntCard style={{ color: "red" }} {...restaurantData} />
+    </>    
+  )
+}
+```
