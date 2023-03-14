@@ -67,7 +67,7 @@ footer
 
 ## Code:
 
-### Case 1: Using Hard Coded Data
+### Case 1: Using Hard Coded Data (without Props)
 
 ```
 const restaurantData = {
@@ -109,13 +109,13 @@ const restaurantData = {
   approxDeliveryTime: "45"
 }
 
-const RestrauntCard = (prop) => {
+const RestrauntCard = (props) => {
   return (
     <div className="restaurant-card">
-      <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + prop.restaurant?.imageId} alt="restaurant image" />
-      <h2>{prop.restaurant?.name}</h2>
-      <h3>{prop.restaurant?.cuisines.join(", ")}</h3>
-      <h4>{prop.restaurant?.approxDeliveryTime} minutes</h4>
+      <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + props.restaurant?.imageId} alt="restaurant image" />
+      <h2>{props.restaurant?.name}</h2>
+      <h3>{props.restaurant?.cuisines.join(", ")}</h3>
+      <h4>{props.restaurant?.approxDeliveryTime} minutes</h4>
     </div>
   )
 }
@@ -148,13 +148,13 @@ const restaurantDataArray = [
   }
 ]
 
-const RestrauntCard = (prop) => {
+const RestrauntCard = (props) => {
   return (
     <div className="restaurant-card">
-      <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + prop.restaurant?.imageId} alt="restaurant image" />
-      <h2>{prop.restaurant?.name}</h2>
-      <h3>{prop.restaurant?.cuisines.join(", ")}</h3>
-      <h4>{prop.restaurant?.approxDeliveryTime} minutes</h4>
+      <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + props.restaurant?.imageId} alt="restaurant image" />
+      <h2>{props.restaurant?.name}</h2>
+      <h3>{props.restaurant?.cuisines.join(", ")}</h3>
+      <h4>{props.restaurant?.approxDeliveryTime} minutes</h4>
     </div>
   )
 }
@@ -171,7 +171,230 @@ const AppLayout = () => {
 
 ```
 
-### Case 4: Passing Sample data(Array) throught `Props`
+### Case 4: Passing Sample data(Array) throught `Props` [Object destructuring]
+
+- Object Destructuring
+  ```
+  (props) => ({restaurant})
+  ```
+  
 ```
+const restaurantDataArray = [
+  {
+    imageId: "bdcd233971b7c81bf77e1fa4471280eb",
+    name: "KFC",
+    cuisines: ["Burger", "Biryani", "American"],
+    approxDeliveryTime: "45"
+  },
+  {
+    imageId: "bdcd233971b7c81bf77e1fa4471280eb",
+    name: "Burger king",
+    cuisines: ["Burger", "American"],
+    approxDeliveryTime: "15"
+  }
+]
+
+const RestrauntCard = ({restaurant}) => {
+  return (
+    <div className="restaurant-card">
+      <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + restaurant?.imageId} alt="restaurant image" />
+      <h2>{restaurant?.name}</h2>
+      <h3>{restaurant?.cuisines.join(", ")}</h3>
+      <h4>{restaurant?.approxDeliveryTime} minutes</h4>
+    </div>
+  )
+}
+
+const AppLayout = () => {
+  return (
+    <>
+      <HeaderComponent />
+      <RestrauntCard restaurant={restaurantDataArray[0]} />
+      <RestrauntCard restaurant={restaurantDataArray[1]} />
+    <>
+  )
+}
+
+```
+
+- We can also destructure `({restaurant})` further:
+  ```
+  (props) => ({restaurant})
+  
+   Now,
+   const { imageId, name, cuisines, approxDeliveryTime } = restaurant
+  
+  ```
+  
+```
+const restaurantDataArray = [
+  {
+    imageId: "bdcd233971b7c81bf77e1fa4471280eb",
+    name: "KFC",
+    cuisines: ["Burger", "Biryani", "American"],
+    approxDeliveryTime: "45"
+  },
+  {
+    imageId: "bdcd233971b7c81bf77e1fa4471280eb",
+    name: "Burger king",
+    cuisines: ["Burger", "American"],
+    approxDeliveryTime: "15"
+  }
+]
+
+const RestrauntCard = ({restaurant}) => {
+  const { imageId, name, cuisines, approxDeliveryTime } = restaurant
+  return (
+    <div className="restaurant-card">
+      <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + imageId} alt="restaurant image" />
+      <h2>{name}</h2>
+      <h3>{cuisines.join(", ")}</h3>
+      <h4>{approxDeliveryTime} minutes</h4>
+    </div>
+  )
+}
+
+const AppLayout = () => {
+  return (
+    <>
+      <HeaderComponent />
+      <RestrauntCard restaurant={restaurantDataArray[0]} />
+      <RestrauntCard restaurant={restaurantDataArray[1]} />
+    <>
+  )
+}
+
+```
+
+### Case 5: Passing Sample data(Array) throught `Props` [Object destructuring on the fly & passing individual Props]
+
+- Object destructuring on the fly & passing individual Props (**without spread operator**)
+
+```
+const restaurantDataArray = [
+  {
+    imageId: "bdcd233971b7c81bf77e1fa4471280eb",
+    name: "KFC",
+    cuisines: ["Burger", "Biryani", "American"],
+    approxDeliveryTime: "45"
+  },
+  {
+    imageId: "bdcd233971b7c81bf77e1fa4471280eb",
+    name: "Burger king",
+    cuisines: ["Burger", "American"],
+    approxDeliveryTime: "15"
+  }
+]
+
+const RestrauntCard = ({restaurant}) => {
+  const { imageId, name, cuisines, approxDeliveryTime } = restaurant
+  return (
+    <div className="restaurant-card">
+      <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + imageId} alt="restaurant image" />
+      <h2>{name}</h2>
+      <h3>{cuisines.join(", ")}</h3>
+      <h4>{approxDeliveryTime} minutes</h4>
+    </div>
+  )
+}
+
+const AppLayout = () => {
+  return (
+    <>
+      <HeaderComponent />
+      <RestrauntCard name={restaurantDataArray[0].name} imageId={restaurantDataArray[0].imageId} cuisines={restaurantDataArray[0].cuisines} approxDeliveryTime={restaurantDataArray[0].approxDeliveryTime} />
+        <RestrauntCard name={restaurantDataArray[1].name} imageId={restaurantDataArray[1].imageId} cuisines={restaurantDataArray[1].cuisines} approxDeliveryTime={restaurantDataArray[1].approxDeliveryTime} />
+    <>
+  )
+}
+
+```
+
+- Object destructuring on the fly & passing individual Props (**using spread operator**)
+
+```
+const restaurantDataArray = [
+  {
+    imageId: "bdcd233971b7c81bf77e1fa4471280eb",
+    name: "KFC",
+    cuisines: ["Burger", "Biryani", "American"],
+    approxDeliveryTime: "45"
+  },
+  {
+    imageId: "bdcd233971b7c81bf77e1fa4471280eb",
+    name: "Burger king",
+    cuisines: ["Burger", "American"],
+    approxDeliveryTime: "15"
+  }
+]
+
+const RestrauntCard = ({restaurant}) => {
+  const { imageId, name, cuisines, approxDeliveryTime } = restaurant
+  return (
+    <div className="restaurant-card">
+      <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + imageId} alt="restaurant image" />
+      <h2>{name}</h2>
+      <h3>{cuisines.join(", ")}</h3>
+      <h4>{approxDeliveryTime} minutes</h4>
+    </div>
+  )
+}
+
+const AppLayout = () => {
+  return (
+    <>
+      <HeaderComponent />
+      <RestrauntCard {...restaurantDataArray[0]} />
+      <RestrauntCard {...restaurantDataArray[1]} />
+    <>
+  )
+}
+
+```
+
+### Case 6: Passing Sample data(Array) throught `Props` [using Map() + Spread Operator + Destructuring]
+
+```
+const restaurantDataArray = [
+  {
+    imageId: "bdcd233971b7c81bf77e1fa4471280eb",
+    name: "KFC",
+    cuisines: ["Burger", "Biryani", "American"],
+    approxDeliveryTime: "45"
+  },
+  {
+    imageId: "bdcd233971b7c81bf77e1fa4471280eb",
+    name: "Burger king",
+    cuisines: ["Burger", "American"],
+    approxDeliveryTime: "15"
+  }
+]
+
+const RestrauntCard = ({restaurant}) => {
+  const { imageId, name, cuisines, approxDeliveryTime } = restaurant
+  return (
+    <div className="restaurant-card">
+      <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + imageId} alt="restaurant image" />
+      <h2>{name}</h2>
+      <h3>{cuisines.join(", ")}</h3>
+      <h4>{approxDeliveryTime} minutes</h4>
+    </div>
+  )
+}
+
+const AppLayout = () => {
+  return (
+    <>
+      <HeaderComponent />
+      
+      {/* <RestrauntCard {...restaurantDataArray[0]} /> */}
+      {/* <RestrauntCard {...restaurantDataArray[1]} /> */}
+      
+      {restaurantDataArray.map(restaurantDataObj => {
+          return <RestrauntCard {...restaurantDataObj} />
+      })}
+    <>
+  )
+}
 
 ```
