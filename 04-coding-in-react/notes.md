@@ -401,6 +401,8 @@ const AppLayout = () => {
 
 ### So, now it is clear that 
  - What all `attribute` we pass in __React Component__ when rendering(function call) it, those attributes gets attached to a empty object & this object is know as Props, is passed to that React Component (function defination)
+ 
+#### Eg1: Passing `Style` using props:-   
 
 ```
 const restaurantData = {
@@ -415,9 +417,9 @@ const RestrauntCard = props => {
   return (
     <div className="restaurant-card">
       <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + props.restaurant.imageId} alt="restaurant image" />
-      <h2>{props.restaurant.name}</h2>
-      <h3>{props.restaurant.cuisines.join(", ")}</h3>
-      <h4>{props.restaurant.approxDeliveryTime} minutes</h4>
+      <h2 style={props.style}>{props.restaurant.name}</h2>
+      <h3 style={props.style}>{props.restaurant.cuisines.join(", ")}</h3>
+      <h4 style={props.style}>{props.restaurant.approxDeliveryTime} minutes</h4>
     </div>
   )
 }
@@ -426,14 +428,14 @@ const AppLayout = () => {
   return (
     <>
        <HeaderComponent />
+       
        <RestrauntCard style={{ color: "red" }} restaurant={restaurantData} />
-       {/* <RestrauntCard style={{ color: "red" }} {...restaurantData} /> */}
     </>    
   )
 }
 ```
 
-Or
+#### Eg2: Passing `Style` using props + Destructuring + Spread operator:- 
 
 ```
 const restaurantData = {
@@ -443,13 +445,13 @@ const restaurantData = {
   approxDeliveryTime: "45"
 }
 
-const RestrauntCard = ({ imageId, name, cuisines, approxDeliveryTime }) => {
+const RestrauntCard = ({ imageId, name, cuisines, approxDeliveryTime, style }) => {
   return (
     <div className="restaurant-card">
       <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + imageId} alt="restaurant image" />
-      <h2>{name}</h2>
-      <h3>{cuisines.join(", ")}</h3>
-      <h4>{approxDeliveryTime} minutes</h4>
+      <h2 style={style}>{name}</h2>
+      <h3 style={style}>{cuisines.join(", ")}</h3>
+      <h4style={style}>{approxDeliveryTime} minutes</h4>
     </div>
   )
 }
@@ -460,6 +462,7 @@ const AppLayout = () => {
        <HeaderComponent />
        
        {/*<RestrauntCard style={{ color: "red" }} restaurant={restaurantData} /> */}
+       
        <RestrauntCard style={{ color: "red" }} {...restaurantData} />
     </>    
   )
