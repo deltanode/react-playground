@@ -1,98 +1,128 @@
-### `Chapter-05 Let's get hooked`
+## `Chapter-05 Let's get hooked`
 
 1. File structure in React
+  - structure on the bases of `types` (i.e based on features & type of file)
+  - Created folder structure 
+    - src -> all code
+    - components -> all components
+    
+     ```
+     src 
+      |-- components
+      |   |-- Header.js
+      |   |-- Body.js
+      |   |--RestaurantCard.js
+      |-- App.js
+      |-- config.js
+      
+      ```
 
-2 types -> based on features & type of file
+2 Different ways to export:
+  - __export default__ Component - only one component can be exported in default - then in import we use default import
+  - __export by name__ - then in import we use `named import`
+  - Eg: there can be many components in the same file. So,
+    - __Named export__ :
+      ```
+      import {Title, Header} from './components/Header';
+      ```
+    - __Default export__ :
+      ```
+      import Header from './components/Header';
+      ```
+    - Using both __Default export__ & __named export__ :
+      ```
+      import Header, {Title} from './components/Header';
+      ```
+    - Using __`* as "anyname"`__ 
+      ```
+      import * as Obj from './components/Header';
+      
+      Obj.Title
+      ```
+  - Note: `name` can be different when exporting component. 
+    Eg: exporting `Header` component using `default export`
+    ```
+    import NewHeader from './components/Header';
+    ```
+  - __file name__ can be `.js` or `.jsx` (but generally .js is  prefered.)
+    Eg: `Header.js` or `Header.jsx`
+    - __without using extention__
+      ```
+      import Header, {Title} from './components/Header';
+      ```
+    - __using `.js` extention__
+      ```
+      import Header, {Title} from './components/Header.js';
+      ```
+    - __using `.jsx` extention__
+      ```
+      import Header, {Title} from './components/Header,jsx';
+      ```
+    
 
-Created fodler structure => src -> components
+- Best convention :
+  - export default ComponentName
+  - import Component from '/Path'
 
-src -> all code
+- Create `config.js` (or `constant.js`) file & put all "hard coded" values & data in it using export.
 
-components -> all components
+- In App
+  - Search box [but can't change value in input box]
 
-export default Component - only one component can be exported in default - default import
+- __One way binding__ in react
 
-export by name - then in import use named import
+- If we need to change the value,
+  - __Every componenet in react maintains a state__
+  - So, You can put all variables in the state. Everytime you use local variable you should use state.
 
-But, there can be many components in the same file
+- __Hook__: just like normal function. 
+  - Eg: `useState()`: is used to create state variable
 
-Named export :
-import {Title, Header} from './components/Header';
+- Why `hooks` ?
+  - Hooks allow you to `reuse stateful logic` without changing your component hierarchy.
+  - Hooks let you split one component into smaller functions based on what pieces are related (such as setting up a subscription or fetching data)
 
-Default export :
-import Header, {Title} from './components/Header';
+- `useState()` hook:
+  - returns as array 
+    - and first element is a variable, which is local state variable and value is passed through useState(value)
+    - second arg is function to modify the state variable
 
-Defaukt :
+- get { useState() } from 'react';
+  ```
+  const [searchText] = useState(value);
+  const [searchText, setSearchText] = useState(value);
 
-name can be different
-export default Header ;
-import NewHeader from './components/Header';
+  const searchVariable = useState(value);
+  const [searchText, setSearchText] = searchVariable;
 
-file name can be .js or .jsx but i prefer .js
+  setSearchText(e.target.value)
+  value = { searchText }
+  ```
 
-Best convention :
+- __Why do we need state ?__ [Interview question]
 
-export default ComponentName
-import Component from '/Path'
+- `Two way binding` Eg: updating state & displaying updated data on the fly (reading and writing )
 
-Create config.js file -> put all hard coded and export
+- Syntactic events Eg: e in `(e) => e.target.value
 
-Search box -> cant change input nox
+- when `useState()` is used React __re-renders the whole component__ (i.e reconciliation happens & only that small portion is updated where data has changed)
 
-One way binding
+- ```
+  const [restaurants, setRestaurants] = useState(restaurantList);
 
-If we need to change the value ,
+  onclick()
+  const data = filterData(searchText, restaurants)
 
-Every componenet in react maintains a state
-. U can put all variables in the state. Everytime u use local variable u put state in it
+  setRestaurants(data);
 
-Hook -> just like normal function -> called using useState() - to create state variable
+  funciton filterData(searchText, restaurants) 
+  {
+    restaurants.filter (res => {
+      res.data.name
+    })
+  }
 
-HOOKS -> provides a direct API to teh React concepts
-
-Why hooks ?
-
-- Hooks allow you to `reuse stateful logic` without changing your component hierarchy.
-- Hooks let you split one component into smaller functions based on what pieces are related (such as setting up a subscription or fetching data)
-
-- returns as array and first element is a variable, which is local state variable and value is passed through useState(value)
-
-- second arg is function to modify the state variable
-
-get { useState() } from 'react';
-
-const [searchText] = useState(value);
-
-const [searchText, setSearchText] = useState(value);
-
-const searchVariable = useState(value);
-const [searchText, setSearchText] = searchVariable;
-
-setSearchText(e.target.value)
-value = { searchText }
-
-Why do we need state ?
-
-Two - way binding => updating state (reading and writing )
-
-Syntactic events
-
-when useState() is used React re-renders (reconciliation)
-
-const [restaurants, setRestaurants] = useState(restaurantList);
-
-onclick()
-const data = filterData(searchText, restaurants)
-
-setRestaurants(data);
-
-funciton filterData(searchText, restaurants) {
-restaurants.filter (res => {
-res.data.name
-})
-}
-
-### In react we are using useState like this---> const [searchText, setSearchText] = useState("") isn't is against javascript rule as we are able to change the value of searchText which is of type const
+- #### Note: In react we are using useState like this `const [searchText, setSearchText] = useState("")` isn't is against javascript rule as we are able to change the value of searchText which is of type const
 
 - When we change this state variable using setSearchText it forces the component to re-render.
   Every time the component re-renders, the const is a new version of const with updated value.
