@@ -94,7 +94,8 @@
 - | In Javascript | In React |
   | --- | --- |
   | - Local Variable <br>`let searchText` | - Local State Variable <br> `const [seacrhText, setSearchText] = useState()`  |
-  | - Local Variable using default value <br> let searchText = "Burger"| - Local State Variable using default value <br> const [searchText, setSearchText] = useState("Burger") |
+  | - Local Variable using default value <br> `let searchText = "Burger"`| - Local State Variable using default value <br> `const [searchText, setSearchText] = useState("Burger")` |
+  |- __In HTML__ <br> `<input type="text" onchange="fun()"/>` | - __InJSX__ <br> `<input type="text" onChange={e => setSearch(e.target.value)}/>` |
   
 
 - get { useState() } from 'react';
