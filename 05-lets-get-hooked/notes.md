@@ -95,8 +95,9 @@
   | --- | --- |
   | - Local Variable <br>`let searchText` | - Local State Variable <br> `const [seacrhText, setSearchText] = useState()`  |
   | - Local Variable using default value <br> `let searchText = "Burger"`| - Local State Variable using default value <br> `const [searchText, setSearchText] = useState("Burger")` |
-  |- __In HTML__ <br> `<input type="text" onchange="fun()"/>` | - __InJSX__ <br> `<input type="text" onChange={e => setSearch(e.target.value)}/>` |
+  |- __In HTML__ <br> `<input type="text" onchange="fun()"/>` <br> `<script>` <br> `fun(e){ searchText = e.target.value}`<br> `</script>` | - __InJSX__ <br> `<input type="text" onChange={e => setSearch(e.target.value)}/>` |
   
+- __Syntactic events__ in React Eg: e in `(e) => e.target.value
 
 - get { useState() } from 'react';
   ```
@@ -113,8 +114,6 @@
 - __Why do we need state ?__ [Interview question]
 
 - `Two way binding` Eg: updating state & displaying updated data on the fly (reading and writing )
-
-- Syntactic events Eg: e in `(e) => e.target.value
 
 - when `useState()` is used React __re-renders the whole component__ (i.e reconciliation happens & only that small portion is updated where data has changed)
 
