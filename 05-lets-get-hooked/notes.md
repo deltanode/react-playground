@@ -84,8 +84,18 @@
 
 - `useState()` hook:
   - returns as array 
-    - and first element is a variable, which is local state variable and value is passed through useState(value)
-    - second arg is function to modify the state variable
+    - and first element is a `variable name` (which is local state variable) 
+    - second arg is `function to modify the state variable`
+    - Syntax: <br>
+       [`variable name`, `function to update the variable`] = useState()
+
+- __Every component in react maintains a state__
+
+- | In Javascript | In React |
+  | --- | --- |
+  | - Local Variable <br>`let searchText` | - Local State Variable <br> `const [seacrhText, setSearchText] = useState()`  |
+  | - Local Variable using default value <br> let searchText = "Burger"| - Local State Variable using default value <br> const [searchText, setSearchText] = useState("Burger") |
+  
 
 - get { useState() } from 'react';
   ```
@@ -121,6 +131,7 @@
       res.data.name
     })
   }
+  ```
 
 - #### Note: In react we are using useState like this `const [searchText, setSearchText] = useState("")` isn't is against javascript rule as we are able to change the value of searchText which is of type const
 
