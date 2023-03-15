@@ -146,7 +146,7 @@ _MORE_:
 <summary>Why do we need `useState Hook`?</summary><br>
 <blockquote>
 
-- `useState()` is one of the basic hooks functions which creates a state and assigns the initialState value passed in the parameter. It also provides a setState function, the state can be updated only using this function. 
+- `useState()` is one of the basic hooks functions which creates a state and assigns the initialState value passed in the parameter. It also provides a setState function, the state can be updated only using this function. <br>
   `const [state, setState] = useState(initialState);` 
 - During initial render, the returned state (state) is the same as the value passed as the first argument (initialState).
 - The setState function is used to update the state. It accepts a new state value and enqueues a re-render of the component. 
