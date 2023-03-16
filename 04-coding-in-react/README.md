@@ -236,12 +236,24 @@ Because Fiber is asynchronous, React can:
 <summary>Why do we need `keys` in React? When do we need keys in React?</summary><br>
 <blockquote>
 
+- A `key` is a special attribute you need to include when creating lists of elements in React. 
+- Keys are used in React to identify which items in the list are changed, updated, or deleted. 
+- In other words, we can say that keys are unique Identifier used to give an identity to the elements in the lists.
+- Keys should be given to the elements within the array to give the elements a stable identity.
+- #### Example
+  ```
+  <li key={0}>1</li>
+  <li key={1}>2</li>
+  <li key={2}>3</li>
+  ```
 - When we have multiple childen with same Tag name, then its difficult for react to figure out the sequence in which the new child is added. So, it re-render the complete node.
 - But we only want to make changes to the small portion only.
 - For this we need to pass `keys`. So that react can figure out where the change has occure & only render that perticular node.
 
+    
 _More_:-
-
+    
+    
 - React create the visual representation of the DOM which is know as Virtual DOM.
 - Because of reconcilliation algorithm, react diff on tree from another, & only make chages to that small portion only.
 
@@ -253,8 +265,16 @@ _More_:-
 <summary>Can we use `index as keys` in React?</summary><br>
 <blockquote>
 
-Yes, we can use `index as keys` in React but we usually avoid it. We shoul prefer it only for the last case senario.
+- Yes, we can use the `index as keys`, but it is not considered as a good practice to use them because if the order of items may change. This can negatively impact performance and may cause issues with component state.
+- Keys are taken from each object which is being rendered. There might be a possibility that if we modify the incoming data react may render them in unusual order.
+- We should prefer it only for the last case senario.
 
+    
+_More_:
+    
+- A key is the only thing React uses to identify DOM elements. It is not recommend to use indexes for keys if the order of items may change. This can negatively impact performance and may cause issues with component state.
+- But, nothing is better than anything. If we don't give a key, react by default assign id of that list item as it's key. 
+- `NO key` << `INDEX as key` <<<<<< `Unique id as key from data` 
 </blockquote><br>
 </details>
 
