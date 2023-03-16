@@ -1,5 +1,5 @@
 import { LOGO_URL } from "../constants"
-import Nav from "./Nav.js"
+import Nav from "./Nav"
 
 // Logo Componnent
 export const Logo = () => <img className="nav__logo" src={LOGO_URL}></img>

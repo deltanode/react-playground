@@ -7,6 +7,8 @@
 
 body {
   font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -26,6 +28,7 @@ img {
   /* background-color: rgb(218, 222, 222); */
   width: 100%;
   padding: 1rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav {
@@ -56,4 +59,30 @@ img {
 
 .nav__link:hover {
   color: rgb(234, 149, 37);
+}
+
+/***** main *****/
+.main {
+  /* background-color: rgb(218, 222, 222); */
+  width: 100%;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+/***** Restaurant *****/
+.restaurant {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.restaurant__card {
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.1), 1px 1px 5px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  margin: 0.5rem;
+  max-width: 15rem;
+  overflow: hidden;
+}
+
+.restaurant__name {
+  color: rgb(229, 17, 17);
 }
