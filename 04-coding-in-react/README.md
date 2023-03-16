@@ -188,6 +188,31 @@ The new, short syntax for declaring Fragment is empty tags `<> </>`. It can be u
 
 <!-- *******************************-->
 <details>
+<summary>Difference between `Virtual DOM` and `Real DOM` ?</summary><br>
+<blockquote>
+
+DOM stands for `Document Object Model`, which represents your application UI and whenever the changes are made in the application, this DOM gets updated and the user is able to visualize the changes. DOM is an interface that allows scripts to update the content, style, and structure of the document.
+- `Virtual DOM`
+    - The Virtual DOM is a light-weight abstraction of the DOM. You can think of it as a copy of the DOM, that can be updated without affecting the actual DOM. It has all the same properties as the real DOM object, but doesn’t have the ability to write to the screen like the real DOM.
+    - Virtual DOM is just like a blueprint of a machine, can do the changes in the blueprint but those changes will not directly apply to the machine.
+    - Reconciliation is a process to compare and keep in sync the two files (Real and Virtual DOM). Diffing algorithm is a technique of reconciliation which is used by React.
+- `Real DOM`
+    - The DOM represents the web page often called a document with a logical tree and each  branch of the tree ends in a node and each node contains object programmers can modify the content of the document using a scripting language like javascript and the changes and updates to the dom are fast because of its tree-like structure but after changes, the updated element and its children have to be re-rendered to update the application UI so the  re-rendering of the UI which make the dom slow all the UI components you need to be rendered for every dom update so real dom would render the entire list and not only those item that receives the update .
+
+|   `Real DOM`    |   `Virtual DOM` |
+|-------------|-----------------|
+| DOM manipulation is very expensive  | DOM manipulation is very easy  | 
+| There is too much memory wastage  | No memory wastage  |
+| It updates Slow | It updates fast |
+| It can directly update HTML | It can’t update HTML directly  |
+|  Creates a new DOM if the element updates. | Update the JSX if the element update |
+| It allows us to directly target any specific node (HTML element) | It can produce about 200,000 Virtual DOM Nodes / Second. |
+| It represents the UI of your application | It is only a virtual representation of the DOM |
+</blockquote><br>
+</details>
+    
+<!-- *******************************-->
+<details>
 <summary>What is `Reconciliation` in React?</summary><br>
 <blockquote>
 
@@ -283,8 +308,43 @@ _More_:
 <summary>What is `props in React`? Ways to.</summary><br>
 <blockquote>
 
-Props are the attributes that we pass in React Component.
-In layman terms, they are just the arguments that we pass on React Component(i.e which is a function only)
+- props stands for properties. 
+- Props are arguments passed into React components. 
+- props are used in React to pass data from one component to another (from a parent component to a child component(s)). 
+- They are useful when you want the flow of data in your app to be dynamic.
+#### Example
+```
+function App() {
+  return (
+    <div className="App">
+      <Tool name="Chetan Nada" tool="Figma"/> // name and tool are props
+    </div>
+  )
+}
+```
+- Props are the attributes that we pass in React Component.
+- In layman terms, they are just the arguments that we pass on React Component(i.e which is a function only)
+    
+_More_:
+    
+- `Props (properties)` passed in Component are similar to the arguments passed in a js function call and received by that function as parameters.
+- Every parent component can pass some information to its child components by giving them props. 
+- Props are similar to HTML attributes, but you can pass any JavaScript value through them, including objects, arrays, and functions.
+
+- Types of Props : 
+    - Familar Props - HTML attributes like className, src, width, height passed in HTML <img> tag 
+    - Passing Props to Component - props are the only argument to your component. React component functions accept a single argument, a props object.
+
+- | Ways to pass props to component | Ways to receive the props in another component | 
+  | ------------------------------- | :--------------------------------:             | 
+  | 1. Add props to the JSX, just like you would with HTML attributes  | All props are sent into a single props object  | 
+  |  ```<Profile name = { "Harshi"} age={28}   />``` |  ``` const Profile = (props) => { let name = props.name; let age = props.age; } ``` |  
+  | 2.   Similar to the way mentioned in 1.          | Props object can be destructed using {} to receive only the required props| 
+  | ```<Profile name = { "Harshi"} age={28}   />```  | ``` const Profile = ({name, age}) => { } ```    | 
+  | 3. Using spread syntax                           |  And props objects destructed using {}        |
+  | ```<Profile {...props}   />```   | ``` const Profile = ({name, age}) => { } ```  |
+
+- However, props are immutable which means unchangeable. When a component needs to change its props (for example, in response to a user interaction or new data), it will have to “ask” its parent component to pass it different props—a new object! Its old props will then be cast aside, and eventually the JavaScript engine will reclaim the memory taken by them.
 
 </blockquote><br>
 </details>
@@ -294,8 +354,16 @@ In layman terms, they are just the arguments that we pass on React Component(i.e
 <summary>What is `Config Driven UI`?</summary><br>
 <blockquote>
 
+- `Config-driven UI` is one of the UI design pattern in which the UI is rendered based on the configuration parameter sent by the server (backend). This is one of the popular pattern used in the industry now.
 - It a way of creataing a dynamic UI in such a way, which changes on the basics of backend API data.
 - Eg: Suppose we provide some services through our web app in different cities. Now we want to display offer & discounts as the cities. So, our web app should re-render on the basis of datacomming from the backend, this is beacause of config driven UI.
+    
+_More_:
+    
+- `Config Driven UI` are based on the configurations of the data application receives. It is rather a good practice to use config driven UIs to make application for dynamic. 
+- It is a very common & basic approach to interact with the User. It provides a generic interface to develop things which help your project scale well. - - It saves a lot of development time and effort.
+- A typical login form, common in most of the Apps. Most of these forms also get frequent updates as the requirements increase in terms of Form Validations, dropdown options,.. or design changes.
+
 </blockquote><br>
 </details>
 
@@ -304,6 +372,34 @@ In layman terms, they are just the arguments that we pass on React Component(i.e
 <summary>Javascript: Map() vs forEach()</summary><br>
 <blockquote>
 
+Some of the difference between map() and forEach() methods are listed below :−
+- The map() method returns a new array, whereas the forEach() method does not return a new array.
+- The map() method is used to transform the elements of an array, whereas the forEach() method is used to loop through the elements of an array.
+- The map() method can be used with other array methods, such as the filter() method, whereas the forEach() method cannot be used with other array methods.
+    
+_Final Thoughts_:
+    
+- As always, the choice between map() and forEach() will depend on your use case. If you plan to change, alternate, or use the data, you should pick map(), because it returns a new array with the transformed data.
+- But, if you won't need the returned array, don't use map() - instead use forEach() or even a for loop.
+    
+#### Syntax:
+```
+ forEach((currentElement, indexOfElement, array) => { ... } )
+
+ map((currentElement, indexOfElement, array) => { ... } )
+
+Parameters:
+  - currentElement: This is the current element that is being processed in the callback.
+  - indexOfElement: The index of that current element inside the array.
+  - array: The array on which the whole operation is being performed.
+```
+- | map()  | forEach() |
+  | --- | --- |
+  | - The map() method returns an entirely new array. | - The forEach() method does not returns a  new array based on the given array. |
+  | - The map() method returns the newly created array according to the provided callback function. | - The forEach() method returns “undefined“. |
+  | - With the map() method, we can chain other methods like, reduce(),sort() etc. | - The forEach() method doesn’t return anything hence the method chaining technique cannot be applied here. |
+  | - It does not change the original array. | - It is not executed for empty elements. |
+    
 </blockquote><br>
 </details>
 
@@ -312,6 +408,12 @@ In layman terms, they are just the arguments that we pass on React Component(i.e
 <summary>Javascript: Optional Chaning (?.)</summary><br>
 <blockquote>
 
+- The optional chaining ?. is a safe way to access nested object properties, even if an intermediate property doesn’t exist.
+- The `optional chaining (?.)` operator accesses an object's property or calls a function.
+- If the **object accessed** or **function called** using this operator is `undefined` or `null`, the expression short circuits and evaluates to `undefined` instead of throwing an `error`.
+
+
+- Reference: https://javascript.info/optional-chaining
 </blockquote><br>
 </details>
 <!-- *******************************-->
