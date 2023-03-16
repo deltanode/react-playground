@@ -1,0 +1,59 @@
+/***** general style *****/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  /* background-color: antiquewhite; */
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/***** header *****/
+.header {
+  /* background-color: rgb(218, 222, 222); */
+  width: 100%;
+  padding: 1rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  width: 5rem;
+  height: 3.5rem;
+}
+
+.nav__list {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav__items {
+  padding: 0 0 0 1rem;
+}
+
+.nav__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav__link:hover {
+  color: rgb(234, 149, 37);
+}
