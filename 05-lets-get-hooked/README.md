@@ -206,19 +206,19 @@ const Example = (props) => {
 <details>
 <summary>Why are useState variables `const` in react?</summary><br>
 <blockquote>
-- Question: 
- - My understanding is, when using `useState()`, we should declare the array as such:
-   ```
-   const [someBooleanValue, setSomeBooleanValue] = useState(false)
-   ```
 
-- Instead of
+_Question_:
+```
+My understanding is, when using `useState()`, we should declare the array as such:
+const [someBooleanValue, setSomeBooleanValue] = useState(false)
 
-  ```
-  let [someBooleanValue, setSomeBooleanValue] = useState(false)
-  ```
+Instead of
+let [someBooleanValue, setSomeBooleanValue] = useState(false)
 
-- Normally, `const` is used on variables that won't be changing. Here, `someBooleanValue` will be changing. What is going on that allows us to use the `const` keyword in this case?
+Normally, `const` is used on variables that won't be changing. Here, `someBooleanValue` will be changing. What is going on that allows us to use the `const` keyword in this case?
+```
+
+_Explaination_:
 
 - In [React Hooks](https://reactjs.org/docs/hooks-state.html) with a Functional Component, your code gets a single value of state for each call into your functional component. React handles the storage separately and returns that current value via `useState` on each execution of your code, providing the latest state value.
 
