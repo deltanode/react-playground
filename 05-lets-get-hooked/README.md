@@ -195,3 +195,8 @@ const Example = (props) => {
 ## References:
 
 - [Akshay Saini Code Link](https://bitbucket.org/namastedev/namaste-react-live/src/master/)
+
+## Screenshot:
+ <img height="600px" width="450px"  src="./screenshot/screenshot_localhost_search_component.png">
+
+
