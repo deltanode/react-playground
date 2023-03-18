@@ -1,0 +1,22 @@
+{
+  "name": "06-exploring-the-world",
+  "version": "1.0.0",
+  "description": "Until last chapter, we were using mock data to render the UI. In this chapter, we learnt about working with real time data from the Web (Our world basically). Then, we covered different types of System Architectures, different approaches to fetch API and render in UI. Today's important concept was one of the basic React Hooks useEffect. We tried using useEffect in all combinations and understanding it in depth. Importance of conditional rendering and Shimmer in UI were explained.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  }
+}
