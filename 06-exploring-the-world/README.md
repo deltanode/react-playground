@@ -50,7 +50,7 @@ Monolith Architecture is the traditional model of software development where the
 <summary>What is the `difference` between `Monolith and Microservice?</summary><br>
 <blockquote>
 
-![Monolith and Microservice](/img/monolith-microservices.png)
+![Monolith and Microservice](./img/monolith-microservices.png)
 
 
 | Parameters   | Monolith Architecture  | Microservices Architecture  |
