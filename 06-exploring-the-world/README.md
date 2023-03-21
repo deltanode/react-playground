@@ -298,12 +298,27 @@ async function getRestaurants() {
 <summary>What is the use of `const json = await data.json()`; in `getRestaurants()`?</summary><br>
 <blockquote>
 
+- Example:
+  ```
+  async function getRestaurants() {
+    try {
+      const data = await fetch(url);
+      const json = await data.json();
+      console.log(json);
+    } catch(err) {
+     console.log(err);
+    }
+  }
+
+  ```
+
 In seen in the above example, the fetch API call returns a promise response with header, in order **to get the data in json format**, we have to resolve that promise using `data.json()`
   
  _More_:
   
 - The `data` object, returned by the `fetch()`, is a generic placeholder for multiple data formats.
 - So, to extract the data in json format, we are using `data.json()`.
+- MDN reference: [Response.json()](https://developer.mozilla.org/en-US/docs/Web/API/Response/json) and [fetch()](https://developer.mozilla.org/en-US/docs/Web/API/fetch)
 </blockquote><br>
 </details>
 <!-- *******************************-->
