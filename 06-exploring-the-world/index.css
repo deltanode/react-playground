@@ -22,7 +22,7 @@ a {
   display: inline-flex;
 }
 
-.container {
+.flex-container {
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
@@ -102,12 +102,37 @@ a {
   flex-wrap: wrap;
 }
 
-.restaurant__card {
+.restaurant__card,
+.shimmer__card {
   box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
   margin-bottom: 1.5rem;
   margin-left: 1.5rem;
   border-radius: 5px;
+  max-width: 210px;
+}
+
+.shimmer__card {
+  width: 210px;
+}
+
+.shimmer__img {
+  width: 190px;
+  height: 130px;
+  /* background-color: #e9e2e2; */
+  background-image: linear-gradient(to right, #cdcaca, #eeecec);
+  margin-bottom: 30px;
+}
+
+.shimmer__div {
+  margin-bottom: 25px;
+  height: 16px;
+  /* background-color: #e9e2e2; */
+  background-image: linear-gradient(to right, #cdcaca, #eeecec);
+}
+
+.restaurant__img {
+  max-width: 200px;
 }
 
 .restaurant__heading {
