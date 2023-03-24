@@ -104,12 +104,19 @@ a {
 
 .restaurant__card,
 .shimmer__card {
-  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.1), -5px - 5px 12px rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
   margin-bottom: 1.5rem;
   margin-left: 1.5rem;
   border-radius: 5px;
   max-width: 210px;
+  border-radius: 0.5rem;
+  transform: width 15s ease 10s;
+}
+
+.restaurant__card:hover,
+.shimmer__card:hover {
+  transform: scale(1.1);
 }
 
 .shimmer__card {
@@ -117,6 +124,7 @@ a {
 }
 
 .shimmer__img {
+  border-radius: 0.5rem;
   width: 190px;
   height: 130px;
   /* background-color: #e9e2e2; */
@@ -132,7 +140,8 @@ a {
 }
 
 .restaurant__img {
-  max-width: 200px;
+  max-width: 190px;
+  border-radius: 0.5rem;
 }
 
 .restaurant__heading {
@@ -144,11 +153,18 @@ a {
   /* background-color: antiquewhite; */
   padding: 1rem;
   margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search__box {
+  margin-bottom: 1rem;
 }
 
 .search__input {
   padding: 0.5rem;
-  width: 20rem;
+  width: 25rem;
   border: 1px solid rgb(65, 65, 65);
   border-radius: 5px;
 }
@@ -164,4 +180,8 @@ a {
 
 .search__btn:hover {
   background-color: rgb(78, 75, 75);
+}
+
+.search__result {
+  color: rgb(166, 44, 44);
 }

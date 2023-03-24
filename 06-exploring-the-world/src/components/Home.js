@@ -17,7 +17,7 @@ const Home = () => {
   const [searchText, setSearchText] = useState("")
   const [allRestaurants, setAllRestaurants] = useState([])
   const [filteredRestaurants, setFilteredRestaurants] = useState([])
-  // const [searchResult, setSearchResult] = useState("")
+  const [searchResult, setSearchResult] = useState("")
 
   // using Effect: Now the function will be called one time only as dependency array is empty
   useEffect(() => {
@@ -33,9 +33,9 @@ const Home = () => {
     // setAllRestaurants([])
     setFilteredRestaurants(jsonData?.data?.cards[2]?.data?.data?.cards)
   }
-
   // if allRestaurants is empty don't render restaurants cards. (It is known as Early Return)
   if (!allRestaurants) {
+    console.log("I returned early")
     return null
   }
 
@@ -44,24 +44,30 @@ const Home = () => {
       <main className="home flex-container">
         {/************  Search ************/}
         <div className="search">
-          {/* // In INPUT, we will be using "onChange" Event to update the state variable "searchText", when we are typing in input box */}
-          <input className="search__input" value={searchText} onChange={e => setSearchText(e.target.value)} placeholder="Search Restaurant ..." />
-          <button
-            className="search__btn"
-            onClick={() => {
-              const data = searchRestaurant(searchText, allRestaurants)
-              // if (data.length === 0) {
-              //   setSearchResult("No Match Found !!!")
-              // }
-              // console.log(data)
-              setFilteredRestaurants(data)
-            }}
-          >
-            Search
-          </button>
+          <div className="search__box">
+            {/* // In INPUT, we will be using "onChange" Event to update the state variable "searchText", when we are typing in input box */}
+            <input className="search__input" value={searchText} onChange={e => setSearchText(e.target.value)} placeholder="Search Restaurant ..." />
+            <button
+              className="search__btn"
+              onClick={() => {
+                const data = searchRestaurant(searchText, allRestaurants)
+                if (data.length === 0) {
+                  setSearchResult("No Match Found !!!")
+                } else {
+                  // setSearchResult(`${data.length} matches found`)
+                  setSearchResult("")
+                }
+                setFilteredRestaurants(data)
+              }}
+            >
+              Search
+            </button>
+          </div>
+          <div className="search__result">{searchResult}</div>
         </div>
-        {/* {searchResult !== "" ? searchResult : setSearchResult(" ")} */}
-        {/************  RestaurantList ************/}
+
+        {/************  Resta
+         * urantList ************/}
         <div className="restaurant">
           {allRestaurants?.length == 0 ? (
             <ShimmerUI />
