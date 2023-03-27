@@ -66,8 +66,7 @@ const Home = () => {
           <div className="search__result">{searchResult}</div>
         </div>
 
-        {/************  Resta
-         * urantList ************/}
+        {/************  RestaurantList ************/}
         <div className="restaurant">
           {allRestaurants?.length == 0 ? (
             <ShimmerUI />
