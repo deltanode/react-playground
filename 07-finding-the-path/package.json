@@ -1,0 +1,25 @@
+{
+  "name": "07-finding-the-path",
+  "version": "1.0.0",
+  "description": "Today we started with the recap of previous chapter's important concepts like useEffect(), do's and don't while creating components and state. As the name suggests, this chapter is about creating routes to different pages of the application and how to navigate through them. We used a library called react-router-dom for enabling the routes and providing them to RouterProvider to render them in the root. Error component for the invalid path were explaned. Importance of SPA (Single Page Application) and different types of routing were explained. Other routing concepts like nested routing (loading children into the parent outlet), dynamic routing (passing dynamic param in the path) were implemented. Insta Ordering App also had lot of enhancements in this chapter, like menu page was created for each restaurant, navigation to various pages of the application is done.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "formik": "^2.2.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.9.0",
+    "yup": "^1.0.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  }
+}
