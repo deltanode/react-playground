@@ -14,6 +14,11 @@
   - It's asked in interviews & already lot of old projects are still using it.
 
 - Recap to routing & `Nesting Routes`: 
+  ```
+  localhost:1234/                  // parent
+  localhost:1234/about             // children
+  localhost:1234/about/profile     // children inside children
+  ```
   - Read about all recommended routers.
   - `Profile.js` component inside `About.js` page (i.e children of children)
   - for children of children path is just `"profile"` not `"/profile"`
