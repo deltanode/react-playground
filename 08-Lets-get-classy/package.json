@@ -1,0 +1,21 @@
+{
+  "name": "08-lets-get-classy",
+  "version": "1.0.0",
+  "description": "Today, it was all about understanding the creating class-based component, it's different lifecycle methods, whats happening under the hood. It was an amazing session as we can easily grasp the concept since we already know how component are rendered in react using functional components. We even discussed about various possible interview questions.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.9.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  }
+}

@@ -1,0 +1,254 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #3895cb;
+  display: inline-flex;
+}
+
+.flex-container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+.nav {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  height: 3.5rem;
+}
+
+.nav__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav__item {
+  padding: 0.5rem;
+}
+
+.nav__link:hover {
+  color: rgb(219, 114, 114);
+}
+
+.nav__btn {
+  border: 1px solid #000;
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  color: #fff;
+  background-color: #000;
+  border-radius: 7px;
+}
+
+.nav__btn:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+/* Footer */
+.footer {
+  box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.footer__copyright {
+  /* background-color: aqua; */
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* Home */
+.home {
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.restaurant {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.restaurant__card,
+.shimmer__card {
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.1), -5px - 5px 12px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+  border-radius: 5px;
+  max-width: 210px;
+  border-radius: 0.5rem;
+  transform: width 15s ease 10s;
+}
+
+.restaurant__card:hover,
+.shimmer__card:hover {
+  transform: scale(1.1);
+}
+
+.shimmer__card {
+  width: 210px;
+}
+
+/* The animation code */
+@keyframes gradient-loop-1 {
+  0% {
+    background-color: #cdcaca;
+  }
+  50% {
+    background-color: #eeecec;
+  }
+  100% {
+    background-color: #cdcaca;
+  }
+}
+
+@keyframes gradient-loop-2 {
+  from {
+    background-position: -1000px 0;
+  }
+  to {
+    background-position: 1000px 0;
+  }
+}
+
+.animation-gradient {
+  /* animation-name: gradient-loop-1; */
+  animation-name: gradient-loop-2;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  /* animation: gradient-loop 2s ease 0s infinite; */
+}
+
+.shimmer__img {
+  border-radius: 0.5rem;
+  width: 190px;
+  height: 130px;
+  /* background-color: #e9e2e2; */
+  /* background-image: linear-gradient(to right, #cdcaca, #eeecec); */
+  background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+  margin-bottom: 30px;
+}
+
+.shimmer__div {
+  margin-bottom: 25px;
+  height: 16px;
+  /* background-color: #e9e2e2; */
+  /* background-image: linear-gradient(to right, #cdcaca, #eeecec); */
+  background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+}
+
+.restaurant__img {
+  max-width: 190px;
+  border-radius: 0.5rem;
+}
+
+.restaurant__heading {
+  color: rgb(205, 36, 36);
+}
+
+/* search */
+.search {
+  /* background-color: antiquewhite; */
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search__box {
+  margin-bottom: 1rem;
+}
+
+.search__input {
+  padding: 0.5rem;
+  width: 25rem;
+  border: 1px solid rgb(65, 65, 65);
+  border-radius: 5px;
+}
+
+.search__btn {
+  padding: 0.5rem;
+  margin-left: 1rem;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.search__btn:hover {
+  background-color: rgb(78, 75, 75);
+}
+
+.search__result {
+  color: rgb(166, 44, 44);
+}
+
+.warning {
+  color: rgb(166, 44, 44);
+}
+
+.login {
+  max-width: 320px;
+  padding: 1rem;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1), -5px -5px 5px 0px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  margin-top: 35vh;
+}
+
+.login label {
+  margin-right: 0.5rem;
+  color: #5f5b5b;
+}
+
+.login input {
+  margin: 1rem 0;
+  padding: 0.25rem;
+}
+
+.login button {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+.login button:hover {
+  background-color: #5f5b5b;
+  color: #fff;
+}
