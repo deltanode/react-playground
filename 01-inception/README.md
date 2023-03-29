@@ -13,9 +13,14 @@ We started learning react from scratch. Environment setup was clearly explained.
 
 ## Notes:
 
-- [Handwritten [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2001%20-%20Inception%20-%20HandWritten%20Notes.pdf)
+- [Handwritten [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2001%20-%20Inception%20-%20HandWritten%20Notes.pdf) 
 - [Digital [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2001%20-%20Inception%20-%20Digital%20Notes.pdf)
 - [Notes.md](https://github.com/deltanode/react-playground/blob/main/01-inception/notes.md)
+
+ > **Credit**: 
+`Digital Notes:` [Arpan Kesh](https://www.linkedin.com/in/arpan-kesh-687740194/) | 
+`Handwritten Notes:`[Ashraya KK](https://github.com/Ashrayaa/Namaste-React) | 
+`Notes.md:` [Harshitha Solai](https://github.com/Learn-React-With-Harshi)  
 
 ## Theory:
 
