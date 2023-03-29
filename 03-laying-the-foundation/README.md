@@ -19,6 +19,8 @@ We revised the previous sessions and doubts raised in the previous sessions were
 - [Digital [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2003%20-%20Laying%20the%20Foundation%20-%20Digital%20Notes.pdf)
 - [Notes.md](https://github.com/deltanode/react-playground/blob/main/03-laying-the-foundation/notes.md)
 
+> **Credit**: `Digital Notes:` [Arpan Kesh](https://www.linkedin.com/in/arpan-kesh-687740194/) | `Handwritten Notes:`[Ashraya KK](https://github.com/Ashrayaa/Namaste-React) | `Notes.md:` [Harshitha Solai](https://github.com/Learn-React-With-Harshi)
+
 ## Theory:
 
 <!-- *******************************-->

@@ -18,6 +18,8 @@ Today was about creating production-ready react app from scratch without using c
 - [Digital [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2002%20-%20Igniting%20our%20App%20-%20Digital%20Notes.pdf)
 - [Notes.md](https://github.com/deltanode/react-playground/blob/main/02-igniting-our-app/notes.md)
 
+> **Credit**: `Digital Notes:` [Arpan Kesh](https://www.linkedin.com/in/arpan-kesh-687740194/) | `Handwritten Notes:`[Ashraya KK](https://github.com/Ashrayaa/Namaste-React) | `Notes.md:` [Harshitha Solai](https://github.com/Learn-React-With-Harshi)
+
 ## Theory:
 
 <!-- ************************** -->

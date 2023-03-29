@@ -25,6 +25,8 @@ While Creating `food ordering app` covered:
 - [Digital [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2005%20-%20Let's%20get%20Hooked!%20-%20Digital%20Notes.pdf)
 - [Notes.md](https://github.com/deltanode/react-playground/blob/main/05-lets-get-hooked/notes.md)
 
+> **Credit**: `Digital Notes:` [Arpan Kesh](https://www.linkedin.com/in/arpan-kesh-687740194/) | `Handwritten Notes:`[Ashraya KK](https://github.com/Ashrayaa/Namaste-React) | `Notes.md:` [Harshitha Solai](https://github.com/Learn-React-With-Harshi)
+
 ## Theory:
 
 <!-- *******************************-->
@@ -208,6 +210,7 @@ const Example = (props) => {
 <blockquote>
 
 _Question_:
+
 ```
 My understanding is, when using `useState()`, we should declare the array as such:
 const [someBooleanValue, setSomeBooleanValue] = useState(false)
