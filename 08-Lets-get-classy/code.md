@@ -192,9 +192,9 @@
   ```
 
   > **Note**:
-  > use `this.state{ stateVariable: value}` to create state variable
-  > WE DO NOT MUTATE STATE DIRECTLY (Eg: `this.state = value`).
-  > Instead use `this.setState{stateVariable: value}` to update state variable
+  > - use `this.state{ stateVariable: value}` to create state variable
+  > - WE DO NOT MUTATE STATE DIRECTLY (Eg: `this.state = value`).
+  > - Instead use `this.setState{stateVariable: value}` to update state variable
 
 - Funtional Component
 
@@ -636,7 +636,7 @@ When `react` is rendering, then render happens in 2 PHASES: **`Render Phase`** &
   > - Now, when the response will be received for the API call then then it will be console logged.
   > - So, because of **async**, `Child: ComponentDidMount() - END` will be console logged at last.
 
-> - **Never Ever Compare `React Life Cucle Method` with `Fuctional Component Hooks**
+> - **Never Ever Compare `React Life Cycle Method` with `Fuctional Component Hooks**
 > - Eg: Don't compare `useEffect()` with `componentDidMount()` bcz useEffect() is NOT using componentDidMount() behind the seen.
 
 ## Comparing the way of writing code in Functional Based Component & Class Based Component.
