@@ -7,6 +7,7 @@ Today, it was all about understanding the creating class-based component, it's d
 - [Handwritten [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2008%20-%20Let's%20get%20Classy%20%20-%20HandWritten%20Notes.pdf)
 - [Digital [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2008%20-%20Let's%20get%20Classy%20-%20Digital%20Notes.pdf)
 - [Notes.md](https://github.com/deltanode/react-playground/blob/main/08-Lets-get-classy/notes.md)
+- [Code.md](https://github.com/deltanode/react-playground/blob/main/08-Lets-get-classy/code.md)
 
 > **Credit**: `Digital Notes:` [Arpan Kesh](https://www.linkedin.com/in/arpan-kesh-687740194/) | `Handwritten Notes:`[Ashraya KK](https://github.com/Ashrayaa/Namaste-React) | `Notes.md:` [Harshitha Solai](https://github.com/Learn-React-With-Harshi)
 
