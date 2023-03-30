@@ -1,4 +1,24 @@
-## `Class Based Components` Vs `Fuctionl Components`:
+### `Class Based Components` Vs `Fuctional Components`:
+
+## Topics:
+1. Basic Example
+2. Example: of using `props`
+3. Example of using `props` & `state`
+4. Best place for API calls
+5. `React Life Cycle`: Tell the order in which console will be printed? [Parent -> Child]
+6. `React Life Cycle`: Tell the order in which console will be printed? [Parent -> Child1 & Child2]
+7.  `React Life Cycle`
+8.  `React Life Cycle Diagram`
+9.  Example: Calling `Github API` & checking the order of execution as per `React Life Cycle`
+10.  Comparing the way of writing code in Functional Based Component & Class Based Component.
+     1.  Dependency Array case:
+     2.  Dependency Array (with 2 dependency):
+     3.  setTimeOut in `componentDidMount()` (i.e using `componentWillUnmount()`):
+     4.  setTimeOut in `useEffect()` (i.e using `return` in useEffect()):
+
+<hr>
+<br>
+
 
 ### 1. Basic Example:
 
