@@ -2,6 +2,17 @@
 
 Today, it was all about understanding the creating class-based component, it's different lifecycle methods, whats happening under the hood. It was an amazing session as we can easily grasp the concept since we already know how component are rendered in react using functional components. We even discussed about various possible interview questions.
 
+### Topics Coverd:-
+
+- Create `Class Based Component`.
+- Pass `props` from Parent to child in Class Based Component.
+- Create a `state variable` inside child in Class Based Component.
+- `Lifecycle method` in React.
+- Play with the console logs to `find out the correct order` of their execution.
+- Use `clearInterval` to fix the issue caused by the interval in class based component.
+- Use `clearInterval` to fix the issue caused by the interval in useEffect() (i.e using return in useEffect()).
+
+
 ## Notes:
 
 - [Handwritten [PDF]](https://github.com/deltanode/react-playground/blob/main/00-React-Notes/Chapter%2008%20-%20Let's%20get%20Classy%20%20-%20HandWritten%20Notes.pdf)
