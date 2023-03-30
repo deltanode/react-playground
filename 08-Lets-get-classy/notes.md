@@ -13,12 +13,52 @@
 - Why class-based components now ? 
   - It's asked in interviews & already lot of old projects are still using it.
 
-- Recap to routing & `Nesting Routes`: 
+- **`Nesting Routes`** [children inside children]: 
   ```
   localhost:1234/                  // parent
   localhost:1234/about             // children
   localhost:1234/about/profile     // children inside children
   ```
+  
+  ```
+  const appConfig = createBrowserRouter([
+    {
+      path: "/",
+      element: <AppLayout />,     // Parent
+      errorElement: <Error />,
+      children: [                 // Children
+        {
+          path: "/",
+          element: <Home />
+        },
+        {
+          path: "/about",
+          element: <About />,    
+          children: [            // Children inside children
+            {
+              path: "profile",             // Note: we are not using "/profile"
+              element: <ProfileClassComponent1 />
+            },
+            {
+              path: "profile2",            // Note: we are not using "/profile"
+              element: <ProfileFunctionalComponent1 />
+            }
+          ]
+        },
+        {
+          path: "/contact",
+          element: <Contact />
+        },
+        {
+          path: "/about-class",
+          element: <AboutClassComponent />
+        }
+      ]
+    }
+  ])
+  ```
+  
+  
   - Read about all recommended routers.
   - `Profile.js` component inside `About.js` page (i.e children of children)
   - for children of children path is just `"profile"` not `"/profile"`
