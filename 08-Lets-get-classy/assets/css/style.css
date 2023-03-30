@@ -81,7 +81,8 @@ a {
 /* Footer */
 .footer {
   box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
+  padding: 0.75rem;
+  margin-top: 3rem;
 }
 
 .footer__copyright {

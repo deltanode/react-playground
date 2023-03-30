@@ -7,6 +7,9 @@ import About from "./components/About"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import Error from "./components/Error"
+import ProfileClassComponent1 from "./components/ProfileClassComponent1"
+import ProfileFunctionalComponent1 from "./components/ProfileFunctionComponent1"
+import AboutClassComponent from "./components/AboutClassComponent"
 
 const AppLayout = () => {
   return (
@@ -31,11 +34,25 @@ const appConfig = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About />
+        element: <About />,
+        children: [
+          {
+            path: "profile", // Note: we are not using "/profile"
+            element: <ProfileClassComponent1 />
+          },
+          {
+            path: "profile2", // Note: we are not using "/profile"
+            element: <ProfileFunctionalComponent1 />
+          }
+        ]
       },
       {
         path: "/contact",
         element: <Contact />
+      },
+      {
+        path: "/about-class",
+        element: <AboutClassComponent />
       }
     ]
   }

@@ -7,7 +7,7 @@ const Header = () => {
   const [isLoggedin, setIsLoggedin] = useState(false)
 
   useEffect(() => {
-    console.log("I am useEffect [inside <Header/>]")
+    // console.log("I am useEffect [inside <Header/>]")
   }, [isLoggedin])
   return (
     <section className="header">
