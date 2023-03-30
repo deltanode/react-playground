@@ -1,24 +1,24 @@
-### `Class Based Components` Vs `Fuctional Components`:
+# `Class Based Components` Vs `Fuctional Components`:
 
 ## Topics:
+
 1. Basic Example
 2. Example: of using `props`
 3. Example of using `props` & `state`
 4. Best place for API calls
 5. `React Life Cycle`: Tell the order in which console will be printed? [Parent -> Child]
 6. `React Life Cycle`: Tell the order in which console will be printed? [Parent -> Child1 & Child2]
-7.  `React Life Cycle`
-8.  `React Life Cycle Diagram`
-9.  Example: Calling `Github API` & checking the order of execution as per `React Life Cycle`
-10.  Comparing the way of writing code in Functional Based Component & Class Based Component.
-     1.  Dependency Array case:
-     2.  Dependency Array (with 2 dependency):
-     3.  setTimeOut in `componentDidMount()` (i.e using `componentWillUnmount()`):
-     4.  setTimeOut in `useEffect()` (i.e using `return` in useEffect()):
+7. `React Life Cycle`
+8. `React Life Cycle Diagram`
+9. Example: Calling `Github API` & checking the order of execution as per `React Life Cycle`
+10. Comparing the way of writing code in Functional Based Component & Class Based Component.
+    1. Dependency Array case:
+    2. Dependency Array (with 2 dependency):
+    3. setTimeOut in `componentDidMount()` (i.e using `componentWillUnmount()`):
+    4. setTimeOut in `useEffect()` (i.e using `return` in useEffect()):
 
 <hr>
 <br>
-
 
 ### 1. Basic Example:
 
@@ -90,23 +90,69 @@
 - Class Based Component
 
   ```
+  import React from "react"
 
+  class ProfileClassComponent1 extends React.Component {
+    render() {
+      console.log("Inside Profile Class Component")
+      return (
+        <div>
+          <h3>Profile: Class Component</h3>
+          <p>NAME: {this.props.name}</p>
+          <p>ADDRESS: {this.props.address}</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      )
+    }
+  }
+
+  export default ProfileClassComponent1
   ```
 
   > **Note**:
   >
-  > -
+  > - `this.props` is used to access the `props` in class based components.
+  > - Note, we have not used `constructer` & we are still using `this.props`
 
 - Funtional Component
 
   ```
+  const ProfileFunctionalComponent1 = props => {
+    return (
+      <div>
+        <hr />
+        <h3>Profile: Functional Component</h3>
+        <p>NAME: {props.name}</p>
+        <p>ADDRESS: {props.address}</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <hr />
+      </div>
+    )
+  }
+
+  export default ProfileFunctionalComponent1
 
   ```
 
 - Using above components:
 
   ```
+  import React from "react"
+  import ProfileFunctionalComponent1 from "./ProfileFunctionComponent1"
+  import ProfileClassComponent1 from "./ProfileClassComponent1"
 
+  const About = () => {
+    return (
+      <div className="flex-container">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, adipisci?</p>
+        <ProfileFunctionalComponent1 name="Ram" address="India" />
+        <ProfileClassComponent1 name="Ram" address="India" />
+      </div>
+    )
+  }
+
+  export default About
   ```
 
 ### 3. Example of using `props` & `state`
