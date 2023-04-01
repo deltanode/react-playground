@@ -1,63 +1,69 @@
-### `Chapter - 09 Optimizing our app`
+### `Chapter - 09 Optimizing our app` [Advanced concepts]
 
-We use hooks everyday in our code in functional component
+- We use `hooks` everyday in our code in functional component:
+- Basic hooks: `useState()` and `useEffect()`
 
-Basic hooks -> useState() and useEffect()
+## Custom Hooks
 
-Advanced concepts today -> Custom Hooks
+- Why ? How ? When ?
+- Why ?
 
-Why ? How ? When ?
+  - Readability,
+  - Resuability,
+  - maintainability / modularity / sepration of concern
+  - testability
 
-Why ? Readability, Resuability, SoC and maintainability
+- Why we use functions ?
 
-Why we use functions ? to perform some task that can be reused
+  - To perform some task that can be reused.
 
-there should be a common where we can keep our utility functions and use in our code
+- There should be something common, where we can keep our utility functions and use in our code
+  - **`utils folder`**: reusable functions could be placed here
 
-utils folder -> reusable functions could be placed
+#### Creating Custom Hooks
 
-This makes our code `testable`
+- `RestaurantMenu.js` Component is doing two things : `fetching data` & `displaying data`
+- Now, we simply want the component tp do only one job : display data. So, we are moving fetching logic to `custom hook`
 
-### Custom Hooks
+- Whenever creating a custom hook
 
-RestaurantMenu Component is doing 2 things : fetching data & displaying data
+  - create in a new file .
+  - create hook name with `use` word. [This is a react way of doing things. Eg: useState()]
 
-So simply to do only one job : dispay data and moving fetching logic to custom hook
+- Why **export** `default` for custom hook
 
-Whenever creating a custom hook -> create in a new file -> use keyword before hookname
+  - Since there is only one separate hook for each hook function.
 
-component name -> captilise first letter
-function (custom hook) -> camelCase
+- Why `named` **export** for config file
 
-why export default for custom hook -> since there is one separate hook js for each hook function
-why named export for config file -> many functions and variables
+  - As, there are many functions and variables in config.js
 
-update state using custom hook
+- Update state using custom hook
 
-Inside custom hook => state & useEffect and async API call
+  - Inside custom hook => state & useEffect and async API call
 
-Custom hook for checking internet connection : to use only once
+- **Create Custom hook** for `checking internet connection` : to use only once
 
-How to fake offline -> network tab -> offline
+  - How to fake offline -> network tab -> offline
+  - Cleanup `eventListener` while moving out of that component.
 
-Cleanup eventListener while moving out of that component
+- Assigment :
+  - creat custom hook for `Local Storage`. [Hint: Get and Set local variables]
 
-Assigment :
+## Code Splittling
 
-Local Storage : Get and Set local variables
+- Code Splittling
 
-Code Splittling
-Dynamic bundling
-Lazy loading
-Chunking
-On Demand loading
+  - also known as Dynamic bundling
+  - also known as Lazy loading
+  - also known as Chunking
+  - also known as On Demand loading
+  - also known as On Logical bundles
 
-Logical bundles of our app
+- Import `Instamart.js` using **`lazy load`**
 
-Import Instamart -> lazy load
-This is a promise
-Initially, on demand loaded components, will not be laoded
+  - This is a promise
+  - Initially, on demand loaded components, will not be laoded
+  - React suspends the loading using Suspense
 
-React suspends the loading using Suspense
-
-Don't lazy load inside component -> it will reload during everytime it re-renders
+- **DISCLAMER**: Don't lazy load inside component, As, it will reload everytime during re-renders.
