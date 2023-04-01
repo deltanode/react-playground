@@ -24,6 +24,11 @@ const NavMenu = () => {
             LOGIN-PAGE
           </Link>
         </li>
+        <li className="nav__item">
+          <Link to="/instamart" className="nav__link green">
+            InstaMart
+          </Link>
+        </li>
       </ul>
     </div>
   )

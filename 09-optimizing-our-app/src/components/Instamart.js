@@ -2,9 +2,9 @@ import React from "react"
 
 const Instamart = () => {
   return (
-    <div>
-      <h1>Instamart</h1>
-      <h2>100s of componnets inside it.</h2>
+    <div className="flex-container">
+      <h1 className="warning">Instamart</h1>
+      <h3>100's of components inside it.</h3>
     </div>
   )
 }
