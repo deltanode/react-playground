@@ -3,6 +3,7 @@ import Shimmer from "./Shimmer"
 import { SWIGGY_PUBLIC_API } from "../Config"
 import RestaurantCard from "./RestaurantCard"
 import { filterRestaurant } from "../utils/helper"
+import useOnline from "../utils/useOnline"
 
 const Home = () => {
   // console.log("---Home---")
@@ -25,6 +26,12 @@ const Home = () => {
     setAllRestaurant(restaurant)
     setFilteredRestaurant(restaurant)
   }
+
+  const isOnline = useOnline()
+  if (!isOnline) {
+    return <h3 className="flex-container warning">**You are Offline. Check Your internet connection</h3>
+  }
+
   return (
     <section className="section">
       <main className="home flex-container">

@@ -1,37 +1,14 @@
 import React, { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import { SWIGGY_RESTAURANT_DETAILS_API } from "../Config"
 import Shimmer from "./Shimmer"
+import useRestaurantMenu from "../utils/useRestaurantMenu"
 
 const RestaurantMenu = () => {
   const param = useParams()
   const { id } = param
-  // ---useState ---
-  const [restaurant, setRestaurant] = useState([])
-  const [menu, setMenu] = useState([])
 
-  // ---useEffect---
-  useEffect(() => {
-    console.log("I am useEffect() inside <RestaurantMenu />")
-    getRestaurantMenu()
-  }, [])
+  const [restaurant, menu] = useRestaurantMenu(id)
 
-  async function getRestaurantMenu() {
-    const data = await fetch(SWIGGY_RESTAURANT_DETAILS_API + id)
-    const json = await data?.json()
-
-    const restaurantData = json?.data?.cards[0].card.card.info
-    // console.log(restaurantData)
-    setRestaurant(restaurantData)
-
-    const menuData = json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card?.itemCards
-    // console.log(menuData)
-    setMenu(menuData)
-  }
-
-  // menu.map(menuItem => {
-  //   console.log(menuItem.card.info.name)
-  // })
   return (
     <div className="menu flex-container">
       <div className="menu__restaurant">
