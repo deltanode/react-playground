@@ -28,6 +28,10 @@ a {
   margin-right: auto;
 }
 
+.green {
+  color: rgb(7, 146, 107);
+}
+
 /* Header */
 .header {
   width: 100%;
