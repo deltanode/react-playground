@@ -2,6 +2,12 @@
 
 Today, it was all about UI Layer of our app. The look and feel of the app attracts the user. Various ways of writing css (styling) is discussed in this chapter. Recreated the whole app using Tailwind CSS.
 
+### Topics Covered:
+
+- Explored all the ways of writing css in React.
+- Configured tailwind.
+- Re-built our food-order-app using tailwind css.
+
 ## Notes:
 
 - [Notes.md](https://github.com/deltanode/react-playground/blob/main/10-what-is-seen-is-sold/notes.md)
