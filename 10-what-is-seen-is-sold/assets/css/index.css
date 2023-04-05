@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply bg-orange-300 text-white ml-4 p-1 rounded-md;
+}
+
+.btn-hover {
+  @apply hover:bg-orange-700 duration-300;
+}
+
+.nav-link {
+  @apply pl-4 text-gray-800;
+}
+
+.nav-link-hover {
+  @apply hover:text-orange-400;
+}

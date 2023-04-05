@@ -1,0 +1,23 @@
+{
+  "name": "10-what-is-seen-is-sold",
+  "version": "1.0.0",
+  "description": "Today, it was all about UI Layer of our app. The look and feel of the app attracts the user. Various ways of writing css (styling) is discussed in this chapter. Recreated the whole app using Tailwind CSS.",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "postcss": "^8.4.21",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.3.1"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0"
+  }
+}

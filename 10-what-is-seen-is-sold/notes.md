@@ -50,7 +50,7 @@
 - less bundle size (minimal css) only includes the css classes that we have used
 - Flexible UI (Customizable)
 
-#### Seting up tailwimd css in our project: (refer)[https://tailwindcss.com/docs/installation/framework-guides]
+#### Seting up tailwimd css in our project: refer [Tailwind Docs](https://tailwindcss.com/docs/installation/framework-guides)
 
 1. Installing `tailwind` & `postcss` using npm [for parcel]
 
@@ -100,7 +100,8 @@
      ```
 
 - Add a plugin/extension `Tailwind CSS IntelliSense` in VScode.
-  - NOTE: Sometime this extension is showing suggetion. In that case `press ctrl + spacebar`.
+
+> **NOTE**: Sometime `Tailwind CSS IntelliSense` extension doesn't show suggetions. In that case `press ctrl + spacebar` before typing any class.
 
 ## Pros & Cons of tailwind
 
@@ -117,6 +118,7 @@
 - Cons:
   - Initial learning curve: every new developer that will join our team will take some time understand & learn.
   - Too much class. So, readability is compromised a little.
-  -
 
-> **Note:**: Because of `JSX` & `tailwind` we don't have to move out of our `.js` file.
+> **Note**: Because of `JSX` & `tailwind` we don't have to move out of our `.js` file.
+
+- Tailwind Cheatsheet: [Cheatsheet 1](https://nerdcave.com/tailwind-cheat-sheet) | [Cheatsheet 2](https://tailwindcomponents.com/cheatsheet/)
