@@ -11,6 +11,7 @@
  *  */
 
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 const Section = props => {
   const [isVisible, setIsVisible] = useState(false)
@@ -38,6 +39,20 @@ const InstaMart = () => {
     <div className="w-[1024px] mx-auto my-4">
       <h2 className="text-xl font-semibold py-2">Insta Mart </h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo fugit sit numquam neque et voluptates animi dolorem veritatis ducimus. Commodi. </p>
+      <p className="my-4">
+        Go to{" "}
+        <Link to="/instamart" className="text-red-500 underline">
+          InstaMart
+        </Link>
+        {"   |   "}
+        <Link to="/instamart2" className="text-red-500 underline">
+          InstaMart2
+        </Link>
+        {"   |   "}
+        <Link to="/instamart3" className="text-red-500 underline">
+          InstaMart3
+        </Link>
+      </p>
 
       <Section title="About Instamart" description={description} />
       <Section title="Team Instamart" description={description} />

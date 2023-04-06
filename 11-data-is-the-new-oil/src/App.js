@@ -13,6 +13,8 @@ import LoginForm from "./components/LoginForm"
 import RestaurantDetail from "./components/RestaurantDetail"
 import Shimmer from "./components/Shimmer"
 const InstaMart = lazy(() => import("./components/InstaMart"))
+const InstaMart2 = lazy(() => import("./components/InstaMart2"))
+const InstaMart3 = lazy(() => import("./components/InstaMart3"))
 
 const AppLayout = () => {
   return (
@@ -69,6 +71,22 @@ const appConfig = createBrowserRouter([
         element: (
           <Suspense fallback={<Shimmer />}>
             <InstaMart />
+          </Suspense>
+        )
+      },
+      {
+        path: "/instamart2",
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <InstaMart2 />
+          </Suspense>
+        )
+      },
+      {
+        path: "/instamart3",
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <InstaMart3 />
           </Suspense>
         )
       }
