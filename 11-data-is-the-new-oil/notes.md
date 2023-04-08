@@ -25,9 +25,8 @@
 5. **State Lifting** (Example of Accrodian & Closing Accordian)
 
 6. **React Developer tool** [chrome extension]: For Debugging data layer:
-
-   - Component (in browser console)
-   - Profiler (in browser console)
+      - Component (in browser console)
+      - Profiler (in browser console)
 
 7. Data layer:
    - props
@@ -36,21 +35,19 @@
    - rendered by
    - source
 
-Data from child to parent ?
+- Data from child to parent ?
 
 9. **Context**: for storing a data that we can used throughout application
-
-   - why not global variable ?
-   - Because react will not be able to track and trigger reconciliation
-
-   - Create Context in `utils` folder
-   - Creating Context
-   - `createContext()`
-   - Using Context:
-   - `useContext` (hook)
-   - Context Consumer: (using context in class based component)
-   - `<<ContextName.Consumer>`
-   - **Context Provider**
-   - `<ContextName.Provider value={}>` (Modiifing)
-   - To "Display Name" of context in brower console during debugging in React Developer extenion Tools use:
-   - `ContextName.displayname = "Name of Context"`
+      - why not global variable ?
+         - Because react will not be able to track and trigger reconciliation
+      - Create Context in `utils` folder
+      - Creating Context
+         - `createContext()`
+      - Using Context:
+         - `useContext` (hook)
+      - Context Consumer: (using context in class based component)
+         - `<<ContextName.Consumer>`
+      - **Context Provider**
+         - `<ContextName.Provider value={}>` (Modifing/Overriding)
+      - To "Display Name" of context in brower console during debugging in React Developer extenion Tools use:
+         - `ContextName.displayname = "Name of Context"`
