@@ -1,7 +1,11 @@
 import NavElement from "./NavElement"
 import { Link } from "react-router-dom"
+import { useContext } from "react"
+import UserContext from "../utils/UserContext"
 
 const NavMenu = () => {
+  /* accessing Context using useContext() hook */
+  const { user } = useContext(UserContext)
   return (
     <ul className="flex items-center">
       <NavElement href="/">Home</NavElement>
@@ -20,6 +24,7 @@ const NavMenu = () => {
         </Link>
       </li> */}
       <button className="btn btn-hover">Login</button>
+      <span className="pl-2 text-green-500">{"Hi, " + user.name}</span>
     </ul>
   )
 }

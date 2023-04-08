@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react"
+import React, { lazy, Suspense, useEffect, useState } from "react"
 import ReactDOM from "react-dom/client"
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom"
 import Header from "./components/Header"
@@ -15,13 +15,39 @@ import Shimmer from "./components/Shimmer"
 const InstaMart = lazy(() => import("./components/InstaMart"))
 const InstaMart2 = lazy(() => import("./components/InstaMart2"))
 const InstaMart3 = lazy(() => import("./components/InstaMart3"))
+import UserContext from "./utils/UserContext"
 
 const AppLayout = () => {
+  const [user, setUser] = useState({
+    name: "sample name",
+    email: "sample@email.id"
+  })
+
+  useEffect(() => {
+    /* suppose we are making a API call to fetch data */
+    // code for API call
+    const data = {
+      name: "Ram Gopal",
+      email: "ram@gopal.com"
+    }
+    /* Now, after receiving data we are setting the user */
+    setUser(data)
+  }, [])
+
   return (
     <>
-      <Header />
-      <Outlet />
-      <Footer />
+      {/* Example of Props Driling */}
+      {/* <Header {...user} /> */}
+      {/* Example of Props Driling when using <Outlet />*/}
+      {/* <Outlet context={user} /> */}
+
+      <UserContext.Provider value={{ user: user, setUser: setUser }}>
+        <Header />
+        {/* <UserContext.Provider value={{ user: user }}> */}
+        <Outlet />
+        {/* </UserContext.Provider> */}
+        <Footer />
+      </UserContext.Provider>
     </>
   )
 }

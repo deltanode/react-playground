@@ -5,8 +5,22 @@ import { SWIGGY_PUBLIC_API } from "../config"
 import { filterRestaurant } from "../utils/helper"
 import Shimmer from "./Shimmer"
 import InternetErrorScreen from "./InternetErrorScreen"
+// import { useOutletContext } from "react-router-dom"
+import { useContext } from "react"
+import UserContext from "../utils/UserContext"
 
-const Home = () => {
+const Home = props => {
+  /* Note: props will not work as Home.js is rendered using <Outlet/> */
+  // console.log("home(props): ", props)
+
+  /* Using useOutletContext hook */
+  // const user = useOutletContext()
+  // console.log("home(useOutletContext): ", user)
+
+  /* Example of using Context */
+  // const { user } = useContext(UserContext)
+  const { user, setUser } = useContext(UserContext)
+
   const [restaurants, setRestaurents] = useState([])
   const [filteredRestaurants, setFilteredRestaurents] = useState([])
   const [searchTxt, setSearchText] = useState("")
@@ -70,6 +84,13 @@ const Home = () => {
               Search
             </button>
           </div>
+        </div>
+
+        {/* Practicing  & playing with Context: We will be updating UserContext from input */}
+        <div className="flex justify-center items-center my-6">
+          <label className="pr-2 text-blue-500">Modify/Override the "UserContext" : </label>
+          <input className="border-2 w-48 py-1 px-2" type="text" value={user.name} onChange={e => setUser({ ...user, name: e.target.value })} />
+          <input className="border-2 w-48 py-1 px-2" type="text" value={user.email} onChange={e => setUser({ ...user, email: e.target.value })} />
         </div>
 
         {/* ----Restaurants---- */}
