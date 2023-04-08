@@ -75,11 +75,11 @@ Today was about Data layer of the app. Consider data as if it's oil, use it wise
 		<a href="https://reactjs.org/docs/lifting-state-up.html" target="_blank">Lifting State Up</a>
 	</li>
 	<li>
-		<a href="https://stackoverflow.com/questions/63765196/pass-props-to-outlet-in-react-router-v6" target="_blank">Passing Props in < Outlet /></a>
-		<br>
-		<a href="https://reactrouter.com/en/6.4.4/hooks/use-outlet-context" target="_blank">UseOutletContext</a>
+		<a href="https://bitbucket.org/namastedev/namaste-react-live/commits/" target="_blank">Akshay Saini Code Link</a>
 	</li>
 	<li>
-		<a href="https://bitbucket.org/namastedev/namaste-react-live/commits/" target="_blank">Akshay Saini Code Link</a>
+		<a href="https://stackoverflow.com/questions/63765196/pass-props-to-outlet-in-react-router-v6" target="_blank">STACK OVERFLOW: Passing Props in < Outlet/>.</a>
+		| 
+		<a href="https://reactrouter.com/en/6.4.4/hooks/use-outlet-context" target="_blank">`useOutletContext` hook</a>
 	</li>
 </ul>
