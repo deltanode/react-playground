@@ -1,9 +1,19 @@
 import { CLOUDINARY_CDN_LINK } from "../config"
+import { useDispatch } from "react-redux"
+import { addItem } from "../utils/cartSlice"
 
 const RestaurantMenu = props => {
   // console.log(props)
   // console.log(props.info)
   // console.log(props.info.name)
+
+  const dispatch = useDispatch()
+
+  const handleAddItem = foodItem => {
+    // dispatch(addItem("grapes"))
+    dispatch(addItem(foodItem))
+  }
+
   return (
     <div className="border-b my-4 px-3 pt-3 pb-5 flex justify-between items-center">
       <div>
@@ -13,7 +23,10 @@ const RestaurantMenu = props => {
       </div>
       <div className="relative">
         <img className="w-28 rounded-md" src={CLOUDINARY_CDN_LINK + props?.info?.imageId} alt={props?.info?.name} />
-        <button className="px-4 py-1 rounded-md bg-white border hover:bg-orange-100 absolute z-10 bottom-[-5] left-[25%] shadow-md"> Add </button>
+        <button onClick={() => handleAddItem(props)} className="px-4 py-1 rounded-md bg-white border hover:bg-orange-100 absolute z-10 bottom-[-5] left-[25%] shadow-md">
+          {" "}
+          Add{" "}
+        </button>
       </div>
     </div>
   )

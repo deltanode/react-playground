@@ -16,6 +16,9 @@ const InstaMart = lazy(() => import("./components/InstaMart"))
 const InstaMart2 = lazy(() => import("./components/InstaMart2"))
 const InstaMart3 = lazy(() => import("./components/InstaMart3"))
 import UserContext from "./utils/UserContext"
+import { Provider } from "react-redux"
+import store from "./utils/store"
+import Cart from "./components/Cart"
 
 const AppLayout = () => {
   const [user, setUser] = useState({
@@ -35,7 +38,8 @@ const AppLayout = () => {
   }, [])
 
   return (
-    <>
+    // <>
+    <Provider store={store}>
       {/* Example of Props Driling */}
       {/* <Header {...user} /> */}
       {/* Example of Props Driling when using <Outlet />*/}
@@ -48,7 +52,8 @@ const AppLayout = () => {
         {/* </UserContext.Provider> */}
         <Footer />
       </UserContext.Provider>
-    </>
+    </Provider>
+    //</>
   )
 }
 
@@ -115,6 +120,10 @@ const appConfig = createBrowserRouter([
             <InstaMart3 />
           </Suspense>
         )
+      },
+      {
+        path: "/cart",
+        element: <Cart />
       }
     ]
   }

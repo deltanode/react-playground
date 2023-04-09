@@ -73,5 +73,5 @@ Today, it was all about handling data using external state management library Re
 	 </li>
 </ul>
 
-<p><img  width="600" height="400" src="./img/12.png"></p>
+<p><img  width="600" height="400" src="./assets/img/12.png"></p>
 </div>
