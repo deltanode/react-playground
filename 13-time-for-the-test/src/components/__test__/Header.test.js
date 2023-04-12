@@ -1,11 +1,12 @@
 /**
  * **** Unit Testing ****
- * Test Header Component:
- *  1. Load Header
- *  2. Test Cases for:
- *     - Check if LOGO is added
- *     - Check default status should be online
- *     - Cart should have 0 item on rendering header
+ *
+ * Testing Header Component:
+ *  Step1. Load HEADER component
+ *  Step2. Test Cases for:
+ *        - Check if LOGO is added
+ *        - Check default status should be online
+ *        - Cart should have 0 item on rendering header
  */
 
 import { render } from "@testing-library/react"
