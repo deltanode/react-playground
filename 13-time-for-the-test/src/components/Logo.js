@@ -6,7 +6,7 @@ const Logo = ({ name, email }) => {
   // console.log("Logo: ", name)
   return (
     <Link to="#">
-      <img className="w-20" src={LOGO_IMG} alt="LOGO Image" />
+      <img data-testid="logo" className="w-20" src={LOGO_IMG} alt="LOGO Image" />
       {/* {name + " " + email} */}
     </Link>
   )

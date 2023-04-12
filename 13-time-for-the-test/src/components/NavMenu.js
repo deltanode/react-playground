@@ -23,7 +23,10 @@ const NavMenu = () => {
       <NavElement href="/shimmer">Shimmer</NavElement>
 
       <NavElement href="/cart" style="text-red-600">
-        Cart <span className="p-1 bg-red-500 text-white rounded-md">{cartItems.length}</span>
+        Cart{" "}
+        <span data-testid="cart-items" className="p-1 bg-red-500 text-white rounded-md">
+          {cartItems.length}
+        </span>
       </NavElement>
 
       <NavElement href="/login-form" style="text-red-700 hover:text-red-300">
@@ -52,8 +55,11 @@ const NavMenu = () => {
       )}
 
       {/* Rendering statue of internet network connection using conditional rendering*/}
-      {isOnline ? <span className="pl-2 text-grey-500"> Internet: &#9989; | </span> : <span className="pl-2 text-grey-500"> Internet: &#10060; | </span>}
+      <span data-testid="online-status" className="pl-2 text-grey-500">
+        Internet: {isOnline ? <b>&#9989;</b> : <b>&#10060;</b>} |
+      </span>
 
+      {/* Displaying name using useContext*/}
       <span className="pl-2 text-green-500">{"Hi, " + user.name}</span>
     </ul>
   )
