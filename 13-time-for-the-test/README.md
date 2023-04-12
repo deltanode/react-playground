@@ -49,3 +49,7 @@ Today, it was all about testing the application. In this chapter, different type
 	<li>Write Integration Test case for search feature on the Homepage</li>
 	<li>Write Integration Test case for Add to Cart flow</li>
 </ul>
+
+## References:
+
+- [Akshay Saini - Bitbucket Repo Link](https://bitbucket.org/namastedev/namaste-react-live/src/master/)
