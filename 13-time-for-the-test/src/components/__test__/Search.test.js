@@ -17,7 +17,7 @@ import store from "../../utils/store"
 import { StaticRouter } from "react-router-dom/server"
 import { RESTAURANT_DATA } from "../../mocks/data"
 
-// Create mock fetch()
+// Create mock fetch() with jest.fn().
 global.fetch = jest.fn(() => {
   return Promise.resolve({
     json: () => {
