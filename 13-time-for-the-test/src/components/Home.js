@@ -39,18 +39,20 @@ const Home = props => {
     setFilteredRestaurents(restaurantData)
   }
 
+  // if (!restaurants) return null
+
   const isOnline = useOnline()
   // if (!isOnline) {
   //   return <InternetErrorScreen />
   // }
 
   // Early Return
-  if (restaurants.length === 0) {
+  if (restaurants?.length === 0) {
     return <Shimmer />
   }
 
   return (
-    <div className="">
+    <div>
       {/* Internet Error Screen */}
       {!isOnline && <InternetErrorScreen />}
 
@@ -59,6 +61,7 @@ const Home = props => {
         <div className="flex justify-center my-6">
           <div>
             <input
+              data-testid="search-input"
               className="border-2 w-96 py-1 px-2"
               type="text"
               placeholder="Search Restaurant ..."
@@ -68,6 +71,7 @@ const Home = props => {
               }}
             />
             <button
+              data-testid="search-btn"
               className="btn btn-hover"
               onClick={() => {
                 // console.log(searchTxt)
@@ -94,7 +98,7 @@ const Home = props => {
         </div>
 
         {/* ----Restaurants---- */}
-        <div className="flex flex-wrap m-2">
+        <div data-testid="res-list" className="flex flex-wrap m-2">
           {searchResult !== "" ? (
             <div className="w-[100%] text-center text-red-500 mt-4 mb-8">No Match Found</div>
           ) : (

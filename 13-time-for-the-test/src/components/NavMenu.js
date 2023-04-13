@@ -14,7 +14,7 @@ const NavMenu = () => {
 
   // Redux-Toolkit: Subscrbing to the component
   const cartItems = useSelector(store => store.cart.items)
-  console.log("NavMenu: ", cartItems)
+  // console.log("NavMenu: ", cartItems)
   return (
     <ul className="flex items-center">
       <NavElement href="/">Home</NavElement>
