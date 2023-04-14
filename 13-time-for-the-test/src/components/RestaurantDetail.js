@@ -20,7 +20,7 @@ const RestaurantDetail = () => {
         <p className="text-gray-700 text-sm">{restaurantInfo?.costForTwoMessage}</p>
       </div>
 
-      <div className="my-4 p-4">
+      <div data-testid="menu" className="my-4 p-4">
         <h2 className="text-gray-700 text-lg font-semibold">Restaurant Menu</h2>
         {restaurantMenu?.map(e => {
           // console.log(e?.card?.card?.title)
