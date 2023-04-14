@@ -80,7 +80,7 @@ test("Add menu to cart", async () => {
   // check the total cart items on button click
   await waitFor(() => expect(body.getByTestId("menu")))
   // fire click thrice to add 3 menu itemsw
-  const allAddBtn = body.getAllByTestId("add-btn")
+  const allAddBtn = body.getAllByTestId("add-btn") // Note: getAllByTestId() vs getByTestId()
   fireEvent.click(allAddBtn[0])
   fireEvent.click(allAddBtn[1])
   fireEvent.click(allAddBtn[2])
