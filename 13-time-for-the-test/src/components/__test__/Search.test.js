@@ -11,10 +11,11 @@
 
 import "@testing-library/jest-dom"
 import { render, waitFor, fireEvent } from "@testing-library/react"
-import Home from "../Home"
+import { StaticRouter } from "react-router-dom/server"
+import { act } from "react-dom/test-utils"
 import { Provider } from "react-redux"
 import store from "../../utils/store"
-import { StaticRouter } from "react-router-dom/server"
+import Home from "../Home"
 import { RESTAURANT_DATA } from "../../mocks/data"
 
 // Create mock fetch() with jest.fn().
@@ -26,15 +27,17 @@ global.fetch = jest.fn(() => {
   })
 })
 
-test("Shimmer should load on homepage", () => {
+test("Shimmer should load on homepage", async () => {
   /*  Load Home Component */
-  const home = render(
-    <StaticRouter>
-      <Provider store={store}>
-        <Home />
-      </Provider>
-    </StaticRouter>
-  )
+  const home = await act(() => {
+    render(
+      <StaticRouter>
+        <Provider store={store}>
+          <Home />
+        </Provider>
+      </StaticRouter>
+    )
+  })
   // console.log(home)
 
   /* Check if shimmer is loaded */
