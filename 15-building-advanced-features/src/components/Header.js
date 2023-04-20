@@ -1,12 +1,47 @@
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import { useDispatch } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { toggleSideBar } from "../utils/appSlice"
+import SearchContainer from "./SearchContainer"
+import { YOUTUBE_SEARCH_SUGGESTION_API } from "../constant"
+import { setSearchCache } from "../utils/searchCacheSlice"
 
 const Header = () => {
+  const [searchQuery, setSearchQuery] = useState("")
+  const [suggestion, setSuggestion] = useState([])
+  const [isSearchFocus, setSearchFocus] = useState("false")
+
+  // toggle sidebar
   const dispatch = useDispatch()
   function handleSideBar() {
     dispatch(toggleSideBar())
   }
+
+  const searchCache = useSelector(store => store.search.searchCache)
+
+  // API call for search suggestion
+  useEffect(() => {
+    /* call API, if search query is not in cache */
+    if (!searchCache[searchQuery]) {
+      /* debounding 140ms*/
+      const searchTimeout = setTimeout(() => getSearchSuggestion(), 140)
+      return () => {
+        clearTimeout(searchTimeout)
+      }
+    } else {
+      setSuggestion(searchCache[searchQuery])
+    }
+  }, [searchQuery])
+
+  async function getSearchSuggestion() {
+    const data = await fetch(YOUTUBE_SEARCH_SUGGESTION_API + searchQuery)
+    const json = await data.json()
+    setSuggestion(json[1])
+    // cache search result using redux store
+    dispatch(setSearchCache({ [searchQuery]: json[1] }))
+  }
+  // console.log("suggestion: ", suggestion)
+
   return (
     <header className="shadow-md p-2">
       <nav className="max-w-7xl mx-auto p-1 flex justify-between items-center ">
@@ -20,8 +55,9 @@ const Header = () => {
         </div>
 
         <div className="flex">
-          <input type="text" className="border-2 py-2 px-4 rounded-l-full w-[500px] focus:outline focus:outline-blue-500 focus:border focus:border-black " placeholder="Search" />
+          <input type="text" placeholder="Search" value={searchQuery} onFocus={() => setSearchFocus(true)} onBlur={() => setSearchFocus(false)} onChange={e => setSearchQuery(e.target.value)} className="border-2 py-2 px-6 rounded-l-full w-[500px] focus:outline focus:outline-blue-500 focus:border focus:border-black " />
           <button className="bg-slate-200 pl-2 pr-3 rounded-r-full text-gray-900">Search</button>
+          {isSearchFocus && (suggestion?.length ? <SearchContainer suggestionList={suggestion} /> : null)}
         </div>
 
         <div className="">
