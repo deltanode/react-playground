@@ -22,4 +22,13 @@ const VideoCard = videoInfo => {
   )
 }
 
+// Higher Order Component
+export const AdVideoCard = videoInfo => {
+  return (
+    <div className="border-2 border-red-400 p-1">
+      <VideoCard {...videoInfo} />
+    </div>
+  )
+}
+
 export default VideoCard
