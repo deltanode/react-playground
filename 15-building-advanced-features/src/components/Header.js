@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
 import { toggleSideBar } from "../utils/appSlice"
 import SearchContainer from "./SearchContainer"
-import { YOUTUBE_SEARCH_SUGGESTION_API } from "../constant"
+import { YOUTUBE_SEARCH_SUGGESTION_API } from "../utils/constant"
 import { setSearchCache } from "../utils/searchCacheSlice"
 
 const Header = () => {
@@ -19,17 +19,19 @@ const Header = () => {
 
   const searchCache = useSelector(store => store.search.searchCache)
 
-  // API call for search suggestion
   useEffect(() => {
-    /* call API, if search query is not in cache */
-    if (!searchCache[searchQuery]) {
-      /* debounding 140ms*/
-      const searchTimeout = setTimeout(() => getSearchSuggestion(), 140)
-      return () => {
-        clearTimeout(searchTimeout)
+    //  debounding 140ms
+    const timer = setTimeout(() => {
+      // first check data in cache
+      if (searchCache[searchQuery]) {
+        setSuggestion(searchCache[searchQuery])
+      } else {
+        // If data not found in cache, then call API
+        getSearchSuggestion()
       }
-    } else {
-      setSuggestion(searchCache[searchQuery])
+    }, 150)
+    return () => {
+      clearTimeout(timer)
     }
   }, [searchQuery])
 
@@ -37,10 +39,9 @@ const Header = () => {
     const data = await fetch(YOUTUBE_SEARCH_SUGGESTION_API + searchQuery)
     const json = await data.json()
     setSuggestion(json[1])
-    // cache search result using redux store
+    // Update Cache
     dispatch(setSearchCache({ [searchQuery]: json[1] }))
   }
-  // console.log("suggestion: ", suggestion)
 
   return (
     <header className="shadow-md p-2">
