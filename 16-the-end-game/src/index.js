@@ -6,6 +6,8 @@ import App from "./App"
 import Body from "./components/Body"
 import WatchPage from "./components/WatchPage"
 import MainContainer from "./components/MainContainer"
+import DemoUseMemo from "./components/DemoUseMemo"
+import DemoUseRef from "./components/DemoUseRef"
 
 const appConfig = createBrowserRouter([
   {
@@ -23,6 +25,15 @@ const appConfig = createBrowserRouter([
           {
             path: "/watch",
             element: <WatchPage />
+          },
+          {
+            path: "/demo",
+            element: (
+              <>
+                <DemoUseMemo />
+                <DemoUseRef />
+              </>
+            )
           }
         ]
       }

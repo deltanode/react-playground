@@ -1,5 +1,5 @@
 import React from "react"
-import Link from "./LinkTag"
+import LinkTag from "./LinkTag"
 
 const SideBar = () => {
   const sideBarData = {
@@ -9,12 +9,16 @@ const SideBar = () => {
   }
   return (
     <div className="col-span-1 p-2">
-      <Link name="home" style="bg-gray-300 text-black " />
+      <div className="border-b pb-2">
+        <LinkTag name="home" href="/" style="bg-gray-300 text-black " />
+        <LinkTag name="useMemo/useRef" href="/demo" />
+      </div>
+
       {Object.keys(sideBarData).map(key => {
         return (
           <div key={key} className="border-b py-2">
             {sideBarData[key].map(linkName => {
-              return <Link key={linkName} name={linkName} />
+              return <LinkTag key={linkName} name={linkName} href="/" />
             })}
           </div>
         )
