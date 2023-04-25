@@ -1,14 +1,24 @@
 # 16 - The End Game
 
-### Read about these topics and practice indepth slow coding all of the below:
+### Topics Coverd:-
 
-<ul>
-	<li>Web Sockets vs API Polling</li>
-	<li>Build YouTube Live Chat</li>
-	<li>useMemo </li>
-	<li>useCallback</li>
-	<li>useRef</li>
-</ul>
+While creating `youtube clone` covered:
+
+- Built YouTube `Live Chat` functionality.
+- Challengs faced:
+	-  `Data Layer`: How to get Live Data using `API Polling`?
+	-  `UI Layer`: Why is browser page `not freezing`?
+- `Web Socket` Vs `API Polling` (Long Polling)
+- Demo of `useMemo()`
+- Overview of `useCallback()`
+- Demo of `useRef()`
+
+### Quick Code Reference
+
+| Project | Tech Stack | Source Code |
+| --- | --- | --- |
+| Youtube Clone | React | <ul><li>- [x] [LiveChat.js](./src/components/LiveChat.js)</li><li>- [x] [ChatMessage.js](./src/components/ChatMessage.js)</li><li>- [x] [chatSlice.js](./src/utils/chatSlice.js)</li><li>- [x] [helper.js](./src/utils/helper.js)</li><li>- [x] [useMemo.js](./src/components/DemoUseMemo.js)</li><li>- [x] [useRef.js](./src/components/DemoUseRef.js)</li></ul> |
+
 
 ## References:
 
