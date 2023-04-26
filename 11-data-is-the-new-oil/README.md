@@ -33,6 +33,12 @@ Today was about Data layer of the app. Consider data as if it's oil, use it wise
 <summary>What is prop drilling?</summary><br>
 <blockquote>
 
+- `Prop drilling` is a technique where data is passed from one component through multiple components until it gets to the component where the data is needed.
+
+- Example:
+I have already implemented `props drilling` in our app InstaFood without knowing its actually name. So, I wanted to pass user info like name, email and isAuthenticated values that I get in landing page (`AppLayout`) component to `NavComponent` in `Header` where based on isAuthenticated value, display Login or Logout button.
+
+- Check App.js & Header.js to see how the props is passed from `AppLayout` to `NavComponent` of previous chapter to see the props drilling implementation. Because, in this chapter we will be modifying that with React Context. More about that in React context section below.
 </blockquote><br>
 </details>
 
@@ -41,6 +47,12 @@ Today was about Data layer of the app. Consider data as if it's oil, use it wise
 <summary>What is lifting the state up?</summary><br>
 <blockquote>
 
+- When we want to pass some props from child component to parent or its siblings, we can use `lifting up state` technique. It can be thought as if the control is handed over to the parent and let the child modify the data through the function that is passed to child as props. There is a `single sourace of truth` maintained by the parent. 
+
+- Example :
+  1. **Child -> Parent**  : I have implemented this in my app for passing marked favourite restaurant card data to Body Component. Check code for implementation & coding-assignment.md for explanation.
+  2. **Child -> Siblings** : I have implemented this in my app for displaying FAQ sections under Help.js for letting child know about the state of its siblings by lifting up the state to the closest ancestor parent.
+Check code for implementation & coding-assignment.md for explanation.
 </blockquote><br>
 </details>
 
