@@ -118,6 +118,12 @@ Three steps of working with Conext :
 	<li>Try out Nested Contexts</li>
 </ul>
 
+## Quick Code Reference
+
+| Project | Tech Stack | Source Code |
+| --- | --- | --- |
+| Food Delivery App | React | <ul><li>- [x] [InstaMart.js](./src/components/InstaMart.js)</li><li>- [x] [InstaMart2.js](./src/components/InstaMart2.js)</li><li>- [x] [InstaMart3.js](./src/components/InstaMart3.js)</li><li>- [x] utils/[UserContext.js](./src/utils/UserContext.js)</li><li>- [x] [App.js](./src/App.js)</li><li>- [x] [NavMenu.js](./src/components/NavMenu.js)</li><li>- [x] [ProfileClass.js](./src/components/ProfileClass.js)</li></ul> |
+
 ## References:
 
 <ul>
