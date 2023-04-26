@@ -197,6 +197,12 @@ If you need to load data from a remote endpoint, then this is a good place to in
 - Create `interval` inside `componentDidMount`?
   - Use `clearInterval` to `fix the issue` caused by the `interval`
 
+## Quick Code Reference
+
+| Project | Tech Stack | Source Code |
+| --- | --- | --- |
+| Food Delivery App | React | <ul><li>- [x] [About.js](./src/components/About.js)</li><li>- [x] [ProfileFunctionComponent1.js](./src/components/ProfileFunctionComponent1.js)</li><li>- [x] [ProfileClassComponent1.js](./src/components/ProfileClassComponent1.js)</li><li>- [x] [ProfileFunctionComponent2.js](./src/components/ProfileFunctionComponent2.js)</li><li>- [x] [ProfileClassComponent2.js](./src/components/ProfileClassComponent2.js)</li><li>- [x] [ProfileFunctionComponent3.js](./src/components/ProfileFunctionComponent3.js)</li><li>- [x] [ProfileClassComponent3.js](./src/components/ProfileClassComponent3.js)</li><li>- [x] [ProfileFunctionComponent4.js](./src/components/ProfileFunctionComponent4.js)</li><li>- [x] [AboutClassComponent.js](./src/components/AboutClassComponent.js)</li><li>- [x] [ProfileClassComponent4.js](./src/components/ProfileClassComponent4.js)</li><li>- [x] [ProfileClassComponent5.js](./src/components/ProfileClassComponent5.js)</li><li>- [x] [ProfileClassComponent6.js](./src/components/ProfileClassComponent6.js)</li><li>- [x] [ProfileClassComponent7.js](./src/components/ProfileClassComponent7.js)</li><li>- [x] [ProfileClassComponent8.js](./src/components/ProfileClassComponent8.js)</li></ul> |
+
 ## References:
 
 - [React Life Cycle Method Diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
