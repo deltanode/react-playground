@@ -111,6 +111,13 @@ While Creating `food ordering app` covered:
 - Try out `lazy and suspense`
 - Make your `code clean`.
 
+## Quick Code Reference
+
+| Project | Tech Stack | Source Code |
+| --- | --- | --- |
+| Food Delivery App | React | <ul><li>- [x] utils/[useRestaurantMenu.js](./src/utils/useRestaurantMenu.js)</li><li>- [x] [RestaurantMenu.js](./src/components/RestaurantMenu.js)</li><li>- [x] utils/[helper.js](./src/utils/helper.js)</li><li>- [x] utils/[useOnline.js](./src/utils/useOnline.js)</li><li>- [x] [Home.js](./src/components/Home.js)</li><li>- [x] [App.js](./src/App.js)</li></ul> |
+
+
 ## References:
 
 - [React Custom Hooks](https://reactjs.org/docs/hooks-custom.html)
