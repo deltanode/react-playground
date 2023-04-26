@@ -128,6 +128,12 @@ In `Client-side routing or rendering (CSR)`, during the first load, the webapp i
 - Create a `Restaurant Page` with `dynamic restaurant ID`.
 - (Extra) - Create a `login Page` using `Formik Library`.
 
+## Quick Code Reference
+
+| Project | Tech Stack | Source Code |
+| --- | --- | --- |
+| Food Delivery App | React | <ul><li>- [x] [package.json](./package.json)</li><li>- [x] [App.js](./src/App.js)</li><li>- [x] [Error.js](./src/components/Error.js)</li><li>- [x] [RestaurantMenu.js](./src/components/RestaurantMenu.js)</li><li>- [x] [Shimmer.js](./src/components/Shimmer.js)</li></ul> |
+
 ## References:
 
 - [Akshay Saini Code Link](https://bitbucket.org/namastedev/namaste-react-live/src/master/)
