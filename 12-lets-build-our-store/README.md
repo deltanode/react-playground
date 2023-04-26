@@ -2,6 +2,18 @@
 
 Today, it was all about handling data using external state management library Redux. We discussed the problems with other ways of data management like Props drilling and Context API. Importance of Redux, Redux Toolkit vs React-Redux and step by step configuration and implementation of React Redux were done in this chapter.
 
+While Creating `food ordering app` covered:
+
+- How Redux works? (i.e `Redux Toolkit Architecture`(RTK))
+- Build our  Store (using `configureStore()`)
+- Create Slice (using `createSlice()`)
+- Provided `redux store` to the application. (using `<Provider store={}/>`)
+- Subscribe the store (using `useSelector()`)
+  - **Don't** subscribe to whole store, **only** subscribe to portion of slice in store (to avoid re-render)
+- Dispatch an Action (using `useDispatch()`)
+- Browser extension for `Redux Dev Tools`
+- Read documentation for: `RTK Query`, `Middlewares`, `Thunks`
+
 ## Notes:
 
 - [Notes.md](./notes.md)
@@ -145,5 +157,16 @@ Finally, the code `exports` the `reducer` for the slice using the reducer proper
 	 </li>
 </ul>
 
+## Quick Code Reference
+
+| Project | Tech Stack | Source Code |
+| --- | --- | --- |
+| Food Delivery App | React | <ul><li>- [x] utils/[store.js](./src/utils/store.js)</li><li>- [x] utils/[cartSlice.js](./src/utils/cartSlice.js)</li><li>- [x] [App.js](./src/App.js)</li><li>- [x] [Header.js](./src/components/Header.js)</li><li>- [x] [RestaurantMenu.js](./src/components/RestaurantMenu.js)</li><li>- [x] [Cart.js](./src/components/Cart.js)</li></ul> |
+
+## Quick Recap
+
+When `we click on Add Button`, we `dispatch an action`, which `calls a reducer function`, which `updates the slice of the store` & for reading data, `we subscribe the store`. Then, `it automagically updates`. 
+
 <p><img  width="600" height="400" src="./assets/img/12.png"></p>
+
 </div>
