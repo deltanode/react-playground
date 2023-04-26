@@ -33,12 +33,17 @@ Today was about Data layer of the app. Consider data as if it's oil, use it wise
 <summary>What is prop drilling?</summary><br>
 <blockquote>
 
-- `Prop drilling` is a technique where data is passed from one component through multiple components until it gets to the component where the data is needed.
+- `Prop drilling` is the process of passing data from one component via several interconnected components to the component that needs it.
+- Prop drilling results in long and unclean code, and also there are greater possibilities for mistakes like renaming the props midway by mistake, refactoring some data's structure, props being forwarded more often than is necessary, using default props unfairly or using default props unfairly or insufficiently.
+- By enclosing your state and data in a context provider, the Context API essentially allows you to transmit your state and data to numerous components. Afterward, it uses its value attribute to send this state to the context provider.
 
-- Example:
-I have already implemented `props drilling` in our app InstaFood without knowing its actually name. So, I wanted to pass user info like name, email and isAuthenticated values that I get in landing page (`AppLayout`) component to `NavComponent` in `Header` where based on isAuthenticated value, display Login or Logout button.
+**More Details**
 
-- Check App.js & Header.js to see how the props is passed from `AppLayout` to `NavComponent` of previous chapter to see the props drilling implementation. Because, in this chapter we will be modifying that with React Context. More about that in React context section below.
+- Component composition is the process of putting together components like bricks to create a final product.
+- There are two kinds of component composition :
+  - container components and
+  - specialized components
+- For more details [refer](https://www.scaler.com/topics/react/prop-drilling-in-react/)
 </blockquote><br>
 </details>
 
@@ -53,6 +58,8 @@ I have already implemented `props drilling` in our app InstaFood without knowing
   1. **Child -> Parent**  : I have implemented this in my app for passing marked favourite restaurant card data to Body Component. Check code for implementation & coding-assignment.md for explanation.
   2. **Child -> Siblings** : I have implemented this in my app for displaying FAQ sections under Help.js for letting child know about the state of its siblings by lifting up the state to the closest ancestor parent.
 Check code for implementation & coding-assignment.md for explanation.
+
+- For more detail [refer](https://blog.prasanna.codes/lifting-state-up-with-reactjs-usestate-hook)
 </blockquote><br>
 </details>
 
@@ -61,6 +68,33 @@ Check code for implementation & coding-assignment.md for explanation.
 <summary>What is Context Provider and Context Consumer?</summary><br>
 <blockquote>
 
+`React Context API` provides a way to pass data through multiple nested levels of components without having to manually pass that data to each level. It is a way of global state management. 
+
+Three steps of working with Conext :
+1.  Create the Context: Create using `createContext()` & Export context from a file (in utils folder)
+2.  Provide Context: Wrap the required components with a `context provider`
+3.  Use the Context: Import `useContext` hook & the created context and create variable to store and use this context
+
+`Context Provider`
+- Every Context object comes with a Provider. 
+- Its a React component that allows consuming components to subscribe to context changes.
+- The Provider component accepts a value prop to be passed to consuming components that are descendants of this Provider. One Provider can be connected to many consumers. Providers can be nested to override values deeper within the tree.
+
+
+`Context Consumer`
+- Before `useContext` existed, there was an older way to read context : `Context.Consumer`
+  ```javascript
+   function Button() {
+    // 🟡 Legacy way (not recommended)
+   return (
+    <ThemeContext.Consumer>
+      {theme => (
+        <button className={theme} />
+      )}
+    </ThemeContext.Consumer>
+   );
+   }
+  ```
 </blockquote><br>
 </details>
 
@@ -69,6 +103,10 @@ Check code for implementation & coding-assignment.md for explanation.
 <summary>If you don’t pass a value to the provider does it take the default value?</summary><br>
 <blockquote>
 
+- No, default value is not passed as value to components. When we don't pass a value to the provider then React throws an error in that case. 
+- If we don't need to pass value then value={undefined} must be mentioned in provider.
+
+- The `defaultValue` argument is *only* used when a component does not have a matching Provider above it in the tree.
 </blockquote><br>
 </details>
 <!-- *******************************-->
