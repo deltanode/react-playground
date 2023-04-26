@@ -153,6 +153,13 @@ Below are the steps to use Tailwind CSS for React App in Parcel :
 	<li>Configure Tailwind and try to build your whole app using tailwind.</li>
 </ul>
 
+## Quick Code Reference
+
+| Project | Tech Stack | Source Code |
+| --- | --- | --- |
+| Food Delivery App | React | <ul><li>- [x] [package.json](./package.json)</li><li>- [x] [tailwind.config.js](./tailwind.config.js)</li><li>- [x] [.postcssrc](./.postcssrc)</li><li>- [x] [index.css](./assets/css/index.css)</li><li>- [x] [App.js](./src/App.js)</li><li>- [x] [Header.js](./src/components/Header.js)</li><li>- [x] [NavMenu.js](./src/components/NavMenu.js)</li><li>- [x] [RestaurantCard.js](./src/components/RestaurantCard.js)</li></ul> |
+
+
 ## References:
 
 <ul>
