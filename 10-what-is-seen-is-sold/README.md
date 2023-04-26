@@ -24,7 +24,7 @@ Today, it was all about UI Layer of our app. The look and feel of the app attrac
 3. `Inline - style attribute` - pass object - {{backgroundColor : "red"}}
 4. `Component Library` - MaterialUI, Bootstrap, Base Web UI, Ant design, chakra UI
 5. `styled-components` 
-6. `CSS Framework` - Tailwind 
+6. `CSS Framework` - **Tailwind**
 </blockquote><br>
 </details>
 
