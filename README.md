@@ -30,6 +30,13 @@ A playground to practice & learn react. This is where the magic happens!
 | 1. |Food Ordering App             |[ 🔗](https://github.com/deltanode/Food-Ordering-App)   |
 | 2. |Youtube Clone                 |[ 🔗](https://github.com/deltanode/Video-Streaming-App) |
 
+### More stuff
+
+| S.No | Topic <img width="250px"> | <img width="50px"> Link <img width="50px"> |
+| :---: | :--- | :---: |
+| 1. |CRUD [React + Firebase]           |[ 🔗](https://github.com/deltanode/crud-react-firebase) |
+| 2. |AUTH [React + Firebase]           |[ 🔗](https://github.com/deltanode/auth-react-firebase) |
+
 
 
 
