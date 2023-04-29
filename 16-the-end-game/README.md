@@ -17,7 +17,7 @@ While creating `youtube clone` covered:
 
 | Project | Tech Stack | Source Code |
 | --- | --- | --- |
-| Youtube Clone | React | <ul><li>- [x] [LiveChat.js](./src/components/LiveChat.js)</li><li>- [x] [ChatMessage.js](./src/components/ChatMessage.js)</li><li>- [x] [chatSlice.js](./src/utils/chatSlice.js)</li><li>- [x] [helper.js](./src/utils/helper.js)</li><li>- [x] [useMemo.js](./src/components/DemoUseMemo.js)</li><li>- [x] [useRef.js](./src/components/DemoUseRef.js)</li></ul> |
+| Youtube Clone | React | <ul><li>- [x] [LiveChat.js](./src/components/LiveChat.js)</li><li>- [x] [ChatMessage.js](./src/components/ChatMessage.js)</li><li>- [x] [chatSlice.js](./src/utils/chatSlice.js)</li><li>- [x] [helper.js](./src/utils/helper.js)</li><li>- [x] [useMemo.js](./src/components/DemoUseMemo.js)</li><li>- [x] [useRef.js](./src/components/DemoUseRef.js)</li><li>- [x] [.env](./.env)</li><li>- [x] [constant.js](./src/utils/constant.js)</li></ul> |
 
 
 ## References:
