@@ -13,7 +13,7 @@ A playground to practice & learn react. This is where the magic happens!
 | 4. |Coding in React            |`Reconciliation` `Virtual DOM` `config driven UI`  |[ 🔗](04-coding-in-react)            |
 | 5. |Let's get hooked           |`useState` `data binding` `name & default export`  |[ 🔗](05-lets-get-hooked)            |
 | 6. |Exploring the world        |`useEffect` `conditional rendereing` `shimmer`     |[ 🔗](06-exploring-the-world)        |
-| 7. |Finding the path           |`Routing` `create-router-dom`                      |[ 🔗](07-finding-the-path)           |
+| 7. |Finding the path           |`Routing` `create-router-dom` `Formik`             |[ 🔗](07-finding-the-path)           |
 | 8. |Let's get Classy           |`class components`                                 |[ 🔗](08-Lets-get-classy)            |
 | 9. |Optimizing our App         |`custom hooks` `lazy loading`                      |[ 🔗](09-optimizing-our-app)         |
 | 10.|What is seen is sold       |`tailwind css`                                     |[ 🔗](10-what-is-seen-is-sold)       |
