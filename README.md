@@ -36,8 +36,8 @@ A playground to practice & learn react. This is where the magic happens!
 
 | S.No | Topic <img width="200px"> | Tags | <img width="50px"> Link <img width="50px"> |
 | :---: | :--- | :--- | :---: |
-| 1. |CRUD [React + Firebase]    | `Firebase` `CRUD`                |[ 🔗](https://github.com/deltanode/crud-react-firebase) |
-| 2. |AUTH [React + Firebase]    | `AUTH using Firebase`            |[ 🔗](https://github.com/deltanode/auth-react-firebase) |
+| 1. |CRUD [React + Firebase]    | `vite` `Firebase` `CRUD` `env-cmd`             |[ 🔗](https://github.com/deltanode/crud-react-firebase) |
+| 2. |AUTH [React + Firebase]    | `AUTH using Firebase` `Protected Routes`       |[ 🔗](https://github.com/deltanode/auth-react-firebase) |
 
 
 
