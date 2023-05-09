@@ -39,6 +39,7 @@ A playground to practice & learn react. This is where the magic happens!
 | 1. |CRUD [React + Firebase]  | `vite` `Firebase` `CRUD` `env-cmd` `Firebase Hosting`  |[ 🔗](https://github.com/deltanode/crud-react-firebase) |
 | 2. |AUTH [React + Firebase]  | `AUTH using Firebase` `Protected Routes`               |[ 🔗](https://github.com/deltanode/auth-react-firebase) |
 | 3. |Modern UI/UX App         | `Responsive UI` `Best Code Practice` `Netlify Hosting` |[ 🔗](https://github.com/deltanode/modern-react-tailwind-app) |
+| 4. |Video Streaming App      | `Responsive UI` `Firebase Intergration`                |[ 🔗](https://github.com/deltanode/video-react-app) |
 
 
 
