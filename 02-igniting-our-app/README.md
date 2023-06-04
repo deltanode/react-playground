@@ -393,6 +393,41 @@ If the type attribute contains anyother value, then the code is treated as data 
 
 <!-- ************************** -->
 <details>
+<summary>What are the attributes of <script> tag and their meaning ?</summary><br>
+<blockquote>        
+
+When loading scripts using the <script> tag, you can use various attributes to control their behavior and interactions with the browser. Here are some common attributes and their meanings:
+
+✅ src:
+This attribute specifies the URL of the external script file to be loaded. For example: <script src="script.js"></script>. The src attribute is required for loading external scripts.
+
+✅ async:
+When the `async` attribute is present, it indicates that the script should be executed asynchronously. This allows the script to be downloaded and executed in the background while the HTML parsing and rendering continue. The execution order is not guaranteed.
+
+✅ defer:
+The `defer` attribute also allows scripts to be loaded asynchronously, but with the guarantee that they will be executed in the order they appear in the HTML document. Scripts with the defer attribute are executed after the HTML parsing is complete, but before the DOMContentLoaded event is triggered.
+
+✅ type:
+The `type` attribute specifies the MIME type of the script. Like - "module", "text/javascript". The default value is "text/javascript".
+
+✅ integrity:
+This attribute allows you to include a cryptographic hash that represents the integrity of the script file. It helps ensure that the script has not been tampered with during delivery. It is commonly used with Content Security Policy (CSP) to enhance security.
+
+✅ crossorigin:
+The `crossorigin` attribute is used when loading scripts from a different origin (domain). It allows the script to request cross-origin permissions, such as reading the response from a cross-origin server. The attribute can have values like "anonymous" or "use-credentials".
+
+✅ charset:
+The charset attribute specifies the character encoding used in the script file. It is rarely used in modern web development since UTF-8 encoding is widely supported by default.
+
+These attributes give you control over how scripts are loaded, executed, and interact with the browser environment. It's important to use them appropriately based on the requirements of your scripts and the desired behavior during the page loading process.
+
+ <img src="./screenshot/script_async_defer.png">        
+
+</blockquote><br>
+</details>        
+        
+<!-- ************************** -->
+<details>
 <summary>Why `node_module` has a another `package-lock.json`(Hidden Lockfiles) </summary><br>
 <blockquote>
 
