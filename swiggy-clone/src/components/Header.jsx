@@ -8,6 +8,8 @@ const Header = () => {
       <h1 className="font-bold text-[22px] text-orange-400">
         <Link to="/">SWIGGY</Link>
       </h1>
+
+      {/* web version */}
       <ul className="list-none hidden lg:flex gap-6">
         <li key="Search">Search </li>
         <li key="Offers">Offers </li>
@@ -16,6 +18,7 @@ const Header = () => {
         <li key="Cart">Cart </li>
       </ul>
 
+      {/* mobile version */}
       <div className="block lg:hidden relative">
         {isOpen ? (
           <button onClick={() => setIsOpen(prev => !prev)} className="bg-black p-2 text-white">

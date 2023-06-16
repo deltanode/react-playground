@@ -15,7 +15,8 @@ export function RestaurantContextProvider({ children }) {
   const [sortOptions, setSortOptions] = useState([])
   const [filterOptions, setFilterOptions] = useState([])
   const [configOptions, setConfigOptions] = useState([])
-  let [filterSearchValue, setFilterSearchValue] = useState([])
+  const [configOptions2, setConfigOptions2] = useState([])
+  const [filterSearchValue, setFilterSearchValue] = useState(new Set())
 
   useEffect(() => {
     const fetchData = async () => {
@@ -28,7 +29,8 @@ export function RestaurantContextProvider({ children }) {
         setTotalOpenRestaurants(apiData?.data?.cards[2]?.data?.data?.totalOpenRestaurants)
         setSortOptions(apiData?.data?.sorts)
         setFilterOptions(apiData?.data?.filters)
-        setConfigOptions(apiData?.data?.configs)
+        setConfigOptions(apiData?.data?.cards[0]?.data?.data?.cards)
+        setConfigOptions2(apiData?.data?.cards[1]?.data?.data?.cards)
         setIsLoading(false)
       } catch (err) {
         setServerError(err.message)
@@ -40,7 +42,7 @@ export function RestaurantContextProvider({ children }) {
 
   // console.log("RestaurantContext is running")
 
-  return <RestaurantContext.Provider value={{ filterSearchValue, setFilterSearchValue, restautants, displayRestautants, setDisplayRestaurants, totalOpenRestautants, sortOptions, filterOptions, configOptions, serverError, isLoading }}>{children}</RestaurantContext.Provider>
+  return <RestaurantContext.Provider value={{ filterSearchValue, setFilterSearchValue, restautants, displayRestautants, setDisplayRestaurants, totalOpenRestautants, sortOptions, filterOptions, configOptions, configOptions2, serverError, isLoading }}>{children}</RestaurantContext.Provider>
 }
 
 // use context

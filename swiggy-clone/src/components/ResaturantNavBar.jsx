@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import { useState } from "react"
 import { useRestaurantContext } from "../contexts/RestaurantContext"
 import { sortRestaurants } from "../utils/helper"
 import RestaurantFilter from "./RestaurantFilter"
@@ -7,6 +7,14 @@ const ResaturantNavBar = () => {
   const { restautants, setDisplayRestaurants, totalOpenRestautants, sortOptions } = useRestaurantContext()
   const [isSortOpen, setIsSortOpen] = useState(false)
   const [isFilterOpen, setIsFilterOpen] = useState(false)
+
+  const handleSort = e => {
+    let text = e?.target?.innerText
+    let sortedRestaurants = sortRestaurants(restautants, text)
+    // console.log("sortededRestaurants: ", sortedRestaurants)
+    setDisplayRestaurants(sortedRestaurants)
+    setIsSortOpen(prev => !prev)
+  }
 
   return (
     <div className="border-b flex justify-between items-center py-4 md:pd-6">
@@ -17,16 +25,7 @@ const ResaturantNavBar = () => {
         <ul className="list-none flex items-center gap-6">
           {sortOptions?.map(sortOption => {
             return (
-              <li
-                onClick={e => {
-                  let text = e?.target?.innerText
-                  let sortedRestaurants = sortRestaurants(restautants, text)
-                  // console.log("sortededRestaurants: ", sortedRestaurants)
-                  setDisplayRestaurants(sortedRestaurants)
-                }}
-                key={sortOption.key}
-                className="hover:text-orange-700"
-              >
+              <li onClick={handleSort} key={sortOption.key} className="hover:text-orange-700">
                 {sortOption.title}
               </li>
             )
@@ -41,30 +40,28 @@ const ResaturantNavBar = () => {
 
       {/* Mobile Version */}
       <div className="lg:hidden flex gap-2 md:gap-4">
+        {/* sort */}
         <div className="relative">
           <button onClick={() => setIsSortOpen(prev => !prev)} className="p-1.5 md:p-2 bg-slate-800 text-white">
             Sort
           </button>
-          <ul className={`${isSortOpen ? "block" : "hidden"} list-none absolute top-[130%] right-0 flex flex-col gap-2 shadow-lg p-2 bg-slate-600 text-white p-4`}>
-            <li key="11" className="whitespace-nowrap">
-              Relevance{" "}
-            </li>
-            <li key="12" className="whitespace-nowrap">
-              Delivery Time{" "}
-            </li>
-            <li key="13" className="whitespace-nowrap">
-              Rating{" "}
-            </li>
-            <li key="14" className="whitespace-nowrap">
-              Cost: Low To High{" "}
-            </li>
-            <li key="15" className="whitespace-nowrap">
-              Cost: High To Low{" "}
-            </li>
+          <ul className={`${isSortOpen ? "block" : "hidden"} list-none absolute z-10 top-[130%] right-0 flex flex-col gap-2 shadow-lg p-2 bg-slate-600 text-white p-4`}>
+            {sortOptions?.map(sortOption => {
+              return (
+                <li onClick={handleSort} key={sortOption.key} className="whitespace-nowrap">
+                  {sortOption.title}
+                </li>
+              )
+            })}
           </ul>
         </div>
-        <div>
-          <button className="p-1.5 md:p-2 bg-slate-800 text-white">Filter</button>
+        {/* filter */}
+        <div className="">
+          <button className="p-1.5 md:p-2 bg-slate-800 text-white" onClick={e => setIsFilterOpen(prev => !prev)}>
+            Filter
+          </button>
+          {/* {isFilterOpen && <div className="fixed z-10 top-0 left-0 w-full h-full bg-white/70  "></div>} */}
+          {isFilterOpen && <RestaurantFilter closeFilter={() => setIsFilterOpen(false)} />}
         </div>
       </div>
     </div>

@@ -1,13 +1,15 @@
 // funtion to filter restaurants
 export function filterRestaurants(restaurants, searchCuisines) {
-  // console.log("restaurants: ", restaurants)
-  // console.log("restaurants: ", restaurants[0]?.data?.cuisines?.toString())
-  // console.log("searchCuisines: ", searchCuisines[0])
   if (searchCuisines.length === 0) {
     return restaurants
   }
+
   const filteredRestaurants = restaurants.filter(restaurant => {
-    return restaurant?.data?.cuisines?.toString().toLowerCase().includes(searchCuisines[0]?.toLowerCase())
+    const cuisineFilterMatched = restaurant?.data?.cuisines.filter(cuisine => searchCuisines.includes(cuisine))
+    // console.log("1 restaurant.cuisines", restaurant?.data?.cuisines)
+    // console.log("2 searchCuisines: ", searchCuisines)
+    // console.log("3 cuisineFilterMatched: ", cuisineFilterMatched)
+    return cuisineFilterMatched.length > 0
   })
   return filteredRestaurants
 }
