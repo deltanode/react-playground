@@ -2,8 +2,10 @@ import React from "react"
 import ReactDOM from "react-dom/client"
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import App from "./App.jsx"
-import { Home, PageNotFound, Menu } from "./pages"
+import { Home, PageNotFound, Menu, Cart } from "./pages"
 import "./index.css"
+import { Provider } from "react-redux"
+import store from "./store/store"
 
 const appConfig = createBrowserRouter([
   {
@@ -18,6 +20,10 @@ const appConfig = createBrowserRouter([
       {
         path: "restaurant/:id",
         element: <Menu />
+      },
+      {
+        path: "cart",
+        element: <Cart />
       }
     ]
   }
@@ -25,6 +31,8 @@ const appConfig = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   // <React.StrictMode>
-  <RouterProvider router={appConfig} />
+  <Provider store={store}>
+    <RouterProvider router={appConfig} />
+  </Provider>
   // </React.StrictMode>,
 )

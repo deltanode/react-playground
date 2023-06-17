@@ -11,7 +11,6 @@ const MenuDetails = ({ menu, isSubheading }) => {
     setIsAccordionOpen(prev => !prev)
   }
 
-  console.log(menu)
   if (menu === undefined) {
     return <div>... loading</div>
   }

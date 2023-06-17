@@ -1,8 +1,12 @@
 import { useState } from "react"
+import { useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
+
+  const cartItems = useSelector(store => store.cart.items)
+  // console.log(cartItems.length)
   return (
     <nav className="flex justify-between items-center py-3 lg:py-6">
       <h1 className="font-bold text-[22px] text-orange-400">
@@ -15,7 +19,9 @@ const Header = () => {
         <li key="Offers">Offers </li>
         <li key="Help">Help </li>
         <li key="Sign In">Sign In </li>
-        <li key="Cart">Cart </li>
+        <li key="Cart">
+          <Link to="cart">Cart {cartItems.length > 0 && <span className="bg-orange-400 text-white p-0.5 rounded-sm">{cartItems.length}</span>}</Link>
+        </li>
       </ul>
 
       {/* mobile version */}
@@ -35,7 +41,9 @@ const Header = () => {
             <li key="Offers">Offers </li>
             <li key="Help">Help </li>
             <li key="Sign In">Sign In </li>
-            <li key="Cart">Cart </li>
+            <li key="Cart">
+              <Link to="cart">Cart {cartItems > 0 && <span className="bg-orange-400 text-white p-0.5 rounded-sm">{cartItems.length}</span>}</Link>
+            </li>
           </ul>
         </div>
       </div>
