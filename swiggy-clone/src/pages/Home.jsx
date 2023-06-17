@@ -5,7 +5,7 @@ import style from "../style"
 
 const Home = () => {
   const { restautants, displayRestautants, setDisplayRestaurants, serverError, filterSearchValue, setFilterSearchValue } = useRestaurantContext()
-
+  // console.log(displayRestautants)
   if (!displayRestautants) {
     return <ShimmerHomePage />
   }

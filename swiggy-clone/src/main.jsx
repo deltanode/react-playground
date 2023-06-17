@@ -1,15 +1,25 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
-import App from "./App.jsx"
-import "./index.css"
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
-import { PageNotFound } from "./pages"
+import App from "./App.jsx"
+import { Home, PageNotFound, Menu } from "./pages"
+import "./index.css"
 
 const appConfig = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <PageNotFound />
+    errorElement: <PageNotFound />,
+    children: [
+      {
+        path: "/",
+        element: <Home />
+      },
+      {
+        path: "restaurant/:id",
+        element: <Menu />
+      }
+    ]
   }
 ])
 

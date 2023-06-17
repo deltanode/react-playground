@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "",
-        secondary: ""
+        primary: "#fefefe",
+        secondary: "#adbf4e"
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"]
@@ -20,5 +20,5 @@ export default {
       "2xl": "1536px"
     }
   },
-  plugins: []
+  plugins: [require("tailwind-scrollbar-hide")]
 }

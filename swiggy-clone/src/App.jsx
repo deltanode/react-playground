@@ -1,7 +1,7 @@
-import style from "./style"
+import { Outlet } from "react-router-dom"
 import Header from "./components/Header"
-import { Home } from "./pages"
 import { RestaurantContextProvider } from "./contexts/RestaurantContext"
+import style from "./style"
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       {/* pages */}
       <div className={`w-full ${style.flexStart} `}>
         <RestaurantContextProvider>
-          <Home />
+          <Outlet />
         </RestaurantContextProvider>
       </div>
     </div>
