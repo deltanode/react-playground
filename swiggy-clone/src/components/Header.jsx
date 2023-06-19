@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useSelector } from "react-redux"
 import { Link } from "react-router-dom"
+import logo from "../assets/logo.png"
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -10,17 +11,28 @@ const Header = () => {
   return (
     <nav className="flex justify-between items-center py-3 lg:py-6">
       <h1 className="font-bold text-[22px] text-orange-400">
-        <Link to="/">SWIGGY</Link>
+        {/* <Link to="/">SWIGGY</Link> */}
+        <img data-testid="logo" src={logo} alt="SWIGGY" />
       </h1>
 
       {/* web version */}
       <ul className="list-none hidden lg:flex gap-6">
-        <li key="Search">Search </li>
+        <li data-testid="nav" key="Search">
+          Search
+        </li>
         <li key="Offers">Offers </li>
         <li key="Help">Help </li>
         <li key="Sign In">Sign In </li>
         <li key="Cart">
-          <Link to="cart">Cart {cartItems.length > 0 && <span className="bg-orange-400 text-white p-0.5 rounded-sm">{cartItems.length}</span>}</Link>
+          {/* <Link to="cart">Cart {cartItems.length > 0 && <span className="bg-orange-400 text-white p-0.5 rounded-sm">{cartItems.length}</span>}</Link> */}
+          <Link to="cart">
+            Cart{" "}
+            {
+              <span data-testid="cart" className="bg-orange-400 text-white p-0.5 rounded-sm">
+                {cartItems.length}
+              </span>
+            }
+          </Link>
         </li>
       </ul>
 
@@ -42,7 +54,8 @@ const Header = () => {
             <li key="Help">Help </li>
             <li key="Sign In">Sign In </li>
             <li key="Cart">
-              <Link to="cart">Cart {cartItems > 0 && <span className="bg-orange-400 text-white p-0.5 rounded-sm">{cartItems.length}</span>}</Link>
+              {/* <Link to="cart">Cart {cartItems.length > 0 && <span className="bg-orange-400 text-white p-0.5 rounded-sm">{cartItems.length}</span>}</Link> */}
+              <Link to="cart">Cart {<span className="bg-orange-400 text-white p-0.5 rounded-sm">{cartItems.length}</span>}</Link>
             </li>
           </ul>
         </div>
