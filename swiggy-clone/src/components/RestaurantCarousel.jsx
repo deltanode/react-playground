@@ -16,7 +16,7 @@ const RestaurantCarousel = () => {
 
   return (
     <div className="w-full relative">
-      <div id="slider" className="w-[100%] h-[340px] flex justify-start py-2  overflow-x-scroll scrollbar-hide gap-14 py-8">
+      <div data-testid="res-carousel" id="slider" className="w-[100%] h-[340px] flex justify-start py-2  overflow-x-scroll scrollbar-hide gap-14 py-8">
         {/* carousel arrows */}
         <div className="absolute  w-full h-full top-0 left-0 flex items-center justify-between p-2">
           <button onClick={handleScrollLeft} className=" w-[20px] h-[20px] bg-white text-gray-700 rounded-full flex justify-center items-center p-4 hover:opacity-90">

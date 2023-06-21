@@ -2,8 +2,9 @@ import { Link } from "react-router-dom"
 import { CLOUDINARY_IMAGE_URL } from "../utils/constant"
 
 const RestaurantCard = data => {
-  // console.log(data)
+  // console.log("data: ", data)
   const { id, name, cuisines, cloudinaryImageId, costForTwoString, minDeliveryTime, avgRating, ribbon } = data
+  // console.log(id, name, cuisines, cloudinaryImageId, costForTwoString, minDeliveryTime, avgRating, ribbon)
   return (
     <Link to={`restaurant/${id}`}>
       <div className="p-5 hover:border-2 hover:shadow-md flex flex-col gap-2">

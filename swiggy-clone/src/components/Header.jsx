@@ -11,8 +11,10 @@ const Header = () => {
   return (
     <nav className="flex justify-between items-center py-3 lg:py-6">
       <h1 className="font-bold text-[22px] text-orange-400">
-        {/* <Link to="/">SWIGGY</Link> */}
-        <img data-testid="logo" src={logo} alt="SWIGGY" />
+        {/* <Link data-testid="logo" to="/">
+          SWIGGY
+        </Link> */}
+        <img data-testid="logo" src={logo} alt="SWIGGY" className="w-[70px]" />
       </h1>
 
       {/* web version */}

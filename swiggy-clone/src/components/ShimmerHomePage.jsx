@@ -38,7 +38,7 @@ const ShimmerHomePage = () => {
     <div className="w-full flex flex-col items-center">
       <div className={`${style.boxWidth} ${style.paddingX} flex flex-col`}>
         <ShimmerRestaurantNavBar />
-        <div className="my-8 grid xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-6 lg:gap-4 lg:gap-6">
+        <div data-testid="shimmer-cards" className="my-8 grid xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-6 lg:gap-4 lg:gap-6">
           {Array(15)
             .fill("")
             .map((element, index) => (

@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react"
 import { SWIGGY_API } from "../utils/request"
+import { RESTAURANT_JSON_DATA } from "../mocks/data"
 
 // create context
 const RestaurantContext = createContext()
@@ -24,6 +25,7 @@ export function RestaurantContextProvider({ children }) {
       try {
         const response = await fetch(SWIGGY_API)
         const apiData = await response.json()
+        // const apiData = RESTAURANT_JSON_DATA
         setRestaurants(apiData?.data?.cards[2]?.data?.data?.cards)
         setDisplayRestaurants(apiData?.data?.cards[2]?.data?.data?.cards)
         setTotalOpenRestaurants(apiData?.data?.cards[2]?.data?.data?.totalOpenRestaurants)

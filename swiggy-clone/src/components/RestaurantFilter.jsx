@@ -25,7 +25,7 @@ const RestaurantFilter = ({ closeFilter }) => {
           <h3>Filter</h3>
         </div>
         {/* filter form */}
-        <form onSubmit={handleSubmit} className="grow px-4 overflow-y-scroll flex flex-col gap-6 shadow-lg">
+        <form data-testid="filter-options" onSubmit={handleSubmit} className="grow px-4 overflow-y-scroll flex flex-col gap-6 shadow-lg">
           {filterOptions?.map(filterOption => {
             return <FilterOptions key={filterOption.key} filterSearchValue={filterSearchValue} setFilterSearchValue={setFilterSearchValue} title={filterOption.title} options={filterOption.options} />
           })}
@@ -36,7 +36,7 @@ const RestaurantFilter = ({ closeFilter }) => {
           <button className="px-6 py-3 border border-slate-500" onClick={() => setFilterSearchValue(new Set())}>
             Clear
           </button>
-          <button className="px-8 py-3 border bg-orange-400 text-white" onClick={handleSubmit}>
+          <button data-testid="filter-button" className="px-8 py-3 border bg-orange-400 text-white" onClick={handleSubmit}>
             Show Restaurants
           </button>
         </div>

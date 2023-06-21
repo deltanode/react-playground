@@ -34,7 +34,7 @@ const FilterOptions = ({ title, options, filterSearchValue, setFilterSearchValue
             <div key={optionObj.option} className="w-[45%]">
               {/* <Checkbox setFilterSearchValue={setFilterSearchValue} optionObj={optionObj} /> */}
               <label htmlFor={optionObj.option}>
-                <input type="checkbox" name={optionObj.option} checked={filterSearchValue.has(optionObj.option) ? true : false} value={optionObj.option} onChange={handleChange} className="mr-2" />
+                <input data-testid="checkbox" type="checkbox" name={optionObj.option} checked={filterSearchValue.has(optionObj.option) ? true : false} value={optionObj.option} onChange={handleChange} className="mr-2" />
                 {optionObj.option}
               </label>
             </div>

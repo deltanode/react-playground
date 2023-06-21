@@ -2,7 +2,7 @@ import React from "react"
 import ReactDOM from "react-dom/client"
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import App from "./App.jsx"
-import { Home, PageNotFound, Menu, Cart } from "./pages"
+import { Home, Home2, PageNotFound, Menu, Cart } from "./pages"
 import "./index.css"
 import { Provider } from "react-redux"
 import store from "./store/store"
@@ -16,6 +16,10 @@ const appConfig = createBrowserRouter([
       {
         path: "/",
         element: <Home />
+      },
+      {
+        path: "/home2",
+        element: <Home2 />
       },
       {
         path: "restaurant/:id",

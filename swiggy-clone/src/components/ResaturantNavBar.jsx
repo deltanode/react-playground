@@ -21,8 +21,9 @@ const ResaturantNavBar = () => {
       <h3 className="font-bold  sm:text-xl md:text-2xl">{totalOpenRestautants} Restaurants</h3>
 
       {/* web version */}
-      <div className="hidden lg:block">
-        <ul className="list-none flex items-center gap-6">
+      <div className="hidden lg:flex justify-end items-center gap-6">
+        {/* sort */}
+        <ul data-testid="sort-list" className=" list-none flex items-center gap-6">
           {sortOptions?.map(sortOption => {
             return (
               <li onClick={handleSort} key={sortOption.key} className="hover:text-orange-700">
@@ -30,11 +31,13 @@ const ResaturantNavBar = () => {
               </li>
             )
           })}
-          <li className="hover:text-orange-700 border-4 py-0.5 px-2 rounded" onClick={e => setIsFilterOpen(prev => !prev)}>
+        </ul>
+        {/* filter */}
+        <ul className="list-none flex items-start">
+          <li data-testid="filter-toggle" className="hover:text-orange-700 border-4 py-0.5 px-2 rounded" onClick={e => setIsFilterOpen(prev => !prev)}>
             Filters
           </li>
           <li>{isFilterOpen && <RestaurantFilter closeFilter={() => setIsFilterOpen(false)} />}</li>
-          {/* <li className="hover:text-orange-700"> {data}</li> */}
         </ul>
       </div>
 
