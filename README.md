@@ -29,7 +29,7 @@ A playground to practice & learn react. This is where the magic happens!
 
 | S.No | Topic <img width="250px"> | <img width="50px"> Link <img width="50px"> |
 | :---: | :--- | :---: |
-| 1. |Food Ordering App             |[ 🔗](https://github.com/deltanode/react-playground/tree/main/swiggy-clone)   |
+| 1. |Swiggy Clone                  |[ 🔗](https://github.com/deltanode/react-playground/tree/main/swiggy-clone)   |
 | 2. |Youtube Clone                 |[ 🔗](https://github.com/deltanode/Video-Streaming-App) |
 
 ### More stuff
@@ -39,7 +39,7 @@ A playground to practice & learn react. This is where the magic happens!
 | 1. |CRUD [React + Firebase]  | `vite` `Firebase` `CRUD` `env-cmd` `Firebase Hosting`  |[ 🔗](https://github.com/deltanode/crud-react-firebase) |
 | 2. |AUTH [React + Firebase]  | `AUTH using Firebase` `Protected Routes`               |[ 🔗](https://github.com/deltanode/auth-react-firebase) |
 | 3. |Modern UI/UX App         | `Responsive UI` `Best Code Practice` `Netlify Hosting` |[ 🔗](https://github.com/deltanode/modern-react-tailwind-app) |
-| 4. |Video Streaming App      | `Responsive UI` `Firebase Intergration`                |[ 🔗](https://github.com/deltanode/video-react-app) |
+| 4. |Netflix CLone            | `Responsive UI` `Firebase Intergration`                |[ 🔗](https://github.com/deltanode/video-react-app) |
 
 ### Interview Question
 
