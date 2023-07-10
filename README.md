@@ -20,8 +20,10 @@ A playground to practice & learn react. This is where the magic happens!
 | 12.  | Let's build our store      | `redux-tool-kit`                                   |       [ 🔗](12-lets-build-our-store)       |
 | 13.  | Time for the test          | `React Testing Library` `jest`                     |        [ 🔗](13-time-for-the-test)         |
 | 14.  | Machine Coding Inteview    | `Time management`                                  |     [ 🔗](14-machine-coding-interview)     |
-| 15.  | Building Advanced Features | `search` `debouncing` `caching` `nesting comments` |    [ 🔗](15-building-advanced-features)    |
-| 16.  | The End Game               | `live-chat` `api polling` `web-sockets` `useMemo`  |           [ 🔗](16-the-end-game)           |
+| 15.  | Building Advanced Features | `search` `debouncing` `caching` `nesting comments` |      [ 🔗](15-building-advanced-features)    |
+| 16.  | The End Game               | `live-chat` `api polling` `web-sockets` `useMemo`  |        [ 🔗](16-the-end-game)           |
+| 17.  | Also Know                  | `error boundries` `useRef` `react middleware`  |       [ 🔗](17-also-know)           |
+
 
 ## Projects
 
