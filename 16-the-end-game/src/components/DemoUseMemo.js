@@ -2,6 +2,7 @@ import { useMemo, useState } from "react"
 import { findPrime } from "../utils/helper"
 
 const DemoUseMemo = () => {
+  console.log("useMeno Component ran")
   const [num, setNum] = useState(1)
   const [isDarkTheme, setIsDarkTheme] = useState(false)
 

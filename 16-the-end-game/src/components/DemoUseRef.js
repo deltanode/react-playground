@@ -22,10 +22,13 @@ const DemoUseRef = () => {
   // const [i] = useState({ current: null })
   useEffect(() => {
     i.current = setInterval(() => {
-      console.log("To stop this setInterval(), Go to 'useRef Demo' page", Math.random())
+      console.log("To stop this setInterval(), Go to 'useRef Demo' page", Math.ceil(Math.random() * 10))
     }, 1000)
 
-    return () => clearInterval(i.current)
+    return () => {
+      clearInterval(i.current)
+      console.log("DemoUseRef unmounted ----")
+    }
   }, [])
 
   return (

@@ -4,7 +4,7 @@ const searchCacheSlice = createSlice({
   name: "search",
   initialState: {
     searchCache: {
-      zzzz: ["hi", "bye"]
+      jav: ["java", "javascript", "jarvis", "javed"]
     }
   },
   reducers: {
